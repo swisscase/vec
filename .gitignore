@@ -1,0 +1,6 @@
+*
+!.gitignore
+!vecEbene0Bahnhof.xml
+!rocrail.ini
+traces/
+backup/
