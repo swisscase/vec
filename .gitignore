@@ -1,7 +1,5 @@
-*
-!.gitignore
-!vecEbene0Bahnhof.xml
-!rocrail.ini
-!rocview.ini
+vecEbene0Bahnhof.xml.anabak
+vecEbene0Bahnhof.xml.anabak.bak
+vecEbene0Bahnhof.xml.bak
+rocrail.ini.bak
 traces/
-backup/
