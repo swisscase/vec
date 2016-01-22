@@ -822,7 +822,7 @@
     <tk type="connector" id="tk20151021100552724" x="7" y="0" z="0" ori="north" prev_id="tk20151021100552724" blockid="R_Bl20.2" road="false" routeids="Fst_Gl321_to_Bl20,Fst_Bl7_to_Bl20,Fst_Bl19_to_Bl20" tknr="20"/>
     <tk type="connector" ori="north" id="tk20151021100602239" x="6" y="0" z="0" prev_id="tk20151021100602239" blockid="R_Bl6.2" road="false" routeids="Fst_Gl322_to_Bl6,Fst_Bl7_to_Bl6,Fst_Bl19_to_Bl6" tknr="6"/>
     <tk type="dirall" id="tk20151021100640394" x="6" y="1" z="0" ori="north" prev_id="tk20151021100640394" blockid="R_Bl_6.1" road="false" routeids="Fst_Gl322_to_Bl6,Fst_Bl7_to_Bl6,Fst_Bl19_to_Bl6" tknr="1"/>
-    <tk type="dirall" ori="north" id="tk20151021100643455" x="7" y="1" z="0" prev_id="tk20151021100643455" blockid="R_Bl_20.3" road="false" routeids="Fst_Gl321_to_Bl20,Fst_Bl7_to_Bl20,Fst_Bl19_to_Bl20" tknr="20"/>
+    <tk type="dirall" ori="north" id="tk20151021100643455" x="7" y="1" z="0" prev_id="tk20151021100643455" blockid="R_Bl_20.3" road="false" routeids="Fst_Gl321_to_Bl20,Fst_Bl7_to_Bl20,Fst_Bl19_to_Bl20" tknr="2"/>
     <tk type="connector" id="tk20151021100750665" x="43" y="0" z="0" ori="north" prev_id="tk20151021100750665" blockid="R_Bl1.4" road="false" routeids="Fst_Gl452_to_Bl1Tal,Fst_Gl4_to_Bl1Tal,Fst_Gl412Tal_to_Bl1Tal" tknr="1"/>
     <tk type="connector" ori="north" id="tk20151021100753487" x="44" y="0" z="0" prev_id="tk20151021100753487" blockid="R_Bl4.2" road="false" routeids="Fst_Bl5E_to_Gl412E" tknr="5"/>
     <tk type="connector" id="tk20151021101112901" x="2" y="22" z="1" ori="south" prev_id="tk20151021101112901" blockid="R_Bl6.2" road="false" routeids="Fst_Gl322_to_Bl6,Fst_Bl7_to_Bl6,Fst_Bl19_to_Bl6" tknr="6"/>
