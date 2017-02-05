@@ -3848,8 +3848,8 @@ wieder kurz drücken um diesen Zustand aufzuheben." timer="0" doublequote="true"
     <ac id="Akt_textupdate_Stoerung_Fahrspannungsausfall" prev_id="Akt_textupdate_Stoerung_Fahrspannungsausfall" desc="Update des Textfeldes Stoerungsausgabe" timed="false" random="false" every="false" hour="0" min="0" sec="0" cmd="update" oid="Soerungsausgabe" suboid="" actiontime="0" param="Fahrspannungsausfall! 
 Nothalt aufheben und weissen Taster drücken.
 (Fahrspannung einschalten)" timer="0" doublequote="true" type="tx" iid="" bus="0" addr="0" port="0" activated="false" async="true"/>
-    <ac id="Akt_Fsp_Bl6_to_Bl9_LED_RESET" prev_id="Akt_Fsp_Bl6_toBl9_LED_RESET" desc="" timed="false" activated="false" random="false" every="false" hour="0" min="0" sec="0" cmd="" oid="Fst_Bl6_to_Bl9_LED_RESET" suboid="" actiontime="0" param="" timer="0" doublequote="true" async="true" type="st" iid="" bus="0" addr="0" port="0"/>
-    <ac id="Akt_Fsp_Bl20_to_Bl9_LED_RESET" prev_id="Akt_Fsp_Bl20_to_Bl9_LED_RESET" desc="" timed="false" activated="false" random="false" every="false" hour="0" min="0" sec="0" cmd="" oid="Fst_Bl20_to_Bl9_LED_RESET" suboid="" actiontime="0" param="" timer="0" doublequote="true" async="true" type="st" iid="" bus="0" addr="0" port="0"/>
+    <ac id="Akt_Fsp_Bl6_to_Bl9_LED_RESET" prev_id="Akt_Fsp_Bl6_toBl9_LED_RESET" desc="" timed="false" activated="false" random="false" every="false" hour="0" min="0" sec="0" cmd="" oid="LED_RESET_Fst_Bl6_to_Bl9" suboid="" actiontime="0" param="" timer="0" doublequote="true" async="true" type="st" iid="" bus="0" addr="0" port="0"/>
+    <ac id="Akt_Fsp_Bl20_to_Bl9_LED_RESET" prev_id="Akt_Fsp_Bl20_to_Bl9_LED_RESET" desc="" timed="false" activated="false" random="false" every="false" hour="0" min="0" sec="0" cmd="" oid="LED_RESET_Fst_Bl20_to_Bl9" suboid="" actiontime="0" param="" timer="0" doublequote="true" async="true" type="st" iid="" bus="0" addr="0" port="0"/>
     <ac id="Akt_Fsp_Bl10_to_Bl7_LED_RESET" prev_id="Akt_Fsp_Bl10_to_Bl7_LED_RESET" desc="" timed="false" activated="false" random="false" every="false" hour="0" min="0" sec="0" cmd="" oid="LED_RESET_Fst_Bl10_to_Bl7" suboid="" actiontime="0" param="" timer="0" doublequote="true" async="true" type="st" iid="" bus="0" addr="0" port="0"/>
     <ac id="Akt_Fsp_Bl16_to_Bl7_LED_RESET" prev_id="Akt_Fsp_Bl16_to_Bl7_LED_RESET" desc="" timed="false" activated="false" random="false" every="false" hour="0" min="0" sec="0" cmd="" oid="LED_RESET_Fst_Bl16_to_Bl7" suboid="" actiontime="0" param="" timer="0" doublequote="true" async="true" type="st" iid="" bus="0" addr="0" port="0"/>
     <ac id="Akt_Bl9_to_Bl16_Weiche_lock" prev_id="Akt_Bl9_to_Bl16_Weiche_lock" desc="lock set" timed="false" random="false" every="false" hour="0" min="0" sec="0" cmd="lockset" oid="Fst_Bl9_to_Bl16_WEICHE" suboid="" actiontime="0" param="" timer="0" doublequote="true" type="st" iid="" bus="0" addr="0" port="0" activated="false" async="true"/>
@@ -3961,15 +3961,16 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="W400" cmd="straight" lock="true" reduceV="true"/>
     </st>
     <st id="Fst_Bl5E_to_Gl412E" desc="" prev_id="Fst_Bl5E_to_Gl412E" bka="Bl.5" bkb="Gl.422" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
-      <swcmd id="W415b" cmd="straight" lock="true" reduceV="true"/>
       <fbevent id="R412"/>
       <fbevent id="R422"/>
+      <swcmd id="W415b" cmd="straight" lock="true" reduceV="true"/>
+      <swcmd id="LED_D348Bl" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
+      <swcmd id="LED_D346Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="FSp_Gl412" cmd="on" lock="false" reduceV="false"/>
       <swcmd id="BlModul5SIGROT" cmd="on" lock="false" reduceV="true"/>
-      <swcmd id="LED_D348Bl" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
       <swcmd id="LED_D348Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-      <swcmd id="LED_D346Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="LED_D346Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
+      <swcmd id="FSp_Gl412" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Gl412E_to_Gl8Berg" desc="" prev_id="Fst_Gl412E_to_Gl8Berg" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
       <swcmd id="W478" cmd="turnout" lock="true" reduceV="true"/>
@@ -4353,11 +4354,6 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="LED_D337Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D344Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
     </st>
-    <st id="Fst_Bl5E_to_Gl412E RESET" desc="" prev_id="Fst_Bl5E_to_Gl412E RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
-      <fbevent id="R412"/>
-      <fbevent id="R422"/>
-      <swcmd id="FSp_Gl412" cmd="off" lock="false" reduceV="false"/>
-    </st>
     <st id="Fst_Gl412E_to_Gl6Berg RESET" desc="" prev_id="Fst_Gl412E_to_Gl6Berg RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
       <fbevent id="R400"/>
       <swcmd id="FSp_Gl6a" cmd="off" lock="false" reduceV="false"/>
@@ -4429,25 +4425,19 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Gl7b" cmd="off" lock="false" reduceV="true"/>
       <swcmd id="FSp_Gl7c" cmd="off" lock="false" reduceV="true"/>
     </st>
-    <st id="Fst_Bl6_to_Gl322" desc="" prev_id="Fst_Bl6_to_Gl322" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Bl6_to_Gl322" desc="" prev_id="Fst_Bl6_to_Gl322" bka="Bl.6" bkb="Gl.322" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
+      <fbevent id="R322"/>
+      <fbevent id="R312"/>
+      <fbevent id="R302"/>
+      <fbevent id="R342"/>
       <swcmd id="W350" cmd="straight" lock="true" reduceV="true"/>
-      <fbevent id="R322"/>
-      <fbevent id="R312"/>
-      <fbevent id="R302"/>
-      <fbevent id="R342"/>
-      <swcmd id="FSp_Gl302" cmd="on" lock="false" reduceV="false"/>
-      <swcmd id="FSp_Bl6" cmd="on" lock="false" reduceV="false"/>
       <swcmd id="LED_D344Gr" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
-      <swcmd id="LED_D344Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D362Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl6" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Gl302" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="LED_D344Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D362Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-    </st>
-    <st id="Fst_Bl6_to_Gl322 RESET" desc="" prev_id="Fst_Bl6_to_Gl322 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <fbevent id="R322"/>
-      <fbevent id="R312"/>
-      <fbevent id="R302"/>
-      <fbevent id="R342"/>
-      <swcmd id="FSp_Gl302" cmd="off" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Gl302" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Gl322_to_Bl6" desc="" prev_id="Fst_Gl322_to_Bl6" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="1" class="" polarization="0" automatic="0">
       <swcmd id="W350" cmd="straight" lock="true" reduceV="false"/>
@@ -4544,7 +4534,7 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Gl5b" cmd="off" lock="false" reduceV="false"/>
       <swcmd id="FSp_Gl5c" cmd="off" lock="false" reduceV="false"/>
     </st>
-    <st id="Fst_Gl321_to_Bl20" desc="" prev_id="Fst_Gl321_to_Bl20" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Gl321_to_Bl20" desc="" prev_id="Fst_Gl321_to_Bl20" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="FSp_Gl301" cmd="on" lock="false" reduceV="true"/>
       <swcmd id="FSp_Bl20" cmd="on" lock="false" reduceV="true"/>
       <fbevent id="R_Bl_20.3"/>
@@ -4562,23 +4552,17 @@ Nothalt aufheben und weissen Taster drücken.
       <fbevent id="R_Bl20.2"/>
       <fbevent id="R_Bl_20.3"/>
     </st>
-    <st id="Fst_Bl20_to_Gl321" desc="" prev_id="Fst_Bl20_to_Gl321" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl20" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="FSp_Gl301" cmd="on" lock="false" reduceV="false"/>
-      <swcmd id="LED_D342Gr" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
-      <swcmd id="LED_D342Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-      <swcmd id="LED_D389Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="LED_D389Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
+    <st id="Fst_Bl20_to_Gl321" desc="" prev_id="Fst_Bl20_to_Gl321" bka="Bl.20" bkb="Gl.311" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R301"/>
       <fbevent id="R311"/>
       <fbevent id="R321"/>
-    </st>
-    <st id="Fst_Bl20_to_Gl321 RESET" desc="" prev_id="Fst_Bl20_to_Gl321 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <fbevent id="R322"/>
-      <fbevent id="R312"/>
-      <fbevent id="R302"/>
-      <fbevent id="R342"/>
-      <swcmd id="FSp_Gl301" cmd="off" lock="false" reduceV="false"/>
+      <swcmd id="LED_D342Gr" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
+      <swcmd id="LED_D389Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl20" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Gl301" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="LED_D342Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
+      <swcmd id="LED_D389Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
+      <swcmd id="FSp_Gl301" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Gl321_to_Gl4 RESET" desc="" prev_id="Fst_Gl321_to_Gl4 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
       <swcmd id="FSp_Gl4a" cmd="off" lock="false" reduceV="false"/>
@@ -4595,18 +4579,16 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Gl6b" cmd="off" lock="false" reduceV="false"/>
       <swcmd id="FSp_Gl6c" cmd="off" lock="false" reduceV="false"/>
     </st>
-    <st id="Fst_Bl7_to_Bl20" desc="" prev_id="Fst_Bl7_to_Bl20" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl20" cmd="on" lock="false" reduceV="false"/>
+    <st id="Fst_Bl7_to_Bl20" desc="" prev_id="Fst_Bl7_to_Bl20" bka="Bl.7" bkb="Bl.20" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl20.1"/>
       <fbevent id="R_Bl20.2"/>
       <fbevent id="R_Bl_20.3"/>
       <swcmd id="LED_D363Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="LED_D363Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D389Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl20" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="LED_D363Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D389Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-    </st>
-    <st id="Fst_Bl7_to_Bl20 RESET" desc="" prev_id="Fst_Bl7_to_Bl20 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
-      <swcmd id="FSp_Bl20" cmd="off" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Bl20" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl20_to_Bl19" desc="" prev_id="Fst_Bl20_to_Bl19" bka="Bl.20" bkb="Bl.19" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl19.1"/>
@@ -4619,18 +4601,16 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="LED_D386_Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="FSp_Bl19" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl7_to_Bl6" desc="" prev_id="Fst_Bl7_to_Bl6" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl6" cmd="on" lock="false" reduceV="false"/>
+    <st id="Fst_Bl7_to_Bl6" desc="" prev_id="Fst_Bl7_to_Bl6" bka="Bl.7" bkb="Bl.6" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl6.2"/>
       <fbevent id="R_Bl6.3"/>
       <fbevent id="R_Bl_6.1"/>
       <swcmd id="LED_D363Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="LED_D363Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D362Gr" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl6" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="LED_D363Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D362Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-    </st>
-    <st id="Fst_Bl7_to_Bl6 RESET" desc="" prev_id="Fst_Bl7_to_Bl6 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl6" cmd="off" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Bl6" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl20_to_Bl7" desc="" prev_id="Fst_Bl20_to_Bl7" bka="Bl.20" bkb="Bl.7" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl7.1"/>
@@ -4652,29 +4632,25 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="LED_D389Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="FSp_Bl20" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl6_to_Bl7" desc="" prev_id="Fst_Bl6_to_Bl7" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Bl6_to_Bl7" desc="" prev_id="Fst_Bl6_to_Bl7" bka="Bl.6" bkb="Bl.7" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl7.1"/>
       <fbevent id="R_Bl7.2"/>
       <fbevent id="R_Bl7.3"/>
-      <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false"/>
       <swcmd id="LED_D361Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="LED_D364Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Bl7" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl6_to_Bl7  RESET" desc="" prev_id="Fst_Bl6_to_Bl7  RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
-      <swcmd id="FSp_Bl7" cmd="off" lock="false" reduceV="false"/>
-    </st>
-    <st id="Fst_Bl6_to_Bl19" desc="" prev_id="Fst_Bl6_to_Bl19" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl19" cmd="on" lock="false" reduceV="false"/>
+    <st id="Fst_Bl6_to_Bl19" desc="" prev_id="Fst_Bl6_to_Bl19" bka="Bl.6" bkb="Bl.19" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl19.1"/>
       <fbevent id="R_Bl19.2"/>
       <fbevent id="R_Bl19.3"/>
       <swcmd id="LED_D386_Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="LED_D386_Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D361Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl19" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="LED_D386_Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D361Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-    </st>
-    <st id="Fst_Bl6_to_Bl19 RESET" desc="" prev_id="Fst_Bl6_to_Bl19 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
-      <swcmd id="FSp_Bl19" cmd="off" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Bl19" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl19_to_Bl6" desc="" prev_id="Fst_Bl19_to_Bl6" bka="Bl.19" bkb="Bl.6" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl_6.1"/>
@@ -4890,45 +4866,36 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="LED_D384Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="FSp_Gl901" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl7_to_Bl8" desc="" prev_id="Fst_Bl7_to_Bl8" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Bl7_to_Bl8" desc="" prev_id="Fst_Bl7_to_Bl8" bka="Bl.7" bkb="Bl.8" bkc="" modid="" bkaside="false" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="FSp_Bl8" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <fbevent id="R_Bl8.1"/>
       <fbevent id="R_Bl8.2"/>
       <fbevent id="R_Bl8.3"/>
+      <swcmd id="FSp_Bl8" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl7_to_Bl8 RESET" desc="" prev_id="Fst_Bl7_to_Bl8 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl8" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl8_to_Bl7" desc="" prev_id="Fst_Bl7_to_Bl8 (copy)" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
+    <st id="Fst_Bl8_to_Bl7" desc="" prev_id="Fst_Bl8_to_Bl7" bka="Bl.8" bkb="Bl.7" bkc="" modid="" bkaside="false" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="FSp_Bl8" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <fbevent id="R_Bl7.1"/>
       <fbevent id="R_Bl7.2"/>
       <fbevent id="R_Bl7.3"/>
+      <swcmd id="FSp_Bl7" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl8_to_Bl7 RESET" desc="" prev_id="Fst_Bl8_to_Bl7 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl7" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl9_to_Bl8" desc="" prev_id="Fst_Bl9_to_Bl8" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Bl9_to_Bl8" desc="" prev_id="Fst_Bl9_to_Bl8" bka="Bl.9" bkb="Bl.8" bkc="" modid="" bkaside="true" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="FSp_Bl9" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="FSp_Bl8" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <fbevent id="R_Bl8.1"/>
       <fbevent id="R_Bl8.2"/>
       <fbevent id="R_Bl8.3"/>
     </st>
-    <st id="Fst_Bl9_to_Bl8 RESET" desc="" prev_id="Fst_Bl9_to_Bl8 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl8" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl8_to_Bl9" desc="" prev_id="Fst_Bl9_to_Bl8 (copy)" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
+    <st id="Fst_Bl8_to_Bl9" desc="" prev_id="Fst_Bl8_to_Bl9" bka="Bl.8" bkb="Bl.9" bkc="" modid="" bkaside="true" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <swcmd id="FSp_Bl9" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="FSp_Bl8" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <fbevent id="R_Bl9.1"/>
       <fbevent id="R_Bl9.2"/>
       <fbevent id="R_Bl9.3"/>
-    </st>
-    <st id="Fst_Bl8_to_Bl9 RESET" desc="" prev_id="Fst_Bl8_to_Bl9 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl9" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
+      <swcmd id="FSp_Bl9" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl18_to_Bl17" desc="" prev_id="Fst_Bl18_to_Bl17" bka="Bl.18" bkb="Bl.17" bkc="" modid="" bkaside="true" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl17.1"/>
@@ -5028,7 +4995,7 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="LED_D381Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="FSp_Bl17" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl6_to_Bl7_WEICHE" desc="" prev_id="Fst_Bl6_to_Bl7_WEICHE" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Bl6_to_Bl7_WEICHE" desc="" prev_id="Fst_Bl6_to_Bl7_WEICHE" bka="Bl.6" bkb="Bl.7" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="W7-19a" cmd="straight" lock="false" reduceV="true" protect="true" atfree="false"/>
       <swcmd id="W7-19b" cmd="straight" lock="true" reduceV="true"/>
       <swcmd id="W6-20a" cmd="straight" lock="false" reduceV="true" protect="true" atfree="false"/>
@@ -5038,20 +5005,25 @@ Nothalt aufheben und weissen Taster drücken.
       <fbevent id="R_Bl7.3"/>
       <swcmd id="FSp_Bl6" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
       <swcmd id="FSp_Gl912" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
+      <swcmd id="FSp_Bl6" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl6_to_Bl19_WEICHE" desc="" prev_id="Fst_Bl6_to_Bl19_WEICHE" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
+    <st id="Fst_Bl6_to_Bl19_WEICHE" desc="" prev_id="Fst_Bl6_to_Bl19_WEICHE" bka="Bl.6" bkb="Bl.19" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
+      <fbevent id="R_Bl19.1"/>
+      <fbevent id="R_Bl19.2"/>
+      <fbevent id="R_Bl19.3"/>
       <swcmd id="W7-19a" cmd="straight" lock="true" reduceV="true"/>
       <swcmd id="W7-19b" cmd="straight" lock="true" reduceV="true"/>
       <swcmd id="W6-20a" cmd="turnout" lock="true" reduceV="true"/>
       <swcmd id="W6-20b" cmd="turnout" lock="true" reduceV="true"/>
-      <fbevent id="R_Bl19.1"/>
-      <fbevent id="R_Bl19.2"/>
-      <fbevent id="R_Bl19.3"/>
-      <swcmd id="FSp_Gl913" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
       <swcmd id="FSp_Bl6" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
+      <swcmd id="FSp_Gl913" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
       <swcmd id="FSp_Gl912" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl6" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl913" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl20_to_Bl7_WEICHE" desc="" prev_id="Fst_Bl20_to_Bl7_WEICHE" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
+    <st id="Fst_Bl20_to_Bl7_WEICHE" desc="" prev_id="Fst_Bl20_to_Bl7_WEICHE" bka="Bl.20" bkb="Bl.7" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <swcmd id="W7-19a" cmd="turnout" lock="false" reduceV="true" protect="true" atfree="false"/>
       <swcmd id="W7-19b" cmd="turnout" lock="true" reduceV="true"/>
       <swcmd id="W6-20a" cmd="straight" lock="true" reduceV="true"/>
@@ -5062,6 +5034,9 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Bl20" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
       <swcmd id="FSp_Gl913" cmd="on" lock="false" protect="false" reduceV="true" atfree="false"/>
       <swcmd id="FSp_Gl912" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl20" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl913" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl20_to_Bl19_WEICHE" desc="" prev_id="Fst_Bl20_to_Bl19_WEICHE" bka="Bl.20" bkb="Bl.19" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <swcmd id="W7-19a" cmd="straight" lock="true" reduceV="true"/>
@@ -5076,48 +5051,33 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Bl20" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
       <swcmd id="FSp_Gl913" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl6_to_Bl7 WEICHE RESET" desc="" prev_id="Fst_Bl6_to_Bl7 WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
-      <swcmd id="FSp_Gl912" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Bl6" cmd="off" lock="false" protect="false" reduceV="true" atfree="false"/>
-    </st>
-    <st id="Fst_Bl6_to_Bl19 WEICHE RESET" desc="" prev_id="Fst_Bl6_to_Bl19 WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Gl913" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl20_to_Bl7 WEICHE RESET" desc="" prev_id="Fst_Bl20_to_Bl7 WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
-      <swcmd id="FSp_Gl913" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Bl20" cmd="off" lock="false" protect="false" reduceV="true" atfree="false"/>
-      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl7_to_Bl20_WEICHE" desc="" prev_id="Fst_Bl7_to_Bl20_WEICHE" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
+    <st id="Fst_Bl7_to_Bl20_WEICHE" desc="" prev_id="Fst_Bl7_to_Bl20_WEICHE" bka="Bl.7" bkb="Bl.20" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <fbevent id="R_Bl20.1"/>
       <fbevent id="R_Bl20.2"/>
       <fbevent id="R_Bl_20.3"/>
-      <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Gl913" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="W7-19a" cmd="turnout" lock="true" reduceV="true" protect="false" atfree="false"/>
       <swcmd id="W7-19b" cmd="turnout" lock="true" reduceV="true" protect="false" atfree="false"/>
       <swcmd id="W6-20a" cmd="straight" lock="true" reduceV="true" protect="false" atfree="false"/>
       <swcmd id="W6-20b" cmd="straight" lock="true" reduceV="true" protect="false" atfree="false"/>
+      <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
+      <swcmd id="FSp_Gl913" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="FSp_Gl912" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl7" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl913" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl7_to_Bl20_WEICHE RESET" desc="" prev_id="Fst_Bl7_to_Bl20_WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Gl913" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl7_to_Bl6_WEICHE" desc="" prev_id="Fst_Bl7_to_Bl6 (copy)" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="">
+    <st id="Fst_Bl7_to_Bl6_WEICHE" desc="" prev_id="Fst_Bl7_to_Bl6_WEICHE" bka="Bl.7" bkb="Bl.6" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <fbevent id="R_Bl6.2"/>
       <fbevent id="R_Bl6.3"/>
       <fbevent id="R_Bl_6.1"/>
-      <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false"/>
-      <swcmd id="FSp_Gl912" cmd="on" lock="false" reduceV="false"/>
       <swcmd id="W7-19a" cmd="straight" lock="false" reduceV="true" protect="true" atfree="false"/>
       <swcmd id="W7-19b" cmd="straight" lock="true" reduceV="true" protect="false" atfree="false"/>
       <swcmd id="W6-20a" cmd="straight" lock="false" reduceV="true" protect="true" atfree="false"/>
       <swcmd id="W6-20b" cmd="straight" lock="true" reduceV="true" protect="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl7_to_Bl6_WEICHE RESET" desc="" prev_id="Fst_Bl7_to_Bl6_WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Gl912" cmd="off" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Gl912" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Bl7" cmd="on" lock="false" reduceV="false"/>
+      <swcmd id="FSp_Gl912" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Bl7" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl19_to_Bl20_WEICHE" desc="" prev_id="Fst_Bl19_to_Bl20_WEICHE" bka="Bl.19" bkb="Bl.20" bkc="" modid="" bkaside="true" bkbside="false" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" speedWait="none" polarizationA="0" polarizationB="0" era="0" automatic="0">
       <fbevent id="R_Bl20.1"/>
@@ -5236,40 +5196,27 @@ Nothalt aufheben und weissen Taster drücken.
         <actioncond id="Fst_Gl8_to_Gl412Tal" subid="" state="locked" type="st"/>
       </actionctrl>
     </st>
-    <st id="Fst_Bl9_to_Bl10" desc="" prev_id="Fst_Bl9_to_Bl10" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl10" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
+    <st id="Fst_Bl9_to_Bl10" desc="" prev_id="Fst_Bl9_to_Bl10" bka="Bl.9" bkb="Bl.10" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl10.1"/>
       <fbevent id="R_Bl10.2"/>
       <fbevent id="R_Bl10.3"/>
       <swcmd id="LED_D364Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="LED_D364Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D365Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl10" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
+      <swcmd id="LED_D364Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D365Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
+      <swcmd id="FSp_Bl10" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl9_to_Bl10 RESET" desc="" prev_id="Fst_Bl9_to_Bl10 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl10" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl9_to_Bl10 WEICHE RESET" desc="" prev_id="Fst_Bl9_to_Bl10 WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl9" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Gl910" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl9_to_Bl16" desc="" prev_id="Fst_Bl9_to_Bl16" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl16" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
+    <st id="Fst_Bl9_to_Bl16" desc="" prev_id="Fst_Bl9_to_Bl16" bka="Bl.9" bkb="Bl.16" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl16.1"/>
       <fbevent id="R_Bl16.2"/>
       <fbevent id="R_Bl16.3"/>
       <swcmd id="LED_D364Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="LED_D364Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D377Bl" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl16" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
+      <swcmd id="LED_D364Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
       <swcmd id="LED_D377Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="true"/>
-    </st>
-    <st id="Fst_Bl9_to_Bl16 RESET" desc="" prev_id="Fst_Bl9_to_Bl16 RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl16" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-    </st>
-    <st id="Fst_Bl9_to_Bl16 WEICHE RESET" desc="" prev_id="Fst_Bl9_to_Bl16 WEICHE RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl9" cmd="off" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Gl911" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
-      <swcmd id="FSp_Gl910" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl16" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="Fst_Bl17_to_Bl16" desc="" prev_id="Fst_Bl17_to_Bl16" bka="Bl.17" bkb="Bl.16" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl16.1"/>
@@ -5321,7 +5268,7 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Gl911" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
       <swcmd id="FSp_Gl910" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl9_to_Bl16_WEICHE" desc="" prev_id="Fst_Bl9_to_Bl16_WEICHE" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
+    <st id="Fst_Bl9_to_Bl16_WEICHE" desc="" prev_id="Fst_Bl9_to_Bl16_WEICHE" bka="Bl.9" bkb="Bl.16" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <fbevent id="R_Bl16.1"/>
       <fbevent id="R_Bl16.2"/>
       <fbevent id="R_Bl16.3"/>
@@ -5332,17 +5279,22 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="FSp_Bl9" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
       <swcmd id="FSp_Gl911" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="FSp_Gl910" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl9" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl911" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl910" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
-    <st id="Fst_Bl9_to_Bl10_WEICHE" desc="" prev_id="Fst_Bl9_to_Bl10_WEICHE" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0">
-      <swcmd id="FSp_Bl9" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
-      <swcmd id="FSp_Gl910" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+    <st id="Fst_Bl9_to_Bl10_WEICHE" desc="" prev_id="Fst_Bl9_to_Bl10_WEICHE" bka="Bl.9" bkb="Bl.10" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" typeperm="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" x="0" y="0" z="0" ori="west" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" status="0" class="" polarization="0" automatic="0" speedWait="none" polarizationA="0" polarizationB="0" era="0">
+      <fbevent id="R_Bl10.1"/>
+      <fbevent id="R_Bl10.2"/>
+      <fbevent id="R_Bl10.3"/>
       <swcmd id="W9-17a" cmd="straight" lock="false" protect="true" reduceV="false" atfree="false"/>
       <swcmd id="W9-17b" cmd="straight" lock="true" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="W10-16a" cmd="straight" lock="false" protect="true" reduceV="false" atfree="false"/>
       <swcmd id="W10-16b" cmd="straight" lock="true" protect="false" reduceV="false" atfree="false"/>
-      <fbevent id="R_Bl10.1"/>
-      <fbevent id="R_Bl10.2"/>
-      <fbevent id="R_Bl10.3"/>
+      <swcmd id="FSp_Bl9" cmd="on" lock="false" reduceV="false" protect="false" atfree="false"/>
+      <swcmd id="FSp_Gl910" cmd="on" lock="false" protect="false" reduceV="false" atfree="false"/>
+      <swcmd id="FSp_Bl9" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
+      <swcmd id="FSp_Gl910" cmd="off" lock="false" protect="false" reduceV="false" atfree="true" mode="0"/>
     </st>
     <st id="LED_RESET_Fst_Bl16_to_Bl7" desc="" prev_id="Fst_Bl16_to_Bl7_LED_RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" polarization="0" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" status="0" typeperm="" class="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" automatic="0" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="LED_D378Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
@@ -5352,11 +5304,11 @@ Nothalt aufheben und weissen Taster drücken.
       <swcmd id="LED_D366Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="LED_D363Gr" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
     </st>
-    <st id="Fst_Bl6_to_Bl9_LED_RESET" desc="" prev_id="Fst_Bl6_to_Bl9_LED_RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" polarization="0" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" status="0" typeperm="" class="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" automatic="0" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="">
+    <st id="LED_RESET_Fst_Bl6_to_Bl9" desc="" prev_id="Fst_Bl6_to_Bl9_LED_RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" polarization="0" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" status="0" typeperm="" class="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" automatic="0" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="LED_D361Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="LED_D364Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
     </st>
-    <st id="Fst_Bl20_to_Bl9_LED_RESET" desc="" prev_id="NEW" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" polarization="0" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" status="0" typeperm="" class="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" automatic="0" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="">
+    <st id="LED_RESET_Fst_Bl20_to_Bl9" desc="" prev_id="Fst_Bl20_to_Bl9_LED_RESET" bka="" bkb="" bkc="" modid="" bkaside="false" bkbside="true" sga="0" sgb="0" speed="none" countcars="no" polarization="0" reduceV="true" maxkmh="0" swappost="false" crossingblocksignals="false" show="false" manual="false" status="0" typeperm="" class="" maxlen="0" minlen="0" commuter="false" nocommuter="false" placing="0" automatic="0" ctciid1="" ctciid2="" ctciid3="" ctcbus1="0" ctcbus2="0" ctcbus3="0" ctcaddr1="0" ctcaddr2="0" ctcaddr3="0" ctcoutput1="" ctcoutput2="" ctcoutput3="" speedWait="none" polarizationA="0" polarizationB="0" era="0">
       <swcmd id="LED_D388Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
       <swcmd id="LED_D364Bl" cmd="off" lock="false" protect="false" reduceV="false" atfree="false"/>
     </st>
