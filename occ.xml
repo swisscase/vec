@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<modocc/>
+<modocc>
+  <occ bkid="Bl.901" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.902" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.10" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.11" lcid="" auto="false" closed="false" placing="0" blockenterside="2"/>
+  <occ bkid="Bl.12" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
+  <occ bkid="Bl.14" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.15" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.16" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.17" lcid="" auto="false" closed="false" placing="0" blockenterside="2"/>
+  <occ bkid="Bl.18" lcid="" auto="false" closed="false" placing="0" blockenterside="2"/>
+  <occ bkid="Bl.19" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
+  <occ bkid="Bl.7" lcid="" auto="false" closed="false" placing="0"/>
+  <occ bkid="Bl.8" lcid="" auto="false" closed="false" placing="0"/>
+</modocc>
