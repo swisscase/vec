@@ -20,7 +20,7 @@
   <occ bkid="E0_Gl.6" lcid="" auto="false" closed="false" placing="0"/>
   <occ bkid="E0_Gl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
   <occ bkid="E0_Gl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="2"/>
-  <occ bkid="E0_Gl.322" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
+  <occ bkid="E0_Gl.322" auto="false" closed="false" placing="0" blockenterside="1"/>
   <occ bkid="E-1_Bl-1_1" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
   <occ bkid="E-1_Bl-1_2" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
   <occ bkid="E-1_Bl-1_3" lcid="" auto="false" closed="false" placing="0" blockenterside="1"/>
