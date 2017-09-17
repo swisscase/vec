@@ -273,121 +273,121 @@
     <tk type="straight" id="tk20170307213748858" x="22" y="3" z="0" ori="east" prev_id="tk20170307213736032" blockid="R_Bl15.3" road="false" routeids="Fst_Bl15_to_Bl16,Fst_Bl16_to_Bl15" tknr="1" copy="false" pre_move_x="19" pre_move_y="3" pre_move_z="0" sensorid=""/>
     <tk type="straight" id="tk20170307213750564" x="21" y="3" z="0" ori="east" prev_id="tk20170307213736032" blockid="R_Bl15.3" road="false" routeids="Fst_Bl15_to_Bl16,Fst_Bl16_to_Bl15" tknr="1" copy="false" pre_move_x="18" pre_move_y="3" pre_move_z="0" sensorid=""/>
     <tk type="straight" id="tk20170307213752515" x="20" y="3" z="0" ori="east" prev_id="tk20170307213736032" blockid="R_Bl15.3" road="false" routeids="Fst_Bl15_to_Bl16,Fst_Bl16_to_Bl15" tknr="1" copy="false" pre_move_x="17" pre_move_y="3" pre_move_z="0" sensorid=""/>
-    <tk type="curve" id="tk20170319131014375" x="53" y="2" z="0" ori="north" pre_move_x="3" pre_move_y="3" pre_move_z="22" locid="" routeids="E-2_R_Gl201h" blockid="" cmd="move"/>
-    <tk type="curve" id="tk20170319131101266" x="64" y="2" z="0" pre_move_x="14" pre_move_y="3" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319131920490" x="59" y="18" z="0" ori="east" pre_move_x="9" pre_move_y="19" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="curve" id="tk20170319131959674" x="70" y="18" z="0" ori="south" pre_move_x="20" pre_move_y="19" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="south" id="tk20170319133451180" x="50" y="11" z="0" pre_move_x="0" pre_move_y="12" pre_move_z="22" locid="" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319155442975" x="63" y="11" z="0" ori="east" pre_move_x="13" pre_move_y="12" pre_move_z="22" locid="" routeids="" blockid="E-2_Bl3" cmd="move"/>
-    <tk type="curve" id="tk20170319155617110" x="71" y="12" z="0" ori="south" pre_move_x="21" pre_move_y="13" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319155630128" x="53" y="8" z="0" ori="south" pre_move_x="3" pre_move_y="9" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319155709570" x="74" y="10" z="0" ori="south" pre_move_x="24" pre_move_y="11" pre_move_z="22" locid="" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319160253818" x="63" y="10" z="0" ori="north" pre_move_x="13" pre_move_y="11" pre_move_z="22" locid="" routeids="" blockid="E-2_Bl3" cmd="move"/>
-    <tk type="curve" id="tk20170319160501517" x="50" y="12" z="0" ori="east" pre_move_x="0" pre_move_y="13" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="straight" id="tk20170319160534003" x="50" y="10" z="0" ori="north" pre_move_x="0" pre_move_y="11" pre_move_z="22" locid="" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319160542340" x="50" y="8" z="0" ori="north" pre_move_x="0" pre_move_y="9" pre_move_z="22" locid="" routeids="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160554644" x="74" y="11" z="0" pre_move_x="24" pre_move_y="12" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160555842" x="70" y="11" z="0" pre_move_x="20" pre_move_y="12" pre_move_z="22" locid="" routeids="" cmd="move"/>
-    <tk type="straight" ori="south" id="tk20170319160556282" x="84" y="18" z="0" pre_move_x="34" pre_move_y="19" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160846343" x="73" y="10" z="0" pre_move_x="23" pre_move_y="11" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160850179" x="65" y="11" z="0" pre_move_x="15" pre_move_y="12" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160850889" x="67" y="11" z="0" pre_move_x="17" pre_move_y="12" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160851274" x="68" y="11" z="0" pre_move_x="18" pre_move_y="12" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170319160851676" x="69" y="11" z="0" pre_move_x="19" pre_move_y="12" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="curve" id="tk20170319172158654" x="98" y="0" z="0" pre_move_x="48" pre_move_y="1" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="curve" ori="north" id="tk20170319172200244" x="87" y="0" z="0" pre_move_x="37" pre_move_y="1" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="curve" ori="west" id="tk20170319172202621" x="83" y="13" z="0" pre_move_x="33" pre_move_y="14" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="curve" ori="north" id="tk20170319172204589" x="72" y="13" z="0" pre_move_x="22" pre_move_y="14" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="curve" id="tk20170319172809079" x="84" y="20" z="0" pre_move_x="34" pre_move_y="21" pre_move_z="22" locid="" ori="east" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" id="tk20170319175536155" x="84" y="17" z="0" ori="north" pre_move_x="34" pre_move_y="18" pre_move_z="22" locid="" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="north" id="tk20170319175536926" x="84" y="16" z="0" pre_move_x="34" pre_move_y="17" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="north" id="tk20170319175537304" x="84" y="15" z="0" pre_move_x="34" pre_move_y="16" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="north" id="tk20170319175537722" x="84" y="14" z="0" pre_move_x="34" pre_move_y="15" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="north" id="tk20170319175538541" x="84" y="13" z="0" pre_move_x="34" pre_move_y="14" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="straight" ori="north" id="tk20170319175539088" x="84" y="12" z="0" pre_move_x="34" pre_move_y="13" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="curve" id="tk20170319175546247" x="84" y="11" z="0" pre_move_x="34" pre_move_y="12" pre_move_z="22" routeids="" blockid="E-2_Bl2" cmd="move"/>
-    <tk type="curve" id="tk20170319175858920" x="72" y="20" z="0" ori="east" pre_move_x="22" pre_move_y="21" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="connector" id="tk20170319175911568" x="80" y="20" z="0" tknr="12" prev_id="tk20170319175911568" blockid="E-1_GF_Verbindung" sensorid="" road="false" routeids="" pre_move_x="30" pre_move_y="21" pre_move_z="22" cmd="move"/>
-    <tk type="connector" id="tk20170319175914020" x="96" y="7" z="0" tknr="12" ori="east" pre_move_x="46" pre_move_y="8" pre_move_z="22" prev_id="tk20170319175914020" blockid="" sensorid="" road="false" routeids="" cmd="move"/>
-    <tk type="dir" id="tk20170319180006448" x="76" y="9" z="0" ori="east" pre_move_x="26" pre_move_y="10" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="dir" id="tk20170319180019426" x="97" y="7" z="0" ori="east" pre_move_x="47" pre_move_y="8" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" id="tk20170319180024627" x="75" y="20" z="0" ori="east" pre_move_x="25" pre_move_y="21" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" id="tk20170319180047227" x="76" y="11" z="0" ori="west" routeids="" pre_move_x="26" pre_move_y="12" pre_move_z="22" cmd="move"/>
-    <tk type="dir" id="tk20170319180059719" x="64" y="11" z="0" pre_move_x="14" pre_move_y="12" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="dir" id="tk20170319180101485" x="64" y="10" z="0" ori="east" routeids="" blockid="E-2_Bl3" pre_move_x="14" pre_move_y="11" pre_move_z="22" cmd="move"/>
-    <tk type="curve" id="tk20170319180940136" x="98" y="7" z="0" ori="south" pre_move_x="48" pre_move_y="8" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" id="tk20170319192943583" x="69" y="13" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="14" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319192944434" x="69" y="14" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="15" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319192944829" x="69" y="16" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="17" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319192945295" x="69" y="15" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="16" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319192946004" x="69" y="17" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="18" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319192946470" x="69" y="18" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="19" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193006837" x="82" y="13" z="0" pre_move_x="32" pre_move_y="14" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193007272" x="82" y="14" z="0" pre_move_x="32" pre_move_y="15" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193007647" x="82" y="15" z="0" pre_move_x="32" pre_move_y="16" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193008175" x="82" y="16" z="0" pre_move_x="32" pre_move_y="17" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193008641" x="82" y="17" z="0" pre_move_x="32" pre_move_y="18" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193009117" x="82" y="18" z="0" pre_move_x="32" pre_move_y="19" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193029573" x="97" y="0" z="0" pre_move_x="47" pre_move_y="1" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193030262" x="97" y="1" z="0" pre_move_x="47" pre_move_y="2" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193030769" x="97" y="2" z="0" pre_move_x="47" pre_move_y="3" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193031347" x="97" y="3" z="0" pre_move_x="47" pre_move_y="4" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193031691" x="97" y="4" z="0" pre_move_x="47" pre_move_y="5" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170319193032086" x="97" y="5" z="0" pre_move_x="47" pre_move_y="6" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dirall" id="tk20170319193050492" x="54" y="2" z="0" pre_move_x="4" pre_move_y="3" pre_move_z="22" routeids="E-2_R_Gl201h" blockid="" cmd="move"/>
-    <tk type="dirall" ori="west" id="tk20170319193051344" x="54" y="3" z="0" pre_move_x="4" pre_move_y="4" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dirall" ori="west" id="tk20170319193051749" x="54" y="4" z="0" pre_move_x="4" pre_move_y="5" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dirall" ori="west" id="tk20170319193052225" x="54" y="5" z="0" pre_move_x="4" pre_move_y="6" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dirall" ori="west" id="tk20170319193052712" x="54" y="6" z="0" pre_move_x="4" pre_move_y="7" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dirall" ori="west" id="tk20170319193053147" x="54" y="7" z="0" pre_move_x="4" pre_move_y="8" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" id="tk20170319193101044" x="52" y="12" z="0" pre_move_x="2" pre_move_y="13" pre_move_z="22" routeids="" blockid="E-2_GF_Verbindung" cmd="move"/>
-    <tk type="dir" id="tk20170319193354500" x="64" y="8" z="0" ori="north" pre_move_x="14" pre_move_y="9" pre_move_z="22" routeids="" blockid="E-2_GF1Ausf" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170319193428918" x="71" y="8" z="0" routeids="" pre_move_x="21" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170319193433499" x="71" y="10" z="0" routeids="" pre_move_x="21" pre_move_y="11" pre_move_z="22" cmd="move"/>
-    <tk type="straight" id="tk20170321202836665" x="73" y="11" z="0" routeids="" pre_move_x="23" pre_move_y="12" pre_move_z="22" cmd="move"/>
-    <tk type="straight" id="tk20170321203148496" x="84" y="9" z="0" routeids="" blockid="E-2_Bl5" pre_move_x="34" pre_move_y="10" pre_move_z="22" cmd="move"/>
-    <tk type="straight" ori="west" id="tk20170321203148912" x="85" y="9" z="0" routeids="" blockid="E-2_Bl5" pre_move_x="35" pre_move_y="10" pre_move_z="22" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170321204715028" x="51" y="8" z="0" pre_move_x="1" pre_move_y="9" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="dir" id="tk20170321205353433" x="88" y="0" z="0" pre_move_x="38" pre_move_y="1" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205353967" x="88" y="1" z="0" pre_move_x="38" pre_move_y="2" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205354245" x="88" y="2" z="0" pre_move_x="38" pre_move_y="3" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205359547" x="88" y="3" z="0" pre_move_x="38" pre_move_y="4" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205400111" x="88" y="4" z="0" pre_move_x="38" pre_move_y="5" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205400520" x="88" y="5" z="0" pre_move_x="38" pre_move_y="6" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205418334" x="63" y="2" z="0" pre_move_x="13" pre_move_y="3" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205419979" x="63" y="3" z="0" pre_move_x="13" pre_move_y="4" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205420333" x="63" y="4" z="0" pre_move_x="13" pre_move_y="5" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205420673" x="63" y="5" z="0" pre_move_x="13" pre_move_y="6" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205421105" x="63" y="6" z="0" pre_move_x="13" pre_move_y="7" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205421523" x="63" y="7" z="0" pre_move_x="13" pre_move_y="8" pre_move_z="22" routeids="" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205454373" x="60" y="13" z="0" routeids="" pre_move_x="10" pre_move_y="14" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205456211" x="60" y="14" z="0" routeids="" pre_move_x="10" pre_move_y="15" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205456521" x="60" y="15" z="0" routeids="" pre_move_x="10" pre_move_y="16" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205456867" x="60" y="16" z="0" routeids="" pre_move_x="10" pre_move_y="17" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205457231" x="60" y="17" z="0" routeids="" pre_move_x="10" pre_move_y="18" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205457593" x="60" y="18" z="0" routeids="" pre_move_x="10" pre_move_y="19" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205525912" x="73" y="13" z="0" routeids="" pre_move_x="23" pre_move_y="14" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205527016" x="73" y="14" z="0" routeids="" pre_move_x="23" pre_move_y="15" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205527364" x="73" y="15" z="0" routeids="" pre_move_x="23" pre_move_y="16" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205527734" x="73" y="16" z="0" routeids="" pre_move_x="23" pre_move_y="17" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205528028" x="73" y="17" z="0" routeids="" pre_move_x="23" pre_move_y="18" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205528406" x="73" y="18" z="0" routeids="" pre_move_x="23" pre_move_y="19" pre_move_z="22" blockid="" cmd="move"/>
-    <tk type="dir" ori="west" id="tk20170321205536310" x="83" y="11" z="0" routeids="" blockid="E-2_Bl2" pre_move_x="33" pre_move_y="12" pre_move_z="22" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205601930" x="71" y="9" z="0" routeids="" pre_move_x="21" pre_move_y="10" pre_move_z="22" cmd="move"/>
-    <tk type="dirall" id="tk20170321205618652" x="50" y="9" z="0" ori="north" routeids="" pre_move_x="0" pre_move_y="10" pre_move_z="22" cmd="move"/>
-    <tk type="dir" id="tk20170321205646640" x="86" y="6" z="0" pre_move_x="36" pre_move_y="7" pre_move_z="22" routeids="" cmd="move"/>
-    <tk type="dir" ori="east" id="tk20170321205654305" x="83" y="9" z="0" routeids="" pre_move_x="33" pre_move_y="10" pre_move_z="22" cmd="move"/>
-    <tk type="curve" ori="west" id="tk20170321214251825" x="73" y="8" z="0" routeids="" pre_move_x="23" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="connector" ori="west" id="tk20170321222002996" x="92" y="20" z="0" tknr="1" prev_id="tk20170321222002996" blockid="" sensorid="" road="false" routeids="" pre_move_x="42" pre_move_y="21" pre_move_z="22" cmd="move"/>
-    <tk type="straight" id="tk20170326194555450" x="70" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="20" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170326194555799" x="69" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="19" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170326194556192" x="68" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="18" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="straight" ori="east" id="tk20170326194559018" x="67" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="17" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="curve" id="tk20170326194606710" x="65" y="8" z="0" ori="east" routeids="" blockid="E-1_Bl-1_3" pre_move_x="15" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="straight" id="tk20170326194616527" x="65" y="7" z="0" ori="north" routeids="" blockid="E-1_Bl-1_3" pre_move_x="15" pre_move_y="8" pre_move_z="22" cmd="move"/>
-    <tk type="dir" id="tk20170326194631331" x="71" y="6" z="0" routeids="" pre_move_x="21" pre_move_y="7" pre_move_z="22" cmd="move"/>
-    <tk type="straight" id="tk20170326194634641" x="66" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="16" pre_move_y="9" pre_move_z="22" cmd="move"/>
-    <tk type="dir" id="tk20170321220213234" x="78" y="6" z="0" pre_move_x="28" pre_move_y="7" pre_move_z="22" routeids="" cmd="move"/>
+    <tk type="curve" id="tk20170319131014375" x="53" y="2" z="0" ori="north" pre_move_x="3" pre_move_y="3" pre_move_z="22" locid="" routeids="E-2_R_Gl201h" blockid=""/>
+    <tk type="curve" id="tk20170319131101266" x="64" y="2" z="0" pre_move_x="14" pre_move_y="3" pre_move_z="22" routeids=""/>
+    <tk type="curve" id="tk20170319131920490" x="59" y="18" z="0" ori="east" pre_move_x="9" pre_move_y="19" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="curve" id="tk20170319131959674" x="70" y="18" z="0" ori="south" pre_move_x="20" pre_move_y="19" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="straight" ori="south" id="tk20170319133451180" x="50" y="11" z="0" pre_move_x="0" pre_move_y="12" pre_move_z="22" locid="" routeids=""/>
+    <tk type="curve" id="tk20170319155442975" x="63" y="11" z="0" ori="east" pre_move_x="13" pre_move_y="12" pre_move_z="22" locid="" routeids="" blockid="E-2_Bl3"/>
+    <tk type="curve" id="tk20170319155617110" x="71" y="12" z="0" ori="south" pre_move_x="21" pre_move_y="13" pre_move_z="22" routeids=""/>
+    <tk type="curve" id="tk20170319155630128" x="53" y="8" z="0" ori="south" pre_move_x="3" pre_move_y="9" pre_move_z="22" routeids=""/>
+    <tk type="curve" id="tk20170319155709570" x="74" y="10" z="0" ori="south" pre_move_x="24" pre_move_y="11" pre_move_z="22" locid="" routeids=""/>
+    <tk type="curve" id="tk20170319160253818" x="63" y="10" z="0" ori="north" pre_move_x="13" pre_move_y="11" pre_move_z="22" locid="" routeids="" blockid="E-2_Bl3"/>
+    <tk type="curve" id="tk20170319160501517" x="50" y="12" z="0" ori="east" pre_move_x="0" pre_move_y="13" pre_move_z="22" routeids=""/>
+    <tk type="straight" id="tk20170319160534003" x="50" y="10" z="0" ori="north" pre_move_x="0" pre_move_y="11" pre_move_z="22" locid="" routeids=""/>
+    <tk type="curve" id="tk20170319160542340" x="50" y="8" z="0" ori="north" pre_move_x="0" pre_move_y="9" pre_move_z="22" locid="" routeids=""/>
+    <tk type="straight" ori="east" id="tk20170319160554644" x="74" y="11" z="0" pre_move_x="24" pre_move_y="12" pre_move_z="22" routeids=""/>
+    <tk type="straight" ori="east" id="tk20170319160555842" x="70" y="11" z="0" pre_move_x="20" pre_move_y="12" pre_move_z="22" locid="" routeids=""/>
+    <tk type="straight" ori="south" id="tk20170319160556282" x="84" y="18" z="0" pre_move_x="34" pre_move_y="19" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="straight" ori="east" id="tk20170319160846343" x="73" y="10" z="0" pre_move_x="23" pre_move_y="11" pre_move_z="22" routeids=""/>
+    <tk type="straight" ori="east" id="tk20170319160850179" x="65" y="11" z="0" pre_move_x="15" pre_move_y="12" pre_move_z="22" routeids=""/>
+    <tk type="straight" ori="east" id="tk20170319160850889" x="67" y="11" z="0" pre_move_x="17" pre_move_y="12" pre_move_z="22" routeids=""/>
+    <tk type="straight" ori="east" id="tk20170319160851274" x="68" y="11" z="0" pre_move_x="18" pre_move_y="12" pre_move_z="22" routeids=""/>
+    <tk type="straight" ori="east" id="tk20170319160851676" x="69" y="11" z="0" pre_move_x="19" pre_move_y="12" pre_move_z="22" routeids=""/>
+    <tk type="curve" id="tk20170319172158654" x="98" y="0" z="0" pre_move_x="48" pre_move_y="1" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="curve" ori="north" id="tk20170319172200244" x="87" y="0" z="0" pre_move_x="37" pre_move_y="1" pre_move_z="22" routeids=""/>
+    <tk type="curve" ori="west" id="tk20170319172202621" x="83" y="13" z="0" pre_move_x="33" pre_move_y="14" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="curve" ori="north" id="tk20170319172204589" x="72" y="13" z="0" pre_move_x="22" pre_move_y="14" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="curve" id="tk20170319172809079" x="84" y="20" z="0" pre_move_x="34" pre_move_y="21" pre_move_z="22" locid="" ori="east" routeids="" blockid=""/>
+    <tk type="straight" id="tk20170319175536155" x="84" y="17" z="0" ori="north" pre_move_x="34" pre_move_y="18" pre_move_z="22" locid="" routeids="" blockid=""/>
+    <tk type="straight" ori="north" id="tk20170319175536926" x="84" y="16" z="0" pre_move_x="34" pre_move_y="17" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="straight" ori="north" id="tk20170319175537304" x="84" y="15" z="0" pre_move_x="34" pre_move_y="16" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="straight" ori="north" id="tk20170319175537722" x="84" y="14" z="0" pre_move_x="34" pre_move_y="15" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="straight" ori="north" id="tk20170319175538541" x="84" y="13" z="0" pre_move_x="34" pre_move_y="14" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="straight" ori="north" id="tk20170319175539088" x="84" y="12" z="0" pre_move_x="34" pre_move_y="13" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="curve" id="tk20170319175546247" x="84" y="11" z="0" pre_move_x="34" pre_move_y="12" pre_move_z="22" routeids="" blockid="E-2_Bl2"/>
+    <tk type="curve" id="tk20170319175858920" x="72" y="20" z="0" ori="east" pre_move_x="22" pre_move_y="21" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="connector" id="tk20170319175911568" x="80" y="20" z="0" tknr="12" prev_id="tk20170319175911568" blockid="E-1_GF_Verbindung" sensorid="" road="false" routeids="" pre_move_x="30" pre_move_y="21" pre_move_z="22"/>
+    <tk type="connector" id="tk20170319175914020" x="96" y="7" z="0" tknr="12" ori="east" pre_move_x="46" pre_move_y="8" pre_move_z="22" prev_id="tk20170319175914020" blockid="" sensorid="" road="false" routeids=""/>
+    <tk type="dir" id="tk20170319180006448" x="76" y="9" z="0" ori="east" pre_move_x="26" pre_move_y="10" pre_move_z="22" routeids=""/>
+    <tk type="dir" id="tk20170319180019426" x="97" y="7" z="0" ori="east" pre_move_x="47" pre_move_y="8" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" id="tk20170319180024627" x="75" y="20" z="0" ori="east" pre_move_x="25" pre_move_y="21" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" id="tk20170319180047227" x="76" y="11" z="0" ori="west" routeids="" pre_move_x="26" pre_move_y="12" pre_move_z="22"/>
+    <tk type="dir" id="tk20170319180059719" x="64" y="11" z="0" pre_move_x="14" pre_move_y="12" pre_move_z="22" routeids=""/>
+    <tk type="dir" id="tk20170319180101485" x="64" y="10" z="0" ori="east" routeids="" blockid="E-2_Bl3" pre_move_x="14" pre_move_y="11" pre_move_z="22"/>
+    <tk type="curve" id="tk20170319180940136" x="98" y="7" z="0" ori="south" pre_move_x="48" pre_move_y="8" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" id="tk20170319192943583" x="69" y="13" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="14" pre_move_z="22"/>
+    <tk type="dir" ori="west" id="tk20170319192944434" x="69" y="14" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="15" pre_move_z="22"/>
+    <tk type="dir" ori="west" id="tk20170319192944829" x="69" y="16" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="17" pre_move_z="22"/>
+    <tk type="dir" ori="west" id="tk20170319192945295" x="69" y="15" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="16" pre_move_z="22"/>
+    <tk type="dir" ori="west" id="tk20170319192946004" x="69" y="17" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="18" pre_move_z="22"/>
+    <tk type="dir" ori="west" id="tk20170319192946470" x="69" y="18" z="0" routeids="" blockid="" pre_move_x="19" pre_move_y="19" pre_move_z="22"/>
+    <tk type="dir" ori="west" id="tk20170319193006837" x="82" y="13" z="0" pre_move_x="32" pre_move_y="14" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193007272" x="82" y="14" z="0" pre_move_x="32" pre_move_y="15" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193007647" x="82" y="15" z="0" pre_move_x="32" pre_move_y="16" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193008175" x="82" y="16" z="0" pre_move_x="32" pre_move_y="17" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193008641" x="82" y="17" z="0" pre_move_x="32" pre_move_y="18" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193009117" x="82" y="18" z="0" pre_move_x="32" pre_move_y="19" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193029573" x="97" y="0" z="0" pre_move_x="47" pre_move_y="1" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193030262" x="97" y="1" z="0" pre_move_x="47" pre_move_y="2" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193030769" x="97" y="2" z="0" pre_move_x="47" pre_move_y="3" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193031347" x="97" y="3" z="0" pre_move_x="47" pre_move_y="4" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193031691" x="97" y="4" z="0" pre_move_x="47" pre_move_y="5" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170319193032086" x="97" y="5" z="0" pre_move_x="47" pre_move_y="6" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dirall" id="tk20170319193050492" x="54" y="2" z="0" pre_move_x="4" pre_move_y="3" pre_move_z="22" routeids="E-2_R_Gl201h" blockid=""/>
+    <tk type="dirall" ori="west" id="tk20170319193051344" x="54" y="3" z="0" pre_move_x="4" pre_move_y="4" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dirall" ori="west" id="tk20170319193051749" x="54" y="4" z="0" pre_move_x="4" pre_move_y="5" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dirall" ori="west" id="tk20170319193052225" x="54" y="5" z="0" pre_move_x="4" pre_move_y="6" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dirall" ori="west" id="tk20170319193052712" x="54" y="6" z="0" pre_move_x="4" pre_move_y="7" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dirall" ori="west" id="tk20170319193053147" x="54" y="7" z="0" pre_move_x="4" pre_move_y="8" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" id="tk20170319193101044" x="52" y="12" z="0" pre_move_x="2" pre_move_y="13" pre_move_z="22" routeids="" blockid="E-2_GF_Verbindung"/>
+    <tk type="dir" id="tk20170319193354500" x="64" y="8" z="0" ori="north" pre_move_x="14" pre_move_y="9" pre_move_z="22" routeids="" blockid="E-2_GF1Ausf"/>
+    <tk type="dir" ori="east" id="tk20170319193428918" x="71" y="8" z="0" routeids="" pre_move_x="21" pre_move_y="9" pre_move_z="22"/>
+    <tk type="dir" ori="east" id="tk20170319193433499" x="71" y="10" z="0" routeids="" pre_move_x="21" pre_move_y="11" pre_move_z="22"/>
+    <tk type="straight" id="tk20170321202836665" x="73" y="11" z="0" routeids="" pre_move_x="23" pre_move_y="12" pre_move_z="22"/>
+    <tk type="straight" id="tk20170321203148496" x="84" y="9" z="0" routeids="" blockid="E-2_Bl5" pre_move_x="34" pre_move_y="10" pre_move_z="22"/>
+    <tk type="straight" ori="west" id="tk20170321203148912" x="85" y="9" z="0" routeids="" blockid="E-2_Bl5" pre_move_x="35" pre_move_y="10" pre_move_z="22"/>
+    <tk type="straight" ori="east" id="tk20170321204715028" x="51" y="8" z="0" pre_move_x="1" pre_move_y="9" pre_move_z="22" routeids=""/>
+    <tk type="dir" id="tk20170321205353433" x="88" y="0" z="0" pre_move_x="38" pre_move_y="1" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205353967" x="88" y="1" z="0" pre_move_x="38" pre_move_y="2" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205354245" x="88" y="2" z="0" pre_move_x="38" pre_move_y="3" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205359547" x="88" y="3" z="0" pre_move_x="38" pre_move_y="4" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205400111" x="88" y="4" z="0" pre_move_x="38" pre_move_y="5" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205400520" x="88" y="5" z="0" pre_move_x="38" pre_move_y="6" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="east" id="tk20170321205418334" x="63" y="2" z="0" pre_move_x="13" pre_move_y="3" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="east" id="tk20170321205419979" x="63" y="3" z="0" pre_move_x="13" pre_move_y="4" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="east" id="tk20170321205420333" x="63" y="4" z="0" pre_move_x="13" pre_move_y="5" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="east" id="tk20170321205420673" x="63" y="5" z="0" pre_move_x="13" pre_move_y="6" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="east" id="tk20170321205421105" x="63" y="6" z="0" pre_move_x="13" pre_move_y="7" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="east" id="tk20170321205421523" x="63" y="7" z="0" pre_move_x="13" pre_move_y="8" pre_move_z="22" routeids="" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205454373" x="60" y="13" z="0" routeids="" pre_move_x="10" pre_move_y="14" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205456211" x="60" y="14" z="0" routeids="" pre_move_x="10" pre_move_y="15" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205456521" x="60" y="15" z="0" routeids="" pre_move_x="10" pre_move_y="16" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205456867" x="60" y="16" z="0" routeids="" pre_move_x="10" pre_move_y="17" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205457231" x="60" y="17" z="0" routeids="" pre_move_x="10" pre_move_y="18" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205457593" x="60" y="18" z="0" routeids="" pre_move_x="10" pre_move_y="19" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205525912" x="73" y="13" z="0" routeids="" pre_move_x="23" pre_move_y="14" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205527016" x="73" y="14" z="0" routeids="" pre_move_x="23" pre_move_y="15" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205527364" x="73" y="15" z="0" routeids="" pre_move_x="23" pre_move_y="16" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205527734" x="73" y="16" z="0" routeids="" pre_move_x="23" pre_move_y="17" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205528028" x="73" y="17" z="0" routeids="" pre_move_x="23" pre_move_y="18" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205528406" x="73" y="18" z="0" routeids="" pre_move_x="23" pre_move_y="19" pre_move_z="22" blockid=""/>
+    <tk type="dir" ori="west" id="tk20170321205536310" x="83" y="11" z="0" routeids="" blockid="E-2_Bl2" pre_move_x="33" pre_move_y="12" pre_move_z="22"/>
+    <tk type="dir" ori="east" id="tk20170321205601930" x="71" y="9" z="0" routeids="" pre_move_x="21" pre_move_y="10" pre_move_z="22"/>
+    <tk type="dirall" id="tk20170321205618652" x="50" y="9" z="0" ori="north" routeids="" pre_move_x="0" pre_move_y="10" pre_move_z="22"/>
+    <tk type="dir" id="tk20170321205646640" x="86" y="6" z="0" pre_move_x="36" pre_move_y="7" pre_move_z="22" routeids=""/>
+    <tk type="dir" ori="east" id="tk20170321205654305" x="83" y="9" z="0" routeids="" pre_move_x="33" pre_move_y="10" pre_move_z="22"/>
+    <tk type="curve" ori="west" id="tk20170321214251825" x="73" y="8" z="0" routeids="" pre_move_x="23" pre_move_y="9" pre_move_z="22"/>
+    <tk type="connector" ori="west" id="tk20170321222002996" x="92" y="20" z="0" tknr="1" prev_id="tk20170321222002996" blockid="" sensorid="" road="false" routeids="" pre_move_x="42" pre_move_y="21" pre_move_z="22"/>
+    <tk type="straight" id="tk20170326194555450" x="70" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="20" pre_move_y="9" pre_move_z="22"/>
+    <tk type="straight" ori="east" id="tk20170326194555799" x="69" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="19" pre_move_y="9" pre_move_z="22"/>
+    <tk type="straight" ori="east" id="tk20170326194556192" x="68" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="18" pre_move_y="9" pre_move_z="22"/>
+    <tk type="straight" ori="east" id="tk20170326194559018" x="67" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="17" pre_move_y="9" pre_move_z="22"/>
+    <tk type="curve" id="tk20170326194606710" x="65" y="8" z="0" ori="east" routeids="" blockid="E-1_Bl-1_3" pre_move_x="15" pre_move_y="9" pre_move_z="22"/>
+    <tk type="straight" id="tk20170326194616527" x="65" y="7" z="0" ori="north" routeids="" blockid="E-1_Bl-1_3" pre_move_x="15" pre_move_y="8" pre_move_z="22"/>
+    <tk type="dir" id="tk20170326194631331" x="71" y="6" z="0" routeids="" pre_move_x="21" pre_move_y="7" pre_move_z="22"/>
+    <tk type="straight" id="tk20170326194634641" x="66" y="8" z="0" routeids="" blockid="E-1_Bl-1_3" pre_move_x="16" pre_move_y="9" pre_move_z="22"/>
+    <tk type="dir" id="tk20170321220213234" x="78" y="6" z="0" pre_move_x="28" pre_move_y="7" pre_move_z="22" routeids=""/>
     <tk type="straight" id="tk20170820113523463" x="19" y="0" z="0" prev_id="tk20150817214539085" blockid="R_901c" road="false" routeids="Fst_Bl17_to_Bl901,Fst_Bl19_to_Bl901" tknr="1" ori="west" copy="false" pre_move_x="16" pre_move_y="0" pre_move_z="0"/>
     <tk type="straight" id="tk20170820113524324" x="18" y="0" z="0" prev_id="tk20150817214539085" blockid="R_901c" road="false" routeids="Fst_Bl17_to_Bl901,Fst_Bl19_to_Bl901" tknr="1" ori="west" copy="false" pre_move_x="15" pre_move_y="0" pre_move_z="0"/>
     <tk type="straight" id="tk20170820113528171" x="19" y="1" z="0" prev_id="tk20150817215041374" blockid="R_Bl18.3" road="false" routeids="Fst_Bl17_to_Bl18,Fst_Bl19_to_Bl18" tknr="1" ori="west" copy="false" pre_move_x="16" pre_move_y="1" pre_move_z="0"/>
@@ -400,7 +400,7 @@
     <tk type="straight" ori="west" id="tk20170820113609492" x="18" y="5" z="0" prev_id="tk20170820113609492" blockid="R_902a" road="false" routeids="Fst_Bl10_to_Bl902" tknr="1" sensorid="" pre_move_x="15" pre_move_y="5" pre_move_z="0" copy="false"/>
     <tk type="straight" id="tk20170820113708892" x="18" y="4" z="0" prev_id="tk20170820113708892" blockid="R_Bl11.1" sensorid="" road="false" routeids="Fst_Bl10_to_Bl11,Fst_Bl12_to_Bl11,Fst_Bl11_to_Bl10" tknr="1" pre_move_x="15" pre_move_y="4" pre_move_z="0"/>
     <tk type="straight" id="tk20170820113738862" x="19" y="4" z="0" prev_id="tk20170820113708892" blockid="R_Bl11.1" sensorid="" road="false" routeids="Fst_Bl10_to_Bl11,Fst_Bl12_to_Bl11,Fst_Bl11_to_Bl10" tknr="1" copy="false" pre_move_x="16" pre_move_y="4" pre_move_z="0"/>
-    <tk type="connector" id="tk20170321221955701" x="92" y="9" z="0" tknr="5" prev_id="tk20170321221955701" blockid="" sensorid="" road="false" routeids="" pre_move_x="42" pre_move_y="10" pre_move_z="22" cmd="move"/>
+    <tk type="connector" id="tk20170321221955701" x="92" y="9" z="0" tknr="5" prev_id="tk20170321221955701" blockid="" sensorid="" road="false" routeids="" pre_move_x="42" pre_move_y="10" pre_move_z="22"/>
     <tk type="straight" ori="east" id="tk20140315235802578" x="31" y="20" z="0" prev_id="tk20140315235802578" blockid="R8c" road="false" routeids="" tknr="1" pre_move_x="31" pre_move_y="25" pre_move_z="0" copy="false"/>
     <tk type="straight" ori="east" id="tk20140315235850540" x="19" y="20" z="0" prev_id="tk20140315235850540" blockid="R8a" road="false" routeids="" tknr="1" pre_move_x="19" pre_move_y="25" pre_move_z="0" copy="false"/>
     <tk type="straight" ori="east" id="tk20140316000027276" x="33" y="20" z="0" prev_id="tk20140316000027276" blockid="R8c" road="false" routeids="" tknr="1" pre_move_x="33" pre_move_y="25" pre_move_z="0" copy="false"/>
