@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plan title="vecEbene0Bahnhof.xml" rocguiversion="2.0.999 revision 6986" rocrailversion="2.0.999-12586" rocrailpwd="C:\Users\Roman\Google Drive\vec\VEC Steuerung Anlage\Ebene 0\Rocrail\AktuelleRocrailversion" donkey="false" healthy="true">
   <boosterlist/>
-  <zlevel z="0" title="Ebene0_PB+GB" tabidx="0"/>
-  <zlevel z="1" title="Ebene0-3" tabidx="1"/>
-  <zlevel z="20" title="Ebene0_PB+GB_Taster" tabidx="2"/>
-  <zlevel z="22" title="Schattenbahnhöfe" tabidx="3"/>
+  <zlevel z="0" title="Sichtbereich" tabidx="0"/>
+  <zlevel z="22" title="Schattenbahnhöfe" tabidx="1"/>
+  <zlevel z="20" title="Taster" tabidx="2"/>
   <swlist>
     <sw type="left" id="W901-17" x="7" y="1" z="0" testing="false" switched="175" ori="east" pre_move_x="4" pre_move_y="1" pre_move_z="0" frogporttype="0" prev_id="W901-17" desc="Modul 912" blockid="R_901-17" routeids="Fst_Bl17_to_Bl901,Fst_Bl17_to_Bl18,Fst_Bl18_to_Bl17,Fst_Bl901_to_Bl17" accnr="0" subtype="default" savepos="none" dir="false" swtype="default" road="false" show="true" swapstraight="false" rectcrossing="false" iid="Stellwerk" uidname="" bus="0" addr1="48" port1="2" gate1="0" inv="false" singlegate="false" accessory="false" addr2="0" port2="0" gate2="0" inv2="false" actdelay="false" syncdelay="false" delay="0" param1="0" value1="1" param2="0" value2="1" prot="D" porttype="0" tdiid="" tdaddr="0" tdport="0" td="false" fbR="" fbG="" fb2R="" fb2G="" fbOcc="" fbOcc2="" fbRinv="false" fbGinv="false" fb2Rinv="false" fb2Ginv="false" fbset="false" fbusefield="false" ctciid1="" ctciid2="" ctcbus1="0" ctcbus2="0" ctcaddr1="0" ctcaddr2="0" ctccmdon1="false" ctccmdon2="false" ctcflip1="true" ctcflip2="true" ctciidled1="" ctciidled2="" ctcbusled1="0" ctcbusled2="0" ctcaddrled1="0" ctcaddrled2="0" ctcportled1="0" ctcportled2="0" ctcgateled1="0" ctcgateled2="0" ctcasswitchled1="false" ctcasswitchled2="false" frogiid="" buspol="0" frogtimer="0" addr0pol1="0" port0pol1="0" gate0pol1="0" addr0pol2="0" port0pol2="0" gate0pol2="0" addr1pol1="0" port1pol1="0" gate1pol1="0" addr1pol2="0" port1pol2="0" gate1pol2="0" frogaccessory="true" frogswitch="false" decid="" state="straight" wantedstate="straight" fieldstate="straight" locid="-unlocked-">
       <accessoryctrl active="false" interval="0" delay="0" lockroutes="" freeblocks=""/>
