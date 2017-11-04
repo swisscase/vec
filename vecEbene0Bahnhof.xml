@@ -171,6 +171,8 @@
     </sw>
     <sw type="right" id="W500" x="16" y="21" z="0" switched="0" testing="false" ori="east" pre_move_x="16" pre_move_y="26" pre_move_z="0" copy="false"/>
     <sw type="right" id="W512" x="17" y="21" z="0" switched="0" testing="false" pre_move_x="17" pre_move_y="26" pre_move_z="0" copy="false"/>
+    <sw type="accessory" accnr="51" id="Vitznau" x="26" y="14" z="0" testing="false" switched="0"/>
+    <sw type="accessory" accnr="53" id="Rigi" x="17" y="7" z="0" testing="false" switched="0"/>
   </swlist>
   <tklist>
     <tk type="curve" id="tk20150817205127209" x="21" y="0" z="0" pre_move_x="18" pre_move_y="0" pre_move_z="0" prev_id="tk20150817205127209" blockid="R_901-19" road="false" routeids="Fst_Bl17_to_Bl901,Fst_Bl19_to_Bl901" tknr="1" ori="west"/>
