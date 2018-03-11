@@ -1,50 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modocc>
-  <occ bkid="E-2_Gl213" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.41" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.42" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.43" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.44" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.45" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl101" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.51" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.52" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.53" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl112" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.6.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.603" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.521" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.522" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.422" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.311" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.4" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.5" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="E0_Gl.6" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="E0_Gl.7" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="E0_Gl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.322" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Bl-1_1" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.452" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.10" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.16" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="Bl.17" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="Bl.19" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.20" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="E0_Gl.371" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="E-2_GF_Verbindung" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_GF1Ausf" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.6" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.9" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.5" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.6" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Bl1" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl2" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl4" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl5" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl201" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl203" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl204" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl205" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl206" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl207" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
 </modocc>
