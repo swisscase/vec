@@ -52,7 +52,7 @@
   <occ bkid="Bl.19" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.20" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.371" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_GF_Verbindung" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_GF_Verbindung" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E-2_GF1Ausf" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_GF_Verbindung" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="Bl.6" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
@@ -70,7 +70,7 @@
   <occ bkid="E-2_Gl204" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl205" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl206" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl207" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl207" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E-2_Gl208" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl209" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
 </modocc>
