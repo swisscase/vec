@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Laengenvergleich_Text_PB_Links_Gl322_Laengenvergleich.xml">
+
+	<trace text="Loklaenge abfragen in Gl.322 nach Gl.8"/>
+	<query vr="FSTLaenge_pb_l_Gl322" table="stlist" id="[E0_Gl.322+]-[E0_Gl.8+]" get="maxlen"/>
+	<query vr="LokID_pb_l_Gl322" table="bklist" id="E0_Gl.322" get="locid"/>
+	<query vr="LokLaenge_pb_l_Gl322" table="lclist" id="@LokID_pb_l_Gl322" get="len"/>
+	<if condition="#FSTLaenge_pb_l_Gl322 > #LokLaenge_pb_l_Gl322">
+	<then>
+		<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
+		<model cmd="modify">
+			<tx id="Text_PB_Links_Gl322_Laengenvergleich" backred="0" backgreen="255" backblue="0"/>
+		</model> 
+	</then>
+	<else>
+		<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
+		<model cmd="modify">
+			<tx id="Text_PB_Links_Gl322_Laengenvergleich" backred="255" backgreen="0" backblue="0"/>
+		</model> 
+	</else>
+	</if>
+</xmlscript>
