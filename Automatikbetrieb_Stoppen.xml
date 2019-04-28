@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Automatikbetrieb_Stoppen.xml">
+	
+	<trace text="Automatikbetrieb: Stoppe Automatikbetrieb. Bitte warten..."/>
+	<foreach table="lclist">	
+	 
+		<if state="lc %oid% = auto|lc %oid% = wait|lc %oid% = automatic" alltrue="false">	
+			<then>
+				<lc id="%lcid%" cmd="stop"/>
+				<trace text="Automatikbetrieb: %oid% => Ist noch unterwegs"/>
+			</then>
+		</if>
+	</foreach>
+	
+	<trace text="Automatikbetrieb: Züge gestoppt. Prüfe ob noch Züge unterwegs sind."/>
+	<foreach table="lclist">	
+		<while state="lc %oid% = auto">
+			<sleep time="2000"/>
+			<trace text="Automatikbetrieb: Die Lok %oid% ist noch unterwegs. Bitte warten bis sie in einem Block angekommen ist."/>
+			<tx id="InfoBox" format="Bitte warten.|Der Zug %oid% fährt noch voll- |automatisch."/>
+		</while>
+	</foreach>
+	<trace text="Automatikbetrieb: Alle Züge sind gestoppt."/>
+	
+	<if condition="#AutomatikUmschalten = 1">
+		<then>
+			<trace text="Automatikbetrieb: Entsperre Weichen"/>
+			<sw id="W415" cmd="resetstatic"/> 
+			<sw id="W415b" cmd="resetstatic"/> 
+			<sw id="W460" cmd="resetstatic"/> 
+			<sw id="W456" cmd="resetstatic"/> 
+			<sw id="W467" cmd="resetstatic"/> 
+			<sw id="W360" cmd="resetstatic"/> 
+			<sw id="W367" cmd="resetstatic"/> 
+			<sw id="W9-17a" cmd="resetstatic"/> 
+			<sw id="W9-17b" cmd="resetstatic"/> 
+			<sw id="W10-16a" cmd="resetstatic"/> 
+			<sw id="W10-16b" cmd="resetstatic"/>
+			<sw id="W7-19a" cmd="resetstatic"/>
+			<sw id="W7-19b" cmd="resetstatic"/>
+			<sw id="W6-20a" cmd="resetstatic"/>
+			<sw id="W6-20b" cmd="resetstatic"/>
+			<trace text="Automatikbetrieb: Alle Weichen sind entsperrt."/>
+		</then>
+	</if>
+	<trace text="Automatikbetrieb: Automatikbetrieb ist beendet."/>
+	<tx id="InfoBox" format="Automatikbetrieb wurde beendet.|Handbetrieb aktiv"/>
+	<vr id="AutomatikUmschalten" value="0"/> 
+</xmlscript>

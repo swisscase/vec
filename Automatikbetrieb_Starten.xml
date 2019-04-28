@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Automatikbetrieb_Starten.xml">
+
+	<trace text="Automatikbetrieb: Starte Automatikbetrieb. Bitte warten..."/>
+	<vr id="AutomatikUmschalten" value="1"/> 
+	<vr id="LokFalschPlatziert" value="1"/> 
+	
+	<foreach table="stlist" state="st %oid% = locked" alltrue="true">
+		<vr id="AutomatikUmschalten" value="0"/> 
+	</foreach>
+	
+	<if condition="#AutomatikUmschalten = 0">
+		<then>
+			<tx id="InfoBox" format="Automatikbetrieb: Abbruch Weichensperrung. Eine Fahrstrasse war noch nicht freigegeben"/>
+			<model cmd="modify">
+				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
+			</model>
+			<trace text="Automatikbetrieb: Abbruch Weichensperrung. Eine Fahrstrasse war noch nicht freigegeben"/>
+			<break cmt=""/>
+		</then>
+		
+		<else>
+			<foreach table="lclist">
+				<if state="lc %oid% = E0_Gl.8|lc %oid% = E0_Gl.7|lc %oid% = Virtuell_G7_Gl371" alltrue="false">
+					<then>
+						<if state="lc %lcid% = +">
+							<then>
+								<trace text="Automatikbetrieb: Die %lcid% ist in eine falsche Richtung platziert" />
+								<vr id="LokFalschPlatziert" value="0"/> 
+							</then>	
+						</if>
+					</then>
+			   </if>
+			</foreach>
+			
+			<foreach table="lclist">
+				<if state="lc %oid% = E0_Gl.6|lc %oid% = E0_Gl.5|lc %oid% = E0_Gl.4|lc %oid% = Virtuell_Gl5_Gl452" alltrue="false">
+					<then>
+						<if state="lc %lcid% = -">
+							<then>
+								<trace text="Automatikbetrieb: Die %lcid% ist in eine falsche Richtung platziert" />
+								<vr id="LokFalschPlatziert" value="0"/> 
+							</then>	
+						</if>
+					</then>
+			   </if>
+			</foreach>
+			
+			<if condition="#LokFalschPlatziert = 0">
+				<then>
+					<trace text="Automatikbetrieb: Abbruch Automatkbetrieb starten da eine Lok falsch platziert ist." />
+				</then>
+				<else>
+					<trace text="Automatikbetrieb: Starte Weichensperrung."/>
+					<model cmd="modify">
+						<tx id="InfoBox" backred="0" backgreen="255" backblue="0"/>
+					</model>
+					<sw id="W415" cmd="straight"/> 
+					<sw id="W415" cmd="setstatic"/> 
+					<sleep time="200"/>
+					<sw id="W415b" cmd="straight"/> 
+					<sw id="W415b" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="W467" cmd="straight"/> 
+					<sw id="W467" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="W360" cmd="straight"/> 
+					<sw id="W360" cmd="setstatic"/>
+					<sleep time="200"/>			
+					<sw id="W367" cmd="straight"/> 
+					<sw id="W367" cmd="setstatic"/> 
+					<sleep time="200"/>
+					<sw id="W9-17a" cmd="straight"/> 
+					<sw id="W9-17a" cmd="setstatic"/> 
+					<sleep time="200"/>
+					<sw id="W9-17b" cmd="straight"/> 
+					<sw id="W9-17b" cmd="setstatic"/> 
+					<sleep time="200"/>
+					<sw id="W10-16a" cmd="straight"/> 
+					<sw id="W10-16a" cmd="setstatic"/>
+					<sleep time="200"/>			
+					<sw id="W10-16b" cmd="straight"/> 
+					<sw id="W10-16b" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="W7-19a" cmd="straight"/> 
+					<sw id="W7-19a" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="W7-19b" cmd="straight"/> 
+					<sw id="W7-19b" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="W6-20a" cmd="straight"/> 
+					<sw id="W6-20a" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="W6-20b" cmd="straight"/> 
+					<sw id="W6-20b" cmd="setstatic"/>
+					<sleep time="200"/>
+					<trace text="Automatikbetrieb: Weichensperrung abgeschlossen."/>
+				
+					<foreach table="lclist">
+						<if state="lc %oid% = E0_Gl.8|lc %oid% = E0_Gl.7|lc %oid% = E0_Gl.6|lc %oid% = E0_Gl.5|lc %oid% = E0_Gl.4|lc %oid% = Virtuell_Gl5_Gl452|lc %oid% = Virtuell_G7_Gl371" alltrue="false">
+							<then>
+								<lc cmd="go"/>
+								<trace text="Automatikbetrieb: Starte Lok %oid%"/>
+							</then>
+					   </if>
+					</foreach>
+					<trace text="Automatikbetrieb: Automatikbetrieb gestartet"/>
+					<tx id="InfoBox" format="Züge fahren vollautomatisch."/>
+				</else>		
+				
+			</if>
+
+		</else>
+	</if>			
+	
+
+</xmlscript>
