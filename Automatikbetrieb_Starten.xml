@@ -2,31 +2,37 @@
 <xmlscript desc="Automatikbetrieb_Starten.xml">
 
 	<trace text="Automatikbetrieb: Starte Automatikbetrieb. Bitte warten..."/>
-	<vr id="AutomatikUmschalten" value="1"/> 
-	<vr id="LokFalschPlatziert" value="1"/> 
 	
+	<!-------Variablen Deklarieren----->
+	<vr id="AutomatikUmschaltenFehlerWennNull" value="1"/> 
+	<vr id="LokFalschPlatziertWennNull" value="1"/> 
+	
+	
+	<!-------Prüfe jedes Element in der Fahrstrassenliste. Falls eine Fahrstrasse gelockt ist, Setze ein Flag.----->
 	<foreach table="stlist" state="st %oid% = locked" alltrue="true">
-		<vr id="AutomatikUmschalten" value="0"/> 
+		<vr id="AutomatikUmschaltenFehlerWennNull" value="0"/> 
 	</foreach>
 	
-	<if condition="#AutomatikUmschalten = 0">
+	
+	<if condition="#AutomatikUmschaltenFehlerWennNull = 0">
 		<then>
-			<tx id="InfoBox" format="Automatikbetrieb: Abbruch Weichensperrung. Eine Fahrstrasse war noch nicht freigegeben"/>
+			<tx id="InfoBox" format="Automatikbetrieb:|Abbruch Automatkbetrieb.|Eine Fahrstrasse war noch|nicht freigegeben"/>
 			<model cmd="modify">
 				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
 			</model>
-			<trace text="Automatikbetrieb: Abbruch Weichensperrung. Eine Fahrstrasse war noch nicht freigegeben"/>
+			<trace text="Automatikbetrieb: Abbruch Automatkbetrieb. Eine Fahrstrasse war noch nicht freigegeben"/>
 			<break cmt=""/>
 		</then>
 		
 		<else>
+			<!-------Prüfe ob die Fahrtrichtung korrekt ist. Falls nicht. Setze ein Fehler Flag----->
 			<foreach table="lclist">
 				<if state="lc %oid% = E0_Gl.8|lc %oid% = E0_Gl.7|lc %oid% = Virtuell_G7_Gl371" alltrue="false">
 					<then>
 						<if state="lc %lcid% = +">
 							<then>
 								<trace text="Automatikbetrieb: Die %lcid% ist in eine falsche Richtung platziert" />
-								<vr id="LokFalschPlatziert" value="0"/> 
+								<vr id="LokFalschPlatziertWennNull" value="0"/> 
 							</then>	
 						</if>
 					</then>
@@ -39,22 +45,36 @@
 						<if state="lc %lcid% = -">
 							<then>
 								<trace text="Automatikbetrieb: Die %lcid% ist in eine falsche Richtung platziert" />
-								<vr id="LokFalschPlatziert" value="0"/> 
+								<vr id="LokFalschPlatziertWennNull" value="0"/> 
 							</then>	
 						</if>
 					</then>
 			   </if>
 			</foreach>
 			
-			<if condition="#LokFalschPlatziert = 0">
+			<!-------Prüfen ob ein Fehler existiert----->
+			<if condition="#LokFalschPlatziertWennNull = 0">
 				<then>
-					<trace text="Automatikbetrieb: Abbruch Automatkbetrieb starten da eine Lok falsch platziert ist." />
+					<!-------Fehlerfall----->
+					<trace text="Automatikbetrieb: Abbruch Automatkbetrieb da eine Lok falsch platziert ist." />
+					<tx id="InfoBox" format="Automatikbetrieb:|Abbruch Automatikbetrieb.|Ein Zug in den Bahnhöfen ist|in eine falsche Richtung|platziert"/>
+					<model cmd="modify">
+						<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
+					</model>
+					
+					<sleep time="5000"/>
+
+					<model cmd="modify">
+						<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+					</model>
+					<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
+						<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+					</actionctrl>
+					
 				</then>
 				<else>
+					<!-------Kein Fehler, alles IO. Wechsle in den Automatikbetrieb----->
 					<trace text="Automatikbetrieb: Starte Weichensperrung."/>
-					<model cmd="modify">
-						<tx id="InfoBox" backred="0" backgreen="255" backblue="0"/>
-					</model>
 					<sw id="W415" cmd="straight"/> 
 					<sw id="W415" cmd="setstatic"/> 
 					<sleep time="200"/>
@@ -96,16 +116,20 @@
 					<sleep time="200"/>
 					<trace text="Automatikbetrieb: Weichensperrung abgeschlossen."/>
 				
+					<!-------Starte die Züge in den Blöcken----->
 					<foreach table="lclist">
 						<if state="lc %oid% = E0_Gl.8|lc %oid% = E0_Gl.7|lc %oid% = E0_Gl.6|lc %oid% = E0_Gl.5|lc %oid% = E0_Gl.4|lc %oid% = Virtuell_Gl5_Gl452|lc %oid% = Virtuell_G7_Gl371" alltrue="false">
 							<then>
-								<lc cmd="go"/>
+								<lc cmd="govirtual"/>
 								<trace text="Automatikbetrieb: Starte Lok %oid%"/>
 							</then>
 					   </if>
 					</foreach>
 					<trace text="Automatikbetrieb: Automatikbetrieb gestartet"/>
-					<tx id="InfoBox" format="Züge fahren vollautomatisch."/>
+					<model cmd="modify">
+						<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+					</model>
+					<tx id="InfoBox" format="Automatikbetrieb gestartet.|Die Züge fahren vollautomatisch."/>
 				</else>		
 				
 			</if>

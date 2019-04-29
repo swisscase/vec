@@ -2,8 +2,9 @@
 <xmlscript desc="Automatikbetrieb_Stoppen.xml">
 	
 	<trace text="Automatikbetrieb: Stoppe Automatikbetrieb. Bitte warten..."/>
+	
+	<!-------Stoppe alle Züge in der Lokliste welche nicht Idle oder Stop sind.----->
 	<foreach table="lclist">	
-	 
 		<if state="lc %oid% = auto|lc %oid% = wait|lc %oid% = automatic" alltrue="false">	
 			<then>
 				<lc id="%lcid%" cmd="stop"/>
@@ -12,17 +13,25 @@
 		</if>
 	</foreach>
 	
+	<!-------Kann man vereinfachen: Alle Züge stoppen. Unabhängig vom Zustand----->
+	
+	<!-------Noch ergänzen dass auch Loks im Wait / Automatic geprüft werden.----->
 	<trace text="Automatikbetrieb: Züge gestoppt. Prüfe ob noch Züge unterwegs sind."/>
 	<foreach table="lclist">	
 		<while state="lc %oid% = auto">
 			<sleep time="2000"/>
 			<trace text="Automatikbetrieb: Die Lok %oid% ist noch unterwegs. Bitte warten bis sie in einem Block angekommen ist."/>
+			<model cmd="modify">
+				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
+			</model>
 			<tx id="InfoBox" format="Bitte warten.|Der Zug %oid% fährt noch voll- |automatisch."/>
+			<!-------Dieser Abschnitt wird so lange ausgeführt bis alle Züge gestoppt sind. Erst dann werden die Weichen freigegeben.----->
 		</while>
 	</foreach>
 	<trace text="Automatikbetrieb: Alle Züge sind gestoppt."/>
 	
-	<if condition="#AutomatikUmschalten = 1">
+	<!-------Wenn die Weichen gesperrt wurden können die Weichen nun wieder freigegeben werden.----->
+	<if condition="#AutomatikUmschaltenFehlerWennNull = 1">
 		<then>
 			<trace text="Automatikbetrieb: Entsperre Weichen"/>
 			<sw id="W415" cmd="resetstatic"/> 
@@ -43,7 +52,14 @@
 			<trace text="Automatikbetrieb: Alle Weichen sind entsperrt."/>
 		</then>
 	</if>
+	
+	<!-------Gebe noch Infotexte in der InfoBox aus----->
 	<trace text="Automatikbetrieb: Automatikbetrieb ist beendet."/>
-	<tx id="InfoBox" format="Automatikbetrieb wurde beendet.|Handbetrieb aktiv"/>
-	<vr id="AutomatikUmschalten" value="0"/> 
+	<model cmd="modify">
+		<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+	</model>
+	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	<vr id="AutomatikUmschaltenFehlerWennNull" value="0"/> 
 </xmlscript>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="BlockNachfahrenBl4_5.xml">
+
+	<trace text="Zug Nachfahren: Prüfe ob ein Zug im Block 4 steht der bis Block 5 nachfahren soll"/>
+	
+	<!-------Variablen Deklarieren----->
+	<vr id="AutomatikZuegeNachfahrenBl4FehlerWennNull" value="1"/> 
+	<vr id="LokRichtungTalBl4WennNull" value="1"/> 
+	
+	
+	<!-------Prüfe jedes Element in der Fahrstrassenliste. Falls eine Fahrstrasse gelockt ist, Setze ein Flag.----->
+	<foreach table="stlist" state="st %oid% = locked" alltrue="true">
+		<vr id="AutomatikZuegeNachfahrenBl4FehlerWennNull" value="0"/> 
+	</foreach>
+	
+	
+	<if condition="#AutomatikZuegeNachfahrenBl4FehlerWennNull = 0">
+		<then>
+			<model cmd="modify">
+				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
+			</model>
+			<tx id="InfoBox" format="Zug Nachfahren:|Es kann kein Zug gestartet|werden. Warte bis alle Züge stehen."/>
+			<trace text="Zug Nachfahren: Es kann kein Zug gestartet werden da noch Züge unterwegs sind. Warte bis alle Züge stehen."/>
+			<break cmt=""/>
+		</then>
+		
+		<else>
+			<!-------Prüfe die Fahrtrichtung. Setze ein Flag----->
+			<foreach table="lclist">
+				
+			   <if state="lc %oid% = E-2_Bl4">
+					<then>
+						<if state="lc %lcid% = +">
+							<then>
+								<trace text="Zug Nachfahren: Die %lcid% ist in richtung Berg platziert" />
+								<vr id="LokRichtungTalBl4WennNull" value="0"/> 
+							</then>	
+						</if>
+						<if state="lc %lcid% = -">
+							<then>
+								<trace text="Zug Nachfahren: Die %lcid% ist in richtung Tal platziert" />
+								<vr id="LokRichtungTalBl4WennNull" value="2"/>
+							</then>
+						</if>
+						
+					</then>
+			   </if>
+			   
+			</foreach>
+			
+			<if condition="#LokRichtungTalBl4WennNull = 0">
+				<then>
+					<!-------Starte den Zug in den Blöcken 4 in Richtung Block 5----->
+					<trace text="Zug Nachfahren: Starte den Zug in Block 4 in den Zielblock 5" />
+					<foreach table="lclist">
+						<if state="lc %oid% = E-2_Bl4" >
+							<then>
+								<lc id="%lcid%" cmd="gotoblock" blockid="E-2_Bl5"/>
+								<lc cmd="go"/>
+								<trace text="Zug Nachfahren: Starte Lok %oid% mit Zielblock 5"/>
+							</then>
+					   </if>
+					</foreach>
+					<tx id="InfoBox" format="Zug Nachfahren:|Zug im Bl.4 fährt|bis zum Bl.5"/>
+					<model cmd="modify">
+						<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+					</model>
+				</then>
+			</if>
+			<if condition="#LokRichtungTalBl4WennNull = 2">
+				<then>
+					<!-------Starte die Züge in den Blöcken 4 in Richtung Block 5----->
+					<trace text="Zug Nachfahren: Ein Zug steht mit falscher Richtung im Block 4"/>
+					<tx id="InfoBox" format="Zug Nachfahren:|Ein Zug steht mit falscher|Richtung im Block 4"/>
+					<model cmd="modify">
+						<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+					</model>
+				</then>			
+			</if>
+		</else>
+	</if>
+	<sleep time="8000"/>
+
+	<model cmd="modify">
+		<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+	</model>
+	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	
+</xmlscript>
