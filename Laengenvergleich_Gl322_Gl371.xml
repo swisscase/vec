@@ -9,13 +9,13 @@
 	<then>
 		<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
 		<model cmd="modify">
-			<tx id="Text_PB_Links_Gl322_Laengenvergleich" backred="0" backgreen="255" backblue="0"/>
+			<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
 		</model> 
 	</then>
 	<else>
 		<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
 		<model cmd="modify">
-			<tx id="Text_PB_Links_Gl322_Laengenvergleich" backred="255" backgreen="0" backblue="0"/>
+			<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
 		</model> 
 	</else>
 	</if>
