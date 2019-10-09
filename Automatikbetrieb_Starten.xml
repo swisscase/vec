@@ -75,6 +75,12 @@
 				<else>
 					<!-------Kein Fehler, alles IO. Wechsle in den Automatikbetrieb----->
 					<trace text="Automatikbetrieb: Starte Weichensperrung."/>
+					<sw id="E-1_W17" cmd="straight"/> 
+					<sw id="E-1_W17" cmd="setstatic"/>
+					<sleep time="200"/>
+					<sw id="E-2_W11" cmd="straight"/> 
+					<sw id="E-2_W11" cmd="setstatic"/>
+					<sleep time="200"/>
 					<sw id="W415" cmd="straight"/> 
 					<sw id="W415" cmd="setstatic"/> 
 					<sleep time="200"/>
@@ -114,16 +120,14 @@
 					<sw id="W6-20b" cmd="straight"/> 
 					<sw id="W6-20b" cmd="setstatic"/>
 					<sleep time="200"/>
+					
 					<trace text="Automatikbetrieb: Weichensperrung abgeschlossen."/>
 				
 					<!-------Starte die Züge in den Blöcken----->
 					<foreach table="lclist">
-						<if state="lc %oid% = E0_Gl.8|lc %oid% = E0_Gl.7|lc %oid% = E0_Gl.6|lc %oid% = E0_Gl.5|lc %oid% = E0_Gl.4|lc %oid% = Virtuell_Gl5_Gl452|lc %oid% = Virtuell_G7_Gl371" alltrue="false">
-							<then>
-								<lc cmd="govirtual"/>
-								<trace text="Automatikbetrieb: Starte Lok %oid%"/>
-							</then>
-					   </if>
+						<lc cmd="govirtual"/>
+						<trace text="Automatikbetrieb: Starte Lok %oid%"/>
+						<sleep time="200"/>	
 					</foreach>
 					<trace text="Automatikbetrieb: Automatikbetrieb gestartet"/>
 					<model cmd="modify">

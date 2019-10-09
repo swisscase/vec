@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="ResetLaengenvergleich_SB_Bl1.xml">
+	<trace text="Reset Textefeld: Loklaenge abfragen in E-2 Bl.1"/>
+	<tx id="Text_SB_Bl1" format="Loklänge Bl.1"/>
+	<model cmd="modify">
+		<tx id="Text_SB_Bl1" bgred="255" bggreen="255" bgblue="128"/>
+	</model> 
+	
+</xmlscript>

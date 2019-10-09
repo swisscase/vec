@@ -3,14 +3,10 @@
 	
 	<trace text="Automatikbetrieb: Stoppe Automatikbetrieb. Bitte warten..."/>
 	
-	<!-------Stoppe alle Züge in der Lokliste welche nicht Idle oder Stop sind.----->
+	<!-------Stoppe alle Züge in der Lokliste----->
 	<foreach table="lclist">	
-		<if state="lc %oid% = auto|lc %oid% = wait|lc %oid% = automatic" alltrue="false">	
-			<then>
-				<lc id="%lcid%" cmd="stop"/>
-				<trace text="Automatikbetrieb: %oid% => Ist noch unterwegs"/>
-			</then>
-		</if>
+		<lc id="%lcid%" cmd="stop"/>
+		<trace text="Automatikbetrieb: %oid% => Ist noch unterwegs"/>
 	</foreach>
 	
 	<!-------Kann man vereinfachen: Alle Züge stoppen. Unabhängig vom Zustand----->
@@ -18,8 +14,9 @@
 	<!-------Noch ergänzen dass auch Loks im Wait / Automatic geprüft werden.----->
 	<trace text="Automatikbetrieb: Züge gestoppt. Prüfe ob noch Züge unterwegs sind."/>
 	<foreach table="lclist">	
-		<while state="lc %oid% = auto">
+		<while state="lc %oid% = auto|lc %oid% = wait" alltrue="false">
 			<sleep time="2000"/>
+			<lc id="%lcid%" cmd="stop"/>
 			<trace text="Automatikbetrieb: Die Lok %oid% ist noch unterwegs. Bitte warten bis sie in einem Block angekommen ist."/>
 			<model cmd="modify">
 				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
@@ -34,6 +31,8 @@
 	<if condition="#AutomatikUmschaltenFehlerWennNull = 1">
 		<then>
 			<trace text="Automatikbetrieb: Entsperre Weichen"/>
+			<sw id="E-1_W17" cmd="resetstatic"/>
+			<sw id="E-2_W11" cmd="resetstatic"/>
 			<sw id="W415" cmd="resetstatic"/> 
 			<sw id="W415b" cmd="resetstatic"/> 
 			<sw id="W460" cmd="resetstatic"/> 
