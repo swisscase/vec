@@ -19,7 +19,7 @@
 			<lc id="%lcid%" cmd="stop"/>
 			<trace text="Automatikbetrieb: Die Lok %oid% ist noch unterwegs. Bitte warten bis sie in einem Block angekommen ist."/>
 			<model cmd="modify">
-				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
+				<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
 			</model>
 			<tx id="InfoBox" format="Bitte warten.|Der Zug %oid% fährt noch voll- |automatisch."/>
 			<!-------Dieser Abschnitt wird so lange ausgeführt bis alle Züge gestoppt sind. Erst dann werden die Weichen freigegeben.----->
@@ -48,6 +48,10 @@
 			<sw id="W7-19b" cmd="resetstatic"/>
 			<sw id="W6-20a" cmd="resetstatic"/>
 			<sw id="W6-20b" cmd="resetstatic"/>
+			<sw id="W901-17" cmd="resetstatic"/>
+			<sw id="W901-19" cmd="resetstatic"/>
+			<sw id="W902-12" cmd="resetstatic"/>
+			<sw id="W902-10" cmd="resetstatic"/>
 			<trace text="Automatikbetrieb: Alle Weichen sind entsperrt."/>
 		</then>
 	</if>
@@ -55,7 +59,7 @@
 	<!-------Gebe noch Infotexte in der InfoBox aus----->
 	<trace text="Automatikbetrieb: Automatikbetrieb ist beendet."/>
 	<model cmd="modify">
-		<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
+		<tx id="InfoBox" bgred="255" bggreen="255" bgblue="255"/>
 	</model>
 	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
