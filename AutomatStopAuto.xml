@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlscript desc="FspEin.xml"> 
+<xmlscript desc="AutomatStopAuto.xml"> 
   <auto cmd="stop"/>
 </xmlscript>
