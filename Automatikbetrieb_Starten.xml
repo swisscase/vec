@@ -173,6 +173,11 @@
 						<tx id="InfoBox" bgred="255" bggreen="255" bgblue="255"/>
 					</model>
 					<tx id="InfoBox" format="Automatikbetrieb gestartet.|Die Züge fahren vollautomatisch."/>
+					
+					<tx id="txWsperre" format="Automatikbetrieb:|Klicke um Weichensperre|zu deaktivieren"/>
+					<model cmd="modify">
+					<tx id="txWsperre" bgred="0" bggreen="255" bgblue="0"/>
+					</model> 
 				</else>		
 				
 			</if>

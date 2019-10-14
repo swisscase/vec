@@ -64,5 +64,11 @@
 	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 	</actionctrl>
+		
+	<tx id="txWsperre" format="Automatikbetrieb:|Nicht aktiv."/>
+	<model cmd="modify">
+	<tx id="txWsperre" bgred="0" bggreen="0" bgblue="0"/>
+	</model>
+	
 	<vr id="AutomatikUmschaltenFehlerWennNull" value="0"/> 
 </xmlscript>
