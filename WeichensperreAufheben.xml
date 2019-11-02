@@ -3,6 +3,8 @@
 	<trace text="Hebe die Weichensperre für die Weichen E-2_W11 und E-1_W17 auf."/>
 	<sw id="E-1_W17" cmd="resetstatic"/>
 	<sw id="E-2_W11" cmd="resetstatic"/>
+	<sw id="E-1_W17" cmd="straight"/>
+	<sw id="E-2_W11" cmd="straight"/>
 	<tx id="txWsperre" format="Automatikbetrieb:|Klicke um Weichensperre|zu aktivieren"/>
 	<model cmd="modify">
 	<tx id="txWsperre" bgred="255" bggreen="0" bgblue="0"/>
