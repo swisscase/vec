@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="FspAutoOff.xml"> 
-  <sys cmd="stop" informall="true"/>
-  <auto cmd="off"/> 
+	<actionctrl id="Akt_textupdate_Infobox_Analogbetrieb">
+		<actioncond id="R_Dig_Analog" subid="" state="off" type="fb"/>
+	</actionctrl>
+	<model cmd="modify">
+		<tx id="InfoBox" bgred="255" bggreen="255" bgblue="0"/>
+	</model>
+	<vr id="BetriebsbeginnWurdeGemachtWennEins" value="0"/> 
+	<sys cmd="stop" informall="true"/>
+	<auto cmd="off"/> 
 </xmlscript>

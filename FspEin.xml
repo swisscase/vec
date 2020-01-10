@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="FspEin.xml"> 
-  <sys cmd="go" informall="true"/>
-  <auto cmd="on"/> 
+	<trace text="Starte RM init..."/>
+	<!-------Variablen Deklarieren----->
+	<vr id="BetriebsbeginnWurdeGemachtWennEins" value="1"/> 
+	<sys cmd="sod" informall="true"/>
+	<actionctrl id="Akt_textupdate_Infobox_Betriebsbeginn">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	<model cmd="modify">
+		<tx id="InfoBox" bgred="255" bggreen="255" bgblue="0"/>
+	</model>
+	<sleep time="8000"/>
+	<trace text="Schalte Power und Auto ein."/>
+	<sys cmd="go" informall="true"/>
+	<auto cmd="on"/> 
+	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	<model cmd="modify">
+		<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
+	</model>
+	
 </xmlscript>

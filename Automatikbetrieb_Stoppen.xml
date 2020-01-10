@@ -59,7 +59,7 @@
 	<!-------Gebe noch Infotexte in der InfoBox aus----->
 	<trace text="Automatikbetrieb: Automatikbetrieb ist beendet."/>
 	<model cmd="modify">
-		<tx id="InfoBox" bgred="255" bggreen="255" bgblue="255"/>
+		<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
 	</model>
 	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>

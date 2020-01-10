@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Automatikbetrieb_CheckBetriebsbeginnErledigt.xml"> 
+	<trace text="Prüfe ob der Betriebsbeginn gemacht wurde..."/>
+	<!-------Variablen Deklarieren----->
+	<if condition="#BetriebsbeginnWurdeGemachtWennEins = 1">
+		<then>
+			<trace text="Betriebsbeginn wurde gemacht. Schalte Power und Auto ein."/>
+			<sys cmd="go" informall="true"/>
+			<auto cmd="on"/> 
+			<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
+				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+			</actionctrl>
+			<model cmd="modify">
+				<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
+			</model>
+		</then>
+		<else>
+			<vr id="BetriebsbeginnWurdeGemachtWennEins" value="0"/> 
+			<trace text="Betriebsbeginn wurde NICHT gemacht. Betriebsbeginn ausführen!"/>
+			<actionctrl id="Akt_textupdate_Infobox_BetriebsbeginnAusfuehren">
+				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+			</actionctrl>
+			<model cmd="modify">
+				<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
+			</model>
+		</else>
+	</if>
+</xmlscript>
