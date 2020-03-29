@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="GBGleis41_Textbox_LaengeSetzen.xml">
+	<query vr="LokID" table="bklist" id="E0_Gl.41" get="locid"/>
+	<query vr="TextfeldID" table="txlist" id="Loklänge_In_CM" get="text"/>
+	<trace text="Skript: @TextfeldID"/>
+	<query vr="LokLaengeAlt" table="lclist" id="@LokID" get="len"/>
+	<model cmd="modify">
+		<lc id="@LokID" len="@TextfeldID"/>
+	</model>
+	<query vr="LokLaengeNeu" table="lclist" id="@LokID" get="len"/>
+	<trace text="Skript: Setze die Loklaenge im Gleis 41 von @LokID | Bisher: @LokLaengeAlt cm Neu: @LokLaengeNeu cm"/>
+</xmlscript>
