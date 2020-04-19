@@ -115,6 +115,12 @@
 					<sw id="W415b" cmd="straight"/> 
 					<sw id="W415b" cmd="setstatic"/>
 					<sleep time="100"/>
+					<sw id="W400" cmd="straight"/> 
+					<sw id="W400" cmd="setstatic"/>
+					<sleep time="100"/>
+					<sw id="W350" cmd="straight"/> 
+					<sw id="W350" cmd="setstatic"/>
+					<sleep time="100"/>
 					<sw id="W467" cmd="straight"/> 
 					<sw id="W467" cmd="setstatic"/>
 					<sleep time="100"/>

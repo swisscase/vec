@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlscript desc="GBGleis41_V0.xml">
+<xmlscript desc="GB_Testfahren_Gleis41_V0.xml">
 	<query vr="LokID" table="bklist" id="E0_Gl.41" get="locid"/>
 	<trace text="Script: Setze Fahrgeschwindigkeit von @LokID auf 0 in Gleis 41"/>
 	<lc id="@LokID" V_hint="0"/>

@@ -35,6 +35,8 @@
 			<sw id="E-2_W11" cmd="resetstatic"/>
 			<sw id="W415" cmd="resetstatic"/> 
 			<sw id="W415b" cmd="resetstatic"/> 
+			<sw id="W400" cmd="resetstatic"/> 
+			<sw id="W350" cmd="resetstatic"/> 
 			<sw id="W460" cmd="resetstatic"/> 
 			<sw id="W456" cmd="resetstatic"/> 
 			<sw id="W467" cmd="resetstatic"/> 

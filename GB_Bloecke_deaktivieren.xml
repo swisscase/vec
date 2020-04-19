@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="GB_Bloecke_deaktivieren.xml">
+	<bk id="E0_Gl.41" state="closed"/>
+	<bk id="E0_Gl.42" state="closed"/>
+	<bk id="E0_Gl.43" state="closed"/>
+	<bk id="E0_Gl.44" state="closed"/>
+	<bk id="E0_Gl.45" state="closed"/>
+	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde."/>
+</xmlscript>
