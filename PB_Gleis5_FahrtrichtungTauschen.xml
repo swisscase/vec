@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="PB_Gleis5_FahrtrichtungTauschen.xml">
+	<query vr="LokID" table="bklist" id="E0_Gl.5" get="locid"/>
+	<lc id="@LokID" cmd="swap"/>
+	<trace text="Skript: Fahrtrichtung von @LokID in Gleis 5 getauscht"/>
+</xmlscript>

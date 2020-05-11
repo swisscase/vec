@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlscript desc="GB_Textbox_Gl43_LaengeSetzen.xml">
-	<query vr="LokID" table="bklist" id="E0_Gl.43" get="locid"/>
+<xmlscript desc="PB_Gleis7_Textbox_LaengeSetzen.xml">
+	<query vr="LokID" table="bklist" id="E0_Gl.7" get="locid"/>
 	<query vr="TextfeldID" table="txlist" id="Loklänge_In_CM" get="text"/>
 	<if condition="#TextfeldID > 0" alltrue="true" connect="and">
     <then>
@@ -9,7 +9,7 @@
 			<lc id="@LokID" len="@TextfeldID"/>
 		</model>
 		<query vr="LokLaengeNeu" table="lclist" id="@LokID" get="len"/>
-		<trace text="Skript: Setze die Loklaenge im Gleis 43 von @LokID | Bisher: @LokLaengeAlt cm Neu: @LokLaengeNeu cm"/>
+		<trace text="Skript: Setze die Loklaenge im Gleis 7 von @LokID | Bisher: @LokLaengeAlt cm Neu: @LokLaengeNeu cm"/>
 		<tx id="Loklänge_In_CM" format="0"/>
 	</then>
 	<else>

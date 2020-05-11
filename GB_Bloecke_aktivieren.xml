@@ -5,5 +5,5 @@
 	<bk id="E0_Gl.43" state="open"/>
 	<bk id="E0_Gl.44" state="open"/>
 	<bk id="E0_Gl.45" state="open"/>
-	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde."/>
+	<trace text="Skript: Öffne alle Blöcke im GB da der Rangiermodus deaktiviert wurde."/>
 </xmlscript>

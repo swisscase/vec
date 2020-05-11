@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlscript desc="Laengenvergleich_Gl322_Virtuell371.xml">
+<xmlscript desc="Laengenvergleich_Gl322_Gl7.xml">
 
-	<trace text="Loklaenge abfragen in Gl.322 nach Virtuell_Gl7_Gl371"/>
-	<query vr="FSTLaenge_pb_l_Gl322" table="stlist" id="[E0_Gl.322+]-[Virtuell_Gl7_Gl371]" get="maxlen"/>
+	<trace text="Loklaenge abfragen in Gl.322 nach Gl.7"/>
+	<query vr="FSTLaenge_pb_l_Gl322" table="stlist" id="[E0_Gl.322+]-[E0_Gl.7+]" get="maxlen"/>
 	<query vr="LokID_pb_l_Gl322" table="bklist" id="E0_Gl.322" get="locid"/>
 	<query vr="LokLaenge_pb_l_Gl322" table="lclist" id="@LokID_pb_l_Gl322" get="len"/>
 	<if condition="#FSTLaenge_pb_l_Gl322 > #LokLaenge_pb_l_Gl322">
