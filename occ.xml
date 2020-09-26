@@ -2,14 +2,14 @@
 <modocc>
   <occ bkid="E-2_Gl210" lcid="RE421_CARGO" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Bl2-&gt;E-2_Gl203]"/>
   <occ bkid="E-2_Gl211" lcid="RE420_376" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Bl2-&gt;E-2_Gl211]"/>
-  <occ bkid="E-2_Gl212" lcid="RE460 CIBA" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl2-&gt;E-2_Gl212]"/>
+  <occ bkid="E-2_Gl212" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl213" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.901" lcid="RE460_RS" auto="false" closed="false" placing="1" blockenterside="1" scid="[+Bl.17-&gt;Bl.901]"/>
+  <occ bkid="Bl.901" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.902" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.41" auto="false" closed="false" placing="0" blockenterside="0" lcid="Ee3/3 16356 SBB"/>
+  <occ bkid="E0_Gl.41" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E0_Gl.42" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.43" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.44" lcid="RAIJET_WAGEN" auto="false" closed="false" placing="1" blockenterside="1"/>
+  <occ bkid="E0_Gl.44" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.45" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Gl101" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Gl102" lcid="RE6/6_11672" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-1_Gl107-&gt;E-1_Gl102]"/>
@@ -23,7 +23,7 @@
   <occ bkid="E0_Gl.51" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.52" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.53" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl110" lcid="AE6/6_Neuchatel" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl110]"/>
+  <occ bkid="E-1_Gl110" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Gl111" lcid="RAILJET" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl111]"/>
   <occ bkid="E-1_Gl112" lcid="RE420_227" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl112]"/>
   <occ bkid="Virtuell_Gl7_Gl371" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
@@ -39,7 +39,7 @@
   <occ bkid="E0_Gl.5" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E0_Gl.6" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E0_Gl.7" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
-  <occ bkid="E0_Gl.8" auto="false" closed="false" placing="2" blockenterside="2" lcid="Ce6/8_II_14252"/>
+  <occ bkid="E0_Gl.8" auto="false" closed="false" placing="2" blockenterside="2" lcid="THALYS PBKA" scid="[-E-2_Bl5-&gt;E0_Gl.8]"/>
   <occ bkid="E0_Gl.322" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E-1_Bl-1_1" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Bl-1_2" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
@@ -74,7 +74,7 @@
   <occ bkid="E-2_Gl203" auto="false" closed="false" placing="0" blockenterside="0" lcid=""/>
   <occ bkid="E-2_Gl204" auto="false" closed="false" placing="1" blockenterside="1" lcid="RE460_Aargau" scid="[-E-2_GF_Verbindung-&gt;Schattenbahnhof_Gl201_206]"/>
   <occ bkid="E-2_Gl205" lcid="ICN_007" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl2-&gt;E-2_Gl205]"/>
-  <occ bkid="E-2_Gl206" lcid="THALYS PBKA" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl2-&gt;E-2_Gl206]"/>
+  <occ bkid="E-2_Gl206" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl207" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl208" lcid="BR486_HZ" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Bl2-&gt;E-2_Gl208]"/>
   <occ bkid="E-2_Gl209" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
