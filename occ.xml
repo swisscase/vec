@@ -4,7 +4,10 @@
   <occ bkid="Bl.901" lcid="RE460_RS" auto="false" closed="false" placing="1" blockenterside="1" scid="[+Bl.17-&gt;Bl.901]"/>
   <occ bkid="Bl.902" lcid="AE4/4" auto="false" closed="false" placing="2" blockenterside="2" scid="[-Bl.10-&gt;Bl.902]"/>
   <occ bkid="E0_Gl.41" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.42" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.43" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.44" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.45" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Gl101" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Gl103" lcid="RE4/4II LION" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-1_Gl107-&gt;E-1_Gl103]"/>
   <occ bkid="E-1_Gl104" lcid="RE193_VEKTRON" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-1_Gl109-&gt;E-1_Gl104]"/>
@@ -19,8 +22,8 @@
   <occ bkid="E0_Gl.311" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.4" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.5" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.6" lcid="Rbe 4/4 SBB" auto="false" closed="false" placing="2" blockenterside="2" scid="[-E-2_Bl5-&gt;E0_Gl.6]"/>
-  <occ bkid="E0_Gl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.6" lcid="Rbe 4/4 SBB" auto="false" closed="false" placing="2" blockenterside="2"/>
+  <occ bkid="E0_Gl.7" lcid="S. 482" auto="false" closed="false" placing="1" blockenterside="2" scid="[-E-2_Bl5-&gt;E0_Gl.7]"/>
   <occ bkid="E0_Gl.8" lcid="RABe511005" auto="false" closed="false" placing="2" blockenterside="2" scid="[-E-2_Bl5-&gt;E0_Gl.8]"/>
   <occ bkid="E0_Gl.322" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Bl-1_1" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
@@ -49,7 +52,7 @@
   <occ bkid="E-2_Bl4" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Bl5" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl201" lcid="VBK803" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Gl207-&gt;E-2_Gl201]"/>
-  <occ bkid="E-2_Gl202" lcid="S. 482" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Gl207-&gt;E-2_Gl202]"/>
+  <occ bkid="E-2_Gl202" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl203" lcid="BDt_BLS" auto="false" closed="false" placing="2" blockenterside="2"/>
   <occ bkid="E-2_Gl204" lcid="RE460_Aargau" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Gl212-&gt;E-2_Gl204]"/>
   <occ bkid="E-2_Gl205" lcid="ICN_007" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_GF_Verbindung-&gt;Schattenbahnhof_Gl201_206]"/>
