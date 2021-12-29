@@ -8,37 +8,37 @@
   <occ bkid="E0_Gl.43" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.44" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.45" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl101" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl101" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E-1_Gl103" lcid="RE4/4II LION" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-1_Gl107-&gt;E-1_Gl103]"/>
   <occ bkid="E-1_Gl104" lcid="RE193_VEKTRON" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-1_Gl109-&gt;E-1_Gl104]"/>
   <occ bkid="E-1_Gl105" lcid="RBDe560_DOMINO" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-1_GF_Verbindung-&gt;Schattenbahnhof_Gl101_106]"/>
   <occ bkid="E-1_Gl106" lcid="RE4/4 I" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-1_Gl107-&gt;E-1_Gl106]"/>
-  <occ bkid="E-1_Gl107" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl107" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E-1_Gl108" lcid="C5/6_2965" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl108]"/>
   <occ bkid="E-1_Gl109" lcid="RE4/4_II_11252" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl109]"/>
-  <occ bkid="Bl.921" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.922" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.923" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.921" lcid="BR486_HZ" auto="false" closed="false" placing="1" blockenterside="2" scid="[+Bl.931-&gt;Bl.921]"/>
+  <occ bkid="Bl.922" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.923" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-1_Gl110" lcid="AE6/6_Neuchatel" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl110]"/>
   <occ bkid="E-1_Gl111" lcid="RAILJET" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Bl1-&gt;E-1_Gl111]"/>
-  <occ bkid="Bl.931" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.932" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.931" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.932" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.412" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
   <occ bkid="Virtuell_Gl207_GF_Verbindung" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.311" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.311" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.4" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.5" lcid="BR486_HZ" auto="false" closed="false" placing="1" blockenterside="1" scid="[+E0_Gl.311-&gt;E0_Gl.5]"/>
+  <occ bkid="E0_Gl.5" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.6" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E0_Gl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E0_Gl.322" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E-1_Bl-1_1" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Bl-1_2" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Bl-1_3" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.10" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.11" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.12" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.14" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.322" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Bl-1_1" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-1_Bl-1_2" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-1_Bl-1_3" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.10" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.11" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.12" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.14" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.15" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="Bl.16" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="Bl.17" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
@@ -47,10 +47,10 @@
   <occ bkid="Bl.20" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E-2_GF_Verbindung" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_GF1Ausf" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_GF_Verbindung" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.6" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-1_GF_Verbindung" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.6" lcid="EE 3/3" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.9" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E-2_Bl1" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E-2_Bl2" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
