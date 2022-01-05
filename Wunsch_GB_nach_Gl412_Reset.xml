@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Wunsch_GB_nach_GL412_Reset.xml">
+<trace text="Starte Skript: Wunsch_GB_nach_GL412_Reset.xml"/>
+<tx id="WunschGBPB" format="Keine Wunschausfahrt"/>
+<co id="Wunsch_GB_PB" cmd="off"/>
+</xmlscript>
