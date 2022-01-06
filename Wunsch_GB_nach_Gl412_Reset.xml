@@ -2,4 +2,6 @@
 <xmlscript desc="Wunsch_GB_nach_GL412_Reset.xml">
 <trace text="Starte Skript: Wunsch_GB_nach_GL412_Reset.xml"/>
 <co id="Wunsch_GB_PB" cmd="off"/>
+<tx id="WunschGBPB" format="---"/>
+<vr id="Wunsch_FST_Gl41_45_PB412_auto" value="0"/>
 </xmlscript>
