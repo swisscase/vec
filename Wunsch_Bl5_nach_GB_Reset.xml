@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Wunsch_Bl5_nach_GB_Reset.xml">
+<trace text="Starte Skript: Wunsch_Bl5_nach_GB_Reset.xml"/>
+<co id="Wunsch_PB_GB" cmd="off"/>
+</xmlscript>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Wunsch_GB_nach_GL412.xml">
-<query vr="Wunsch_FST_Gl41_45_PB412_manuell" table="varlist" id="Wunsch_FST_Gl41_45_PB412_manuell" get="text"/>
+<query vr="Wunsch_FST_Gl41_45_PB412_auto" table="varlist" id="Wunsch_FST_Gl41_45_PB412_auto" get="text"/>
 <trace text="Starte Skript: Wunschausfahrt von GB nach Gleis 412, Wunsch_GB_nach_GL412.xml"/>
-<if condition="#Wunsch_FST_Gl41_45_PB412_manuell > 0" alltrue="true" connect="and">
+<if condition="#Wunsch_FST_Gl41_45_PB412_auto > 0" alltrue="true" connect="and">
 <then>
-	<trace text="Skript: Wunschausfahrt von GB Gl. #Wunsch_FST_Gl41_45_PB412_manuell gewünscht nach Gleis 412"/>
-	<tx id="WunschGBPB" format="Wunsch GB Gl. #Wunsch_FST_Gl41_45_PB412_manuell > Gl.412"/>
+	<trace text="Skript: Wunschausfahrt von GB Gl. #Wunsch_FST_Gl41_45_PB412_auto gewünscht nach Gleis 412"/>
+	<tx id="WunschGBPB" format="Wunsch GB Gl. #Wunsch_FST_Gl41_45_PB412_auto > Gl.412"/>
 	<co id="Wunsch_GB_PB" cmd="on"/>
 </then>
 <else>
