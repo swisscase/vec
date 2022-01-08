@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Wunsch_Bl6_nach_Gl511.xml">
+<trace text="Starte Skript: Wunschausfahrt von Gleis Bl.6 nach Gl.511, Wunsch_Bl6_nach_Gl511.xml"/>
+<vr id="Wunsch_FST_Bl6_Zu_Gl511" value="511"/>
+<while condition="#Wunsch_FST_Bl6_Zu_Gl511 > 10">
+
+	<co id="LED_D356Gr_Kopie" cmd="on"/>
+	<co id="LED_D356Gr" cmd="on"/>
+	<co id="LED_D662Gr_Kopie" cmd="on"/>
+	<co id="LED_D662Gr" cmd="on"/>
+
+	<sleep time="1000"/>
+
+	<co id="LED_D356Gr_Kopie" cmd="off"/>
+	<co id="LED_D356Gr" cmd="off"/>
+	<co id="LED_D662Gr_Kopie" cmd="off"/>
+	<co id="LED_D662Gr" cmd="off"/>	
+
+	<sleep time="1000"/>
+	
+</while>
+</xmlscript>

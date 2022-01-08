@@ -13,7 +13,8 @@
 	
 	<!-------Noch ergänzen dass auch Loks im Wait / Automatic geprüft werden.----->
 	<trace text="Automatikbetrieb: Züge gestoppt. Prüfe ob noch Züge unterwegs sind."/>
-	<foreach table="lclist">	
+	<foreach table="lclist">
+		<trace text="%oid%"/>
 		<while state="lc %oid% = auto|lc %oid% = wait" alltrue="false">
 			<sleep time="2000"/>
 			<lc id="%lcid%" cmd="stop"/>
@@ -25,8 +26,7 @@
 			<!-------Dieser Abschnitt wird so lange ausgeführt bis alle Züge gestoppt sind. Erst dann werden die Weichen freigegeben.----->
 		</while>
 	</foreach>
-	<trace text="Automatikbetrieb: Alle Züge sind gestoppt."/>
-	
+		
 	<!-------Wenn die Weichen gesperrt wurden können die Weichen nun wieder freigegeben werden.----->
 	<if condition="#AutomatikUmschaltenFehlerWennNull = 1">
 		<then>
@@ -37,6 +37,7 @@
 			<sw id="W415b" cmd="resetstatic"/> 
 			<sw id="W400" cmd="resetstatic"/> 
 			<sw id="W350" cmd="resetstatic"/> 
+			<sw id="W356" cmd="resetstatic"/> 
 			<sw id="W460" cmd="resetstatic"/> 
 			<sw id="W456" cmd="resetstatic"/> 
 			<sw id="W467" cmd="resetstatic"/> 
@@ -54,7 +55,13 @@
 			<sw id="W901-19" cmd="resetstatic"/>
 			<sw id="W902-12" cmd="resetstatic"/>
 			<sw id="W902-10" cmd="resetstatic"/>
+			<sw id="W925" cmd="resetstatic"/>
+			<sw id="W922" cmd="resetstatic"/>
+			<sw id="W923" cmd="resetstatic"/>
 			<trace text="Automatikbetrieb: Alle Weichen sind entsperrt."/>
+			<bk id="E0_Gl.6" state="open"/>
+			<bk id="Bl.922" state="open"/>
+			<bk id="Bl.932" state="open"/>
 		</then>
 	</if>
 	

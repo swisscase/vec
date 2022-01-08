@@ -17,7 +17,7 @@
 	</foreach>
 	
 	<foreach table="lclist">
-		<if state="lc %oid% = Bl.6|lc %oid% = Bl.7|lc %oid% = Bl.8|lc %oid% = Bl.9|lc %oid% = Bl.10|lc %oid% = Bl.11|lc %oid% = Bl.12|lc %oid% = Bl.14|lc %oid% = Bl.15|lc %oid% = Bl.16|lc %oid% = Bl.17|lc %oid% = Bl.18|lc %oid% = Bl.19|lc %oid% = Bl.20|lc %oid% = E0_Gl.322|lc %oid% = E0_Gl.311|lc %oid% = E-2_Bl1|lc %oid% = E-2_Bl2|lc %oid% = E-2_Bl3|lc %oid% = E-2_Bl4|lc %oid% = E-2_Bl5" alltrue="false">
+		<if state="lc %oid% = Bl.923|lc %oid% = Bl.931|lc %oid% = Bl.921|lc %oid% = Bl.6|lc %oid% = Bl.7|lc %oid% = Bl.8|lc %oid% = Bl.9|lc %oid% = Bl.10|lc %oid% = Bl.11|lc %oid% = Bl.12|lc %oid% = Bl.14|lc %oid% = Bl.15|lc %oid% = Bl.16|lc %oid% = Bl.17|lc %oid% = Bl.18|lc %oid% = Bl.19|lc %oid% = Bl.20|lc %oid% = E0_Gl.322|lc %oid% = E0_Gl.311|lc %oid% = E-2_Bl1|lc %oid% = E-2_Bl2|lc %oid% = E-2_Bl3|lc %oid% = E-2_Bl4|lc %oid% = E-2_Bl5" alltrue="false">
 			<then>
 				<trace text="Automatikbetrieb: Die %lcid% steht in der Fahrstrecke" />
 				<vr id="FahrstreckeNichtFreiWennNull" value="0"/> 
@@ -124,9 +124,18 @@
 					<sw id="W467" cmd="straight"/> 
 					<sw id="W467" cmd="setstatic"/>
 					<sleep time="100"/>
+					<sw id="W356" cmd="straight"/> 
+					<sw id="W356" cmd="setstatic"/>
+					<sleep time="100"/>	
 					<sw id="W360" cmd="straight"/> 
 					<sw id="W360" cmd="setstatic"/>
-					<sleep time="100"/>			
+					<sleep time="100"/>	
+					<sw id="W460" cmd="straight"/> 
+					<sw id="W460" cmd="setstatic"/>
+					<sleep time="100"/>
+					<sw id="W456" cmd="straight"/> 
+					<sw id="W456" cmd="setstatic"/>
+					<sleep time="100"/>						
 					<sw id="W367" cmd="straight"/> 
 					<sw id="W367" cmd="setstatic"/> 
 					<sleep time="100"/>
@@ -166,14 +175,34 @@
 					<sw id="W902-10" cmd="straight"/> 
 					<sw id="W902-10" cmd="setstatic"/>
 					<sleep time="100"/>
+					<sw id="W925" cmd="turnaround"/> 
+					<sw id="W925" cmd="setstatic"/>
+					<sleep time="100"/>
+					<sw id="W922" cmd="straight"/> 
+					<sw id="W922" cmd="setstatic"/>
+					<sleep time="100"/>
+					<sw id="W923" cmd="straight"/> 
+					<sw id="W923" cmd="setstatic"/>
+					<sleep time="100"/>
 					<trace text="Automatikbetrieb: Weichensperrung abgeschlossen."/>
-				
-					<!-------Starte die Züge in den Blöcken----->
+					<bk id="E0_Gl.6" state="closed"/>
+					<bk id="Bl.922" state="closed"/>
+					<bk id="Bl.932" state="closed"/>	
+
+					
+					<!-------Starte die Züge in Gleis 4,5,7,8----->				
+					
 					<foreach table="lclist">
-						<lc cmd="go"/>
-						<trace text="Automatikbetrieb: Starte Lok %oid%"/>
-						<sleep time="50"/>
+						<trace text="%oid%"/>
+						<if state="lc %oid% = E0_Gl.4|lc %oid% = E0_Gl.5|lc %oid% = E0_Gl.7|lc %oid% = E0_Gl.8" alltrue="false">
+							<then>
+								<lc cmd="go"/>
+								<trace text="Automatikbetrieb: Starte Lok %oid%"/>
+								<sleep time="50"/>
+							</then>
+						   </if>
 					</foreach>
+					
 					<trace text="Automatikbetrieb: Automatikbetrieb gestartet"/>
 					<model cmd="modify">
 						<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>

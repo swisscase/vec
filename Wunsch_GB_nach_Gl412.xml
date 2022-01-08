@@ -2,6 +2,50 @@
 <xmlscript desc="Wunsch_GB_nach_GL412.xml">
 <trace text="Starte Skript: Wunschausfahrt von GB Gl. %param1% nach Gleis 412, Wunsch_GB_nach_GL412.xml"/>
 <vr id="Wunsch_FST_Gl41_45_PB412_auto" value="%param1%"/>
-<tx id="WunschGBPB" format="Wunsch GB Gl. %param1% > Gl.412"/>
-<co id="Wunsch_GB_PB" cmd="on"/>
+<while condition="#Wunsch_FST_Gl41_45_PB412_auto > 10">
+	<co id="LED_D355Gr_Kopie" cmd="on"/>
+	<co id="LED_D355Gr" cmd="on"/>
+	<switch var="%param1%">
+		<case val="41">
+		  	<co id="LED_D651Gr" cmd="on"/>
+		</case>
+		<case val="42">
+		  	<co id="LED_D652Gr" cmd="on"/>
+		</case>
+		<case val="43">
+		  	<co id="LED_D653Gr" cmd="on"/>
+		</case>
+		<case val="44">
+		  	<co id="LED_D654Gr" cmd="on"/>
+		</case>
+		<case val="45">
+		  	<co id="LED_D655Gr" cmd="on"/>
+		</case>
+	</switch>
+	
+	<sleep time="1000"/>
+	
+	<co id="LED_D355Gr_Kopie" cmd="off"/>
+	<co id="LED_D355Gr" cmd="off"/>
+	<switch var="%param1%">
+		<case val="41">
+		  	<co id="LED_D651Gr" cmd="off"/>
+		</case>
+		<case val="42">
+		  	<co id="LED_D652Gr" cmd="off"/>
+		</case>
+		<case val="43">
+		  	<co id="LED_D653Gr" cmd="off"/>
+		</case>
+		<case val="44">
+		  	<co id="LED_D654Gr" cmd="off"/>
+		</case>
+		<case val="45">
+		  	<co id="LED_D655Gr" cmd="off"/>
+		</case>
+	</switch>
+	
+	<sleep time="1000"/>
+	
+</while>
 </xmlscript>

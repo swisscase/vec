@@ -5,5 +5,9 @@
 	<bk id="E0_Gl.43" state="closed"/>
 	<bk id="E0_Gl.44" state="closed"/>
 	<bk id="E0_Gl.45" state="closed"/>
-	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde."/>
+	<co id="LED_D355Rt" cmd="on"/>
+	<co id="LED_D356Rt" cmd="on"/>
+	<co id="LED_D355Rt_Kopie" cmd="on"/>
+	<co id="LED_D356Rt_Kopie" cmd="on"/>
+	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde. Rote Rangier LED's im Gleis nach GB beim PB-Stellpult eingeschaltet."/>
 </xmlscript>
