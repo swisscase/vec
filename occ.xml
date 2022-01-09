@@ -3,7 +3,7 @@
   <occ bkid="E-2_Gl211" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E-2_Gl212" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.901" lcid="RE460_RS" auto="false" closed="false" placing="1" blockenterside="1" scid="[+Bl.17-&gt;Bl.901]"/>
-  <occ bkid="Bl.902" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.902" lcid="RE460_Aargau" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E0_Gl.41" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="E0_Gl.42" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.43" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
@@ -36,7 +36,7 @@
   <occ bkid="Virtuell_Gl207_GF_Verbindung" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.311" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.4" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E0_Gl.5" lcid="AM843" auto="false" closed="false" placing="1" blockenterside="1"/>
+  <occ bkid="E0_Gl.5" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.6" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.7" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.8" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
