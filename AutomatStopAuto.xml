@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="AutomatStopAuto.xml"> 
-  <auto cmd="stop"/>
+	<trace text="Skript: AutomatStartStopAuto.xml"/>
+	<auto cmd="stop"/>
+	<trace text="Ende Skript: AutomatStartStopAuto.xml"/>
 </xmlscript>

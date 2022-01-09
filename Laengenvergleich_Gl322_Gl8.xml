@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Laengenvergleich_Gl322_Gl8.xml">
-
-	<trace text="Loklaenge abfragen in Gl.322 nach Gl.8"/>
+	<trace text="Loklaenge abfragen in Gl.322 nach Gl.8. Skript: Laengenvergleich_Gl322_Gl8.xml"/>
 	<query vr="FSTLaenge_pb_l_Gl322" table="stlist" id="[E0_Gl.322+]-[E0_Gl.8+]" get="maxlen"/>
 	<query vr="LokID_pb_l_Gl322" table="bklist" id="E0_Gl.322" get="locid"/>
 	<query vr="LokLaenge_pb_l_Gl322" table="lclist" id="@LokID_pb_l_Gl322" get="len"/>
 	<if condition="#FSTLaenge_pb_l_Gl322 > #LokLaenge_pb_l_Gl322">
-	<then>
-		<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
-		<model cmd="modify">
-			<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
-		</model> 
-	</then>
-	<else>
-		<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
-		<model cmd="modify">
-			<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
-		</model> 
-	</else>
+		<then>
+			<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
+			<model cmd="modify">
+				<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
+			</model> 
+		</then>
+		<else>
+			<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
+			<model cmd="modify">
+				<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
+			</model> 
+		</else>
 	</if>
+	<trace text="Ende Skript: Laengenvergleich_Gl322_Gl8.xml"/>	
 </xmlscript>

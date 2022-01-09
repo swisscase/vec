@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="PB_Bloecke_deaktivieren.xml">
+	<trace text="Skript: PB_Bloecke_deaktivieren.xml"/>	
 	<bk id="E0_Gl.311" state="open"/>
 	<bk id="E0_Gl.322" state="open"/>
 	<bk id="E0_Gl.4" state="open"/>
@@ -8,4 +9,5 @@
 	<bk id="E0_Gl.7" state="open"/>
 	<bk id="E0_Gl.8" state="open"/>
 	<trace text="Skript: Öffne alle Blöcke im PB da der Fahrbetrieb aktiviert wurde."/>
+	<trace text="Ende Skript: PB_Bloecke_deaktivieren.xml"/>	
 </xmlscript>

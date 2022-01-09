@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="GB_Textbox_Gl41_LaengeSetzen.xml">
+	<trace text="Skript: GB_Textbox_Gl41_LaengeSetzen.xml"/>
 	<query vr="LokID" table="bklist" id="E0_Gl.41" get="locid"/>
 	<query vr="TextfeldID" table="txlist" id="Loklänge_In_CM" get="text"/>
 	<if condition="#TextfeldID > 0" alltrue="true" connect="and">
-    <then>
-		<query vr="LokLaengeAlt" table="lclist" id="@LokID" get="len"/>
-		<model cmd="modify">
-			<lc id="@LokID" len="@TextfeldID"/>
-		</model>
-		<query vr="LokLaengeNeu" table="lclist" id="@LokID" get="len"/>
-		<trace text="Skript: Setze die Loklaenge im Gleis 41 von @LokID | Bisher: @LokLaengeAlt cm Neu: @LokLaengeNeu cm"/>
-		<tx id="Loklänge_In_CM" format="0"/>
-	</then>
-	<else>
-      	<trace text="Skript: Kein Wert im Textfeld Zuglänge eingegeben"/>
-    </else>
-  </if>
+		<then>
+			<query vr="LokLaengeAlt" table="lclist" id="@LokID" get="len"/>
+			<model cmd="modify">
+				<lc id="@LokID" len="@TextfeldID"/>
+			</model>
+			<query vr="LokLaengeNeu" table="lclist" id="@LokID" get="len"/>
+			<trace text="Skript: Setze die Loklaenge im Gleis 41 von @LokID | Bisher: @LokLaengeAlt cm Neu: @LokLaengeNeu cm"/>
+			<tx id="Loklänge_In_CM" format="0"/>
+		</then>
+		<else>
+			<trace text="Skript: Kein Wert im Textfeld Zuglänge eingegeben"/>
+		</else>
+	</if>
+ 	<trace text="Ende Skript: GB_Textbox_Gl41_LaengeSetzen.xml"/>
 </xmlscript>

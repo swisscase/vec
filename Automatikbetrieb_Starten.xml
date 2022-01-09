@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Automatikbetrieb_Starten.xml">
 
-	<trace text="Automatikbetrieb: Starte Automatikbetrieb. Bitte warten..."/>
+	<trace text="Automatikbetrieb: Starte Automatikbetrieb. Bitte warten... Skrip: Automatikbetrieb_Starten.xml"/>
 	
 	<!-------Variablen Deklarieren----->
 	<vr id="AutomatikUmschaltenFehlerWennNull" value="1"/> 
@@ -187,25 +187,22 @@
 					<trace text="Automatikbetrieb: Weichensperrung abgeschlossen."/>
 					<bk id="E0_Gl.6" state="closed"/>
 					<bk id="Bl.922" state="closed"/>
-					<bk id="Bl.932" state="closed"/>	
+					<bk id="Bl.932" state="closed"/>
+					<bk id="E0_Gl.41" state="closed"/>
+					<bk id="E0_Gl.42" state="closed"/>
+					<bk id="E0_Gl.43" state="closed"/>
+					<bk id="E0_Gl.44" state="closed"/>
+					<bk id="E0_Gl.45" state="closed"/>				
 
-					
-					<!-------Starte die Züge in Gleis 4,5,7,8----->				
-					
-					<foreach table="lclist">
-						<trace text="%oid%"/>
-						<if state="lc %oid% = E0_Gl.4|lc %oid% = E0_Gl.5|lc %oid% = E0_Gl.7|lc %oid% = E0_Gl.8" alltrue="false">
-							<then>
-								<lc cmd="go"/>
-								<trace text="Automatikbetrieb: Starte Lok %oid%"/>
-								<sleep time="50"/>
-							</then>
-						   </if>
+					<!-------Starte die Züge in Gleis 4,5,7,8----->			
+					<foreach table="lclist" condition="%lccur% # E0_Gl.4|%lccur% # E0_Gl.5|%lccur% # E0_Gl.7|%lccur% # E0_Gl.8" alltrue="false">
+						<lc cmd="go"/>
+						<trace text="Automatikbetrieb: Starte Lok %oid%"/>
 					</foreach>
 					
 					<trace text="Automatikbetrieb: Automatikbetrieb gestartet"/>
 					<model cmd="modify">
-						<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
+						<tx id="InfoBox" bgred="239" bggreen="206" bgblue="200"/>
 					</model>
 					<tx id="InfoBox" format="Automatikbetrieb gestartet.|Die Züge fahren vollautomatisch."/>
 					
@@ -219,6 +216,6 @@
 
 		</else>
 	</if>			
-	
+	<trace text="Ende Skript: Automatikbetrieb_Starten.xml"/>
 
 </xmlscript>

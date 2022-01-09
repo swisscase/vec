@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="GB_Bloecke_deaktivieren.xml">
+	<trace text="Skript: GB_Bloecke_deaktivieren.xml"/>
 	<bk id="E0_Gl.41" state="closed"/>
 	<bk id="E0_Gl.42" state="closed"/>
 	<bk id="E0_Gl.43" state="closed"/>
@@ -10,4 +11,5 @@
 	<co id="LED_D355Rt_Kopie" cmd="on"/>
 	<co id="LED_D356Rt_Kopie" cmd="on"/>
 	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde. Rote Rangier LED's im Gleis nach GB beim PB-Stellpult eingeschaltet."/>
+	<trace text="Ende Skript: GB_Bloecke_deaktivieren.xml"/>
 </xmlscript>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Laengenvergleich_Text_PB_Rechts_Laengenvergleich.xml">
-
-	<trace text="Loklaenge abfragen in Block 5 nach Gl6"/>
+	<trace text="Loklaenge abfragen in Block 5 nach Gl6. Skript: Laengenvergleich_Text_PB_Rechts_Laengenvergleich.xml"/>
 	<query vr="FSTLaenge_pb_r" table="stlist" id="[E-2_Bl5+]-[E0_Gl.6]" get="maxlen"/>
 	<query vr="LokID_pb_r" table="bklist" id="E-2_Bl5" get="locid"/>
 	<query vr="LokLaenge_pb_r" table="lclist" id="@LokID_pb_r" get="len"/>
 	<if condition="#FSTLaenge_pb_r > #LokLaenge_pb_r">
-	<then>
-		<tx id="Text_PB_Rechts_Laengenvergleich" format="OK: @LokLaenge_pb_r cm"/>
-		<model cmd="modify">
-			<tx id="Text_PB_Rechts_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
-		</model> 
-	</then>
-	<else>
-		<tx id="Text_PB_Rechts_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_r cm"/>
-		<model cmd="modify">
-			<tx id="Text_PB_Rechts_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
-		</model> 
-	</else>
+		<then>
+			<tx id="Text_PB_Rechts_Laengenvergleich" format="OK: @LokLaenge_pb_r cm"/>
+			<model cmd="modify">
+				<tx id="Text_PB_Rechts_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
+			</model> 
+		</then>
+		<else>
+			<tx id="Text_PB_Rechts_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_r cm"/>
+			<model cmd="modify">
+				<tx id="Text_PB_Rechts_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
+			</model> 
+		</else>
 	</if>
+	<trace text="Ende Skript: Laengenvergleich_Text_PB_Rechts_Laengenvergleich.xml"/>	
 </xmlscript>

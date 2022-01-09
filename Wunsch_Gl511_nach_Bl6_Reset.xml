@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Wunsch_Gl511_nach_Bl6_Reset.xml">
-<trace text="Starte Skript: Wunsch_Gl511_nach_Bl6_Reset.xml"/>
+<trace text="Skript: Wunsch_Gl511_nach_Bl6_Reset.xml"/>
 <vr id="Wunsch_FST_Gl511_Zu_Bl6" value="0"/>
+<trace text="Ende Skript: Wunsch_Gl511_nach_Bl6_Reset.xml"/>
 </xmlscript>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Automatikbetrieb_Stoppen.xml">
 	
-	<trace text="Automatikbetrieb: Stoppe Automatikbetrieb. Bitte warten..."/>
+	<trace text="Automatikbetrieb: Stoppe Automatikbetrieb. Bitte warten... Skript: Automatikbetrieb_Stoppen.xml"/>
 	
 	<!-------Stoppe alle Züge in der Lokliste----->
 	<foreach table="lclist">	
@@ -62,6 +62,11 @@
 			<bk id="E0_Gl.6" state="open"/>
 			<bk id="Bl.922" state="open"/>
 			<bk id="Bl.932" state="open"/>
+			<bk id="E0_Gl.41" state="open"/>
+			<bk id="E0_Gl.42" state="open"/>
+			<bk id="E0_Gl.43" state="open"/>
+			<bk id="E0_Gl.44" state="open"/>
+			<bk id="E0_Gl.45" state="open"/>
 		</then>
 	</if>
 	
@@ -80,4 +85,5 @@
 	</model>
 	
 	<vr id="AutomatikUmschaltenFehlerWennNull" value="0"/> 
+	<trace text="Ende Skript: Automatikbetrieb_Stoppen.xml"/>
 </xmlscript>

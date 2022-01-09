@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="RMAbfragen.xml"> 
-  <sys cmd="sod"/>
+	<trace text="Skript: RMAbfragen.xml"/>
+	<sys cmd="sod"/>
+	<trace text="Ende Skript: RMAbfragen.xml"/>
 </xmlscript>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="FspEin.xml"> 
-	<trace text="Starte RM init..."/>
+	<trace text="Starte RM init... Skript: FspEin.xml"/>
 	<!-------Variablen Deklarieren----->
 	<vr id="BetriebsbeginnWurdeGemachtWennEins" value="1"/> 
 	<sys cmd="sod" informall="true"/>
@@ -20,5 +20,5 @@
 	<model cmd="modify">
 		<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
 	</model>
-	
+	<trace text="Ende Skript: FspEin.xml"/>
 </xmlscript>

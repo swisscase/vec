@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Wunsch_GB_nach_GL412.xml">
-<trace text="Starte Skript: Wunschausfahrt von GB Gl. %param1% nach Gleis 412, Wunsch_GB_nach_GL412.xml"/>
+<trace text="Starte Skript: Wunschausfahrt von GB Gl. %param1% nach Gleis 412. Skript: Wunsch_GB_nach_GL412.xml"/>
 <vr id="Wunsch_FST_Gl41_45_PB412_auto" value="%param1%"/>
 <while condition="#Wunsch_FST_Gl41_45_PB412_auto > 10">
+	<trace text="Skript: Wunsch_GB_nach_GL412.xml noch am Laufen (While Loop)"/>
 	<co id="LED_D355Gr_Kopie" cmd="on"/>
 	<co id="LED_D355Gr" cmd="on"/>
 	<switch var="%param1%">
@@ -48,4 +49,5 @@
 	<sleep time="1000"/>
 	
 </while>
+<trace text="Ende Skript: Wunsch_GB_nach_GL412.xml"/>
 </xmlscript>

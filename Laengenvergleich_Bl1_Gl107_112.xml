@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Laengenvergleich_Bl1_Gl107_112.xml">
-
-	<trace text="Loklaenge abfragen in Block 1 nach Gl.107 - 112"/>
+	<trace text="Loklaenge abfragen in Block 1 nach Gl.107 - 112. Skript: Laengenvergleich_Bl1_Gl107_112.xml"/>
 	<query vr="FSTLaenge_pb_r" table="stlist" id="[E-2_Bl1-]-[E-1_Gl107+]" get="maxlen"/>
 	<query vr="LokID_pb_r" table="bklist" id="E-2_Bl1" get="locid"/>
 	<query vr="LokLaenge_pb_r" table="lclist" id="@LokID_pb_r" get="len"/>
 	<if condition="#FSTLaenge_pb_r > #LokLaenge_pb_r">
-	<then>
-		<tx id="Text_SB_Bl1" format="OK: @LokLaenge_pb_r cm"/>
-		<model cmd="modify">
-			<tx id="Text_SB_Bl1" bgred="0" bggreen="255" bgblue="0"/>
-		</model> 
-	</then>
-	<else>
-		<tx id="Text_SB_Bl1" format="Zu Lang: @LokLaenge_pb_r cm"/>
-		<model cmd="modify">
-			<tx id="Text_SB_Bl1" bgred="255" bggreen="0" bgblue="0"/>
-		</model> 
-	</else>
+		<then>
+			<tx id="Text_SB_Bl1" format="OK: @LokLaenge_pb_r cm"/>
+			<model cmd="modify">
+				<tx id="Text_SB_Bl1" bgred="0" bggreen="255" bgblue="0"/>
+			</model> 
+		</then>
+		<else>
+			<tx id="Text_SB_Bl1" format="Zu Lang: @LokLaenge_pb_r cm"/>
+			<model cmd="modify">
+				<tx id="Text_SB_Bl1" bgred="255" bggreen="0" bgblue="0"/>
+			</model> 
+		</else>
 	</if>
+	<trace text="Ende Skript: Laengenvergleich_Bl1_Gl107_112.xml"/>
 </xmlscript>

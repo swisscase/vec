@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="BlockNachfahrenBl14_16.xml">
 
-	<trace text="Zug Nachfahren: Prüfe ob Züge im Block 14 - 16 stehen die bis Block 14 oder 16 nachfahren sollen"/>
+	<trace text="Zug Nachfahren: Prüfe ob Züge im Block 14 - 16 stehen die bis Block 14 oder 16 nachfahren sollen. Skript: BlockNachfahrenBl14_16.xml"/>
 	
 	<!-------Variablen Deklarieren----->
 	<vr id="AutomatikZuegeNachfahrenBl1416FehlerWennNull" value="1"/> 
@@ -113,5 +113,5 @@
 	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 	</actionctrl>
-	
+	<trace text="Ende Skript: BlockNachfahrenBl14_16.xml"/>
 </xmlscript>
