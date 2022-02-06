@@ -24,12 +24,13 @@
   <occ bkid="Bl.931" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
   <occ bkid="Bl.932" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.511" arrivetime="1642713794" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.512" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.311" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.4" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.4" arrivetime="1642710550" lcid="RE460 CIBA" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.5" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="E0_Gl.6" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.7" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.8" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.7" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.8" arrivetime="1642710550" lcid="C5/6_2965" auto="false" closed="false" placing="2" blockenterside="2"/>
   <occ bkid="E0_Gl.322" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.12" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
   <occ bkid="Bl.14" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
