@@ -9,14 +9,14 @@
 	<co id="LED_D662Gr_Kopie" cmd="on"/>
 	<co id="LED_D662Gr" cmd="on"/>
 
-	<sleep time="1000"/>
+	<sleep time="2000"/>
 
 	<co id="LED_D356Gr_Kopie" cmd="off"/>
 	<co id="LED_D356Gr" cmd="off"/>
 	<co id="LED_D662Gr_Kopie" cmd="off"/>
 	<co id="LED_D662Gr" cmd="off"/>	
 
-	<sleep time="1000"/>
+	<sleep time="2000"/>
 	
 </while>
 <trace text="Ende Skript: Wunsch_Bl6_nach_Gl511.xml"/>

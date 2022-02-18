@@ -24,7 +24,7 @@
 		</case>
 	</switch>
 	
-	<sleep time="1000"/>
+	<sleep time="2000"/>
 	
 	<co id="LED_D355Gr_Kopie" cmd="off"/>
 	<co id="LED_D355Gr" cmd="off"/>
@@ -46,7 +46,7 @@
 		</case>
 	</switch>
 	
-	<sleep time="1000"/>
+	<sleep time="2000"/>
 	
 </while>
 <trace text="Ende Skript: Wunsch_GB_nach_GL412.xml"/>
