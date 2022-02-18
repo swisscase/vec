@@ -1,53 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modocc>
-  <occ bkid="E-2_Gl210" arrivetime="1642711241" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl211" arrivetime="1642711253" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.901" arrivetime="1642713843" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.902" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.41" arrivetime="1642712204" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.42" arrivetime="1642712371" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E0_Gl.43" arrivetime="1642713526" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.44" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.45" arrivetime="1642713741" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl102" arrivetime="1642711179" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl103" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl104" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl105" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl106" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl108" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl109" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.921" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.922" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.923" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E-1_Gl110" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-1_Gl111" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.931" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.932" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.511" arrivetime="1642713794" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E0_Gl.512" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.311" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.4" arrivetime="1642710550" lcid="RE460 CIBA" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.5" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.6" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E0_Gl.7" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E0_Gl.8" arrivetime="1642710550" lcid="C5/6_2965" auto="false" closed="false" placing="2" blockenterside="2"/>
-  <occ bkid="E0_Gl.322" arrivetime="1642710550" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.12" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.14" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="Bl.15" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.16" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.19" arrivetime="1642713843" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_GF1Ausf" arrivetime="1642713442" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="Bl.6" arrivetime="1642713819" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
-  <occ bkid="E-2_Bl1" arrivetime="1642713435" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl2" arrivetime="1642713503" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl3" arrivetime="1642713550" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl4" arrivetime="1642713580" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Bl5" arrivetime="1642713645" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl201" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl210" arrivetime="1642711241" lcid="RE421_CARGO" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl211" arrivetime="1642711253" lcid="RE420_376" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl213" arrivetime="1645119064" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.901" arrivetime="1645118727" lcid="RE460_RS" auto="false" closed="false" placing="1" blockenterside="2" scid=""/>
+  <occ bkid="Bl.902" arrivetime="1645118565" lcid="AE4/4" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.41" arrivetime="1645123360" lcid="TEE Mario Ver" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.42" arrivetime="1645129841" lcid="ICN_007" auto="false" closed="false" placing="1" blockenterside="1" scid="[+E0_Gl.511-&gt;E0_Gl.42+]"/>
+  <occ bkid="E0_Gl.43" arrivetime="1645125983" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E0_Gl.44" arrivetime="1645127117" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.45" arrivetime="1645129699" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl102" arrivetime="1642711179" lcid="RE6/6_11672" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl103" arrivetime="1645119968" lcid="RE4/4II LION" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl104" arrivetime="1645119898" lcid="RE193_VEKTRON" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl105" arrivetime="1645119726" lcid="RBDe560_DOMINO" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl106" arrivetime="1645129962" lcid="RE4/4 I" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-1_Gl107-&gt;E-1_Gl106]"/>
+  <occ bkid="E-1_Gl107" arrivetime="1645129805" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl108" arrivetime="1645120349" lcid="C5/6_2965" auto="false" closed="false" placing="1" blockenterside="1"/>
+  <occ bkid="E-1_Gl109" arrivetime="1645120405" lcid="RE4/4_II_11252" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.921" arrivetime="1645129925" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.922" arrivetime="1645127378" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.923" arrivetime="1645129925" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl110" arrivetime="1645120449" lcid="AE6/6_Neuchatel" auto="false" closed="false" placing="2" blockenterside="1"/>
+  <occ bkid="E-1_Gl111" arrivetime="1645120477" lcid="RAILJET" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Gl112" arrivetime="1645120595" lcid="RE420_227" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.931" arrivetime="1645129925" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.932" arrivetime="1645127173" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.511" arrivetime="1645129841" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.311" arrivetime="1645130135" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.4" arrivetime="1645127825" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.5" arrivetime="1645130135" lcid="S. 482" auto="false" closed="false" placing="2" blockenterside="1" scid="[+E0_Gl.311-&gt;E0_Gl.5]"/>
+  <occ bkid="E0_Gl.6" arrivetime="1645123234" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.7" arrivetime="1645128097" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.8" arrivetime="1645124248" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E0_Gl.322" arrivetime="1645128132" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-1_Bl-1_1" arrivetime="1645123462" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Bl-1_2" arrivetime="1645123485" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_Bl-1_3" arrivetime="1645123554" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.10" arrivetime="1645129664" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.11" arrivetime="1645129683" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.12" arrivetime="1645129747" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.14" arrivetime="1645129995" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.15" arrivetime="1645129995" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.16" arrivetime="1645129994" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.17" arrivetime="1645130039" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.18" arrivetime="1645130060" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.19" arrivetime="1645130091" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="Bl.20" arrivetime="1645130109" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_GF_Verbindung" arrivetime="1645127898" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-2_GF1Ausf" arrivetime="1645123822" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-1_GF_Verbindung" arrivetime="1645129962" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.6" arrivetime="1645129789" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.7" arrivetime="1645129591" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.8" arrivetime="1645129591" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="Bl.9" arrivetime="1645129640" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-2_Bl1" arrivetime="1645129785" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-2_Bl2" arrivetime="1645127887" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Bl3" arrivetime="1645127917" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Bl4" arrivetime="1645127947" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Bl5" arrivetime="1645127990" lcid="" auto="false" closed="false" scid="" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl201" arrivetime="1645127899" lcid="VBK803" auto="false" closed="false" placing="2" blockenterside="1" scid="[-E-2_Gl207-&gt;E-2_Gl201]"/>
   <occ bkid="E-2_Gl202" arrivetime="1642710628" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl204" arrivetime="1642713396" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl205" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl206" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
-  <occ bkid="E-2_Gl209" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl204" arrivetime="1645123611" lcid="RE460_Aargau" auto="false" closed="false" placing="1" blockenterside="1" scid="[-E-2_Gl207-&gt;E-2_Gl204]"/>
+  <occ bkid="E-2_Gl205" arrivetime="1645119016" lcid="" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl206" arrivetime="1645118753" lcid="THALYS PBKA" auto="false" closed="false" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl207" arrivetime="1645127836" lcid="" auto="false" closed="false" placing="0" blockenterside="0" scid=""/>
+  <occ bkid="E-2_Gl208" arrivetime="1645119565" lcid="" auto="false" closed="true" placing="0" blockenterside="0"/>
+  <occ bkid="E-2_Gl209" arrivetime="1645119310" lcid="RE460 CIBA" auto="false" closed="false" placing="0" blockenterside="0"/>
 </modocc>
