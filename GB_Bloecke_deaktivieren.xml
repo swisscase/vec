@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="GB_Bloecke_deaktivieren.xml">
 	<trace text="Skript: GB_Bloecke_deaktivieren.xml"/>
+	
+	<if state="bk E0_Gl.6 = reserved|bk E0_Gl.7 = reserved|bk E0_Gl.8 = reserved|bk E0_Gl.41 = reserved|bk E0_Gl.42 = reserved|bk E0_Gl.43 = reserved|bk E0_Gl.44 = reserved|bk E0_Gl.45 = reserved|bk E0_Gl.511 = reserved|bk E-2_Bl1 = reserved" alltrue="false">
+		<then>
+			
+			<while state="fb R_Rangierbetrieb_GB = true" alltrue="false">
+				<trace text="Skript Rangiermodus GB: Bitte Kippschalter deaktivieren, da noch ein Zug in/aus dem Bahnhof unterwegs ist."/>
+				<model cmd="modify">
+					<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
+				</model>
+				<tx id="InfoBox" format="Rangiermodus GB:|Abbruch Rangiermodus GB da eine Lok|im Bahnhof noch unterwegs ist|Kippschalter Rangiermodus GB deaktivieren!"/>
+				<!-------Dieser Abschnitt wird so lange ausgeführt bis der Kippschalter deaktiviert ist. ----->
+				<sleep time="2000"/>
+			</while>
+						
+			<model cmd="modify">
+				<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
+			</model>
+			<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
+				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+			</actionctrl>
+			
+			<trace text="Ende Skript: GB_Bloecke_deaktivieren.xml"/>
+						
+			<exit cmt="Rangiermodus GB: Abbruch Rangiermodus GB da eine Lok in den Bahnhof noch unterwegs ist"/>
+		</then>
+	</if>
+	
 	<bk id="E0_Gl.41" state="closed"/>
 	<bk id="E0_Gl.42" state="closed"/>
 	<bk id="E0_Gl.43" state="closed"/>
