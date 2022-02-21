@@ -6,13 +6,11 @@
 	<trace text="Skript: Wunsch_Bl5_nach_GB.xml noch am Laufen (While Loop)"/>
 	<co id="LED_D348Bl" cmd="on"/>
 	<co id="LED_D346Bl" cmd="on"/>
-	<co id="LED_D355Bl_Kopie" cmd="on"/>
-	<co id="LED_D355Bl" cmd="off"/>
+	<co id="LED_D355Bl" cmd="on"/>
 	<sleep time="2000"/>
 	<co id="LED_D348Bl" cmd="off"/>
 	<co id="LED_D346Bl" cmd="off"/>
-	<co id="LED_D355Bl_Kopie" cmd="off"/>
-	<co id="LED_D355Bl" cmd="on"/>
+	<co id="LED_D355Bl" cmd="off"/>
 	<sleep time="2000"/>
 </while>
 <trace text="Ende Skript: Wunsch_Bl5_nach_GB.xml"/>

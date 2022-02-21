@@ -3,5 +3,9 @@
 	<trace text="Skript: Nothalt.xml"/>
 	<trace text="Nothalt ausgeführt weil der Nothalt Buzzer gedrückt wurde"/>
 	<sys cmd="ebreak"/>
+	<model cmd="modify">
+		<tx id="NothaltText" bgred="255" bggreen="0" bgblue="0"/>
+	</model>
+	<tx id="NothaltText" format="NOTHALT BUZZER AKTIV"/>
 	<trace text="Ende Skript: Nothalt.xml"/>
 </xmlscript>

@@ -68,7 +68,6 @@
 			<if condition="#LokRichtungTalBl79WennNull = 0">
 				<then>
 					<!-------Starte die Züge in den Blöcken 7-9 in Richtung Block 7----->
-					<trace text="Zug Nachfahren: Starte die Züge in Block 7-9 in Richtung Tal mit Zielblock 7" />
 					<foreach table="lclist">
 						<if state="lc %oid% = Bl.9|lc %oid% = Bl.8|lc %oid% = Bl.7" alltrue="false">
 							<then>

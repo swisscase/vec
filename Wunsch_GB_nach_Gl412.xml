@@ -4,7 +4,6 @@
 <vr id="Wunsch_FST_Gl41_45_PB412_auto" value="%param1%"/>
 <while condition="#Wunsch_FST_Gl41_45_PB412_auto > 10">
 	<trace text="Skript: Wunsch_GB_nach_GL412.xml noch am Laufen (While Loop)"/>
-	<co id="LED_D355Gr_Kopie" cmd="on"/>
 	<co id="LED_D355Gr" cmd="on"/>
 	<switch var="%param1%">
 		<case val="41">
@@ -26,7 +25,6 @@
 	
 	<sleep time="2000"/>
 	
-	<co id="LED_D355Gr_Kopie" cmd="off"/>
 	<co id="LED_D355Gr" cmd="off"/>
 	<switch var="%param1%">
 		<case val="41">

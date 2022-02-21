@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="NothaltReset.xml"> 
+	<trace text="Skript: NothaltReset.xml"/>
+	<trace text="Nothalt Buzzer wurde deaktiviert"/>
+	<model cmd="modify">
+		<tx id="NothaltText" bgred="255" bggreen="255" bgblue="255"/>
+	</model>
+	<tx id="NothaltText" format="Nothalt Buzzer nicht aktiv"/>
+	<trace text="Ende Skript: NothaltReset.xml"/>
+</xmlscript>
