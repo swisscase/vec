@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="Automatikbetrieb_CheckBetriebsbeginnErledigt.xml"> 
-	<trace text="Prüfe ob der Betriebsbeginn gemacht wurde. Skript: Automatikbetrieb_CheckBetriebsbeginnErledigt.xml"/>
+	<trace text="Skript: Automatikbetrieb_CheckBetriebsbeginnErledigt.xml. Prüfe ob der Betriebsbeginn gemacht wurde."/>
 	<!-------Variablen Deklarieren----->
 	<if condition="#BetriebsbeginnWurdeGemachtWennEins = 1">
 		<then>
