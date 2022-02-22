@@ -9,6 +9,8 @@
 	<vr id="FahrstreckeNichtFreiWennNull" value="1"/>
 	<vr id="FehlerWennNull" value="1"/>
 	<vr id="Lokname" text="leer"/>
+
+	<tx id="Automatik_Hand" format="Automatikbetrieb"/>
 	
 	<!-------Prüfe jedes Element in der Fahrstrassenliste. Falls eine Fahrstrasse gelockt ist, Setze ein Flag.----->
 	<foreach table="stlist" state="st %oid% = locked" alltrue="true">
