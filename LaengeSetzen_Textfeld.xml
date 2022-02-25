@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlscript desc="Textbox_LaengeSetzen.xml">
-	<trace text="Skript: Textbox_LaengeSetzen.xml in Gleis %param1%"/>
+<xmlscript desc="LaengeSetzen_Textfeld.xml">
+	<trace text="Skript: LaengeSetzen_Textfeld.xml in Gleis %param1%"/>
 	<query vr="LokID" table="bklist" id="%param1%" get="locid"/>
 	<query vr="TextfeldID" table="txlist" id="Loklänge_In_CM" get="text"/>
 	<if condition="#TextfeldID > 1" alltrue="true" connect="and">
@@ -17,5 +17,5 @@
 			<trace text="Skript: Kein Wert im Textfeld Zuglänge eingegeben"/>
 		</else>
 	 </if>
- 	<trace text="Ende Skript: Textbox_LaengeSetzen.xml"/>
+ 	<trace text="Ende Skript: LaengeSetzen_Textfeld.xml"/>
 </xmlscript>
