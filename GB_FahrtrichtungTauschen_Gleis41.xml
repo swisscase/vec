@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmlscript desc="GB_FahrtrichtungTauschen_Gleis41.xml">
-	<trace text="Skript: GB_FahrtrichtungTauschen_Gleis41.xml"/>
-	<query vr="LokID" table="bklist" id="E0_Gl.41" get="locid"/>
-	<lc id="@LokID" cmd="swap"/>
-	<trace text="Skript: Fahrtrichtung von @LokID in Gleis 41 getauscht"/>
-	<trace text="Ende Skript: GB_FahrtrichtungTauschen_Gleis41.xml"/>
-</xmlscript>

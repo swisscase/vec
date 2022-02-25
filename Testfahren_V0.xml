@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Testfahren_V0.xml">
+	<trace text="Skript: Testfahren_V0.xml in Gleis %param1%"/>
+	<query vr="LokID" table="bklist" id="%param1%" get="locid"/>
+	<trace text="Script: Setze Fahrgeschwindigkeit von @LokID auf 0 in %param1%"/>
+	<lc id="@LokID" V_hint="0"/>
+	<trace text="Ende Skript: Testfahren_V0.xml"/>
+</xmlscript>

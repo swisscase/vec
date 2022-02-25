@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="FahrtrichtungTauschen.xml">
+	<trace text="Skript: FahrtrichtungTauschen.xml für Gleis %param1%"/>	
+	<query vr="LokID" table="bklist" id="%param1%" get="locid"/>
+	<lc id="@LokID" cmd="blockside"/>
+	<lc id="@LokID" cmd="swap"/>
+	<trace text="Skript: Fahrtrichtung von @LokID in Gleis %param1% getauscht"/>
+	<trace text="Ende Skript: FahrtrichtungTauschen.xml"/>
+</xmlscript>
