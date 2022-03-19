@@ -6,11 +6,13 @@
 	<trace text="Skript: Wunsch_Gl511_nach_Bl6.xml noch am Laufen (While Loop)"/>
 	<co id="LED_D661Bl" cmd="on"/>
 	<co id="LED_D356Bl" cmd="on"/>
+	<co id="LED_D361Bl" cmd="on"/>
 	
 	<sleep time="2000"/>
 	
 	<co id="LED_D661Bl" cmd="off"/>
 	<co id="LED_D356Bl" cmd="off"/>	
+	<co id="LED_D361Bl" cmd="off"/>	
 	
 	<sleep time="2000"/>
 	
