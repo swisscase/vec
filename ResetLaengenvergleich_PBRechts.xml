@@ -2,7 +2,7 @@
 <xmlscript desc="ResetLaengenvergleich_PBRechts.xml">
 	<trace text="Skript: ResetLaengenvergleich_PBRechts.xml"/>
 	<trace text="Reset Textefeld: Loklaenge abfragen in E0 Block 5"/>
-	<tx id="Text_PB_Rechts_Laengenvergleich" format="Loklänge Bl5"/>
+	<tx id="Text_PB_Rechts_Laengenvergleich" format="Loklänge Bl.5"/>
 	<model cmd="modify">
 		<tx id="Text_PB_Rechts_Laengenvergleich" bgred="255" bggreen="255" bgblue="128"/>
 	</model> 
