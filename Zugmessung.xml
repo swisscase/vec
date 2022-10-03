@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="ZugmessungIdentifierInVariable.xml">
+	<trace text="Skript: ZugmessungIdentifierInVariable.xml"/>
+	<query vr="ZugmessungWert" table="fblist" id="%param1%" get="identifier"/>
+	<vr id="Zugmessung_%param3%_%param2%" text="@ZugmessungWert"/>
+	<tx id="Zugmessung" format="%param3% V = @Zugmessung_%param3%_Geschwindigkeit m/s Zuglaenge: @Zugmessung_%param3%_Laenge"/>
+ 	<trace text="Ende Skript: ZugmessungIdentifierInVariable.xml"/>
+</xmlscript>
