@@ -10906,7 +10906,7 @@ Bitte zuerst ausführen!" timer="0" doublequote="true" type="tx" iid="" bus="0" 
       <scentry block="E0_Gl.311" blockexitside="0" ahour="0" aminute="0" hour="0" minute="0" minwait="0" regularstop="true" swap="false" free2go="false" indelay="0" actionsatin="false"/>
     </sc>
   </sclist>
-  <mv scale="87" distance="5400" distanceR="0" mph="false" oneway="true" record="true" s1="E-2_R_Bl4.2" s2="E-2_R_Bl5.1" calibrate="false" lcid="" calctrainlen="true">
+  <mv scale="87" distance="5400" distanceR="0" mph="false" oneway="true" record="true" s1="R_Bl1.1" s2="E-2_R_Bl1.2" calibrate="false" lcid="" calctrainlen="true">
     <actionctrl id="Akt_textupdate_Messwert" state="in" desc="" lcid="" reset="true" allconditions="true" atcmd="true" atevt="false" auto="true" manual="true" substate="" duration="0" timer="0" mvspeed="61.543800" mvtrainlen="0" callerparam=""/>
   </mv>
   <linklist/>
