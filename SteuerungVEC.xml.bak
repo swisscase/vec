@@ -9149,7 +9149,6 @@ Bitte zuerst ausführen!" timer="0" doublequote="true" type="tx" iid="" bus="0" 
     <vr id="Zugmessung__" generated="false" text="(null)"/>
     <vr id="Zugmessung_Bl1_Geschwindigkeit" generated="false" text="0.15"/>
     <vr id="Zugmessung_Bl1_Laenge" generated="false" text="54.45"/>
-    <vr id="LokID" generated="true" text="RE4/4_11182" value="0"/>
   </vrlist>
   <lightctrl converted="true"/>
   <system>
