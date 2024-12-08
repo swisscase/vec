@@ -6,15 +6,15 @@
 	<query vr="LokLaenge_pb_l_Gl322" table="lclist" id="@LokID_pb_l_Gl322" get="len"/>
 	<if condition="#FSTLaenge_pb_l_Gl322 > #LokLaenge_pb_l_Gl322">
 		<then>
-			<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
+			<tx id="Text_PB_Links_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
 			<model cmd="modify">
-				<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
+				<tx id="Text_PB_Links_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
 			</model> 
 		</then>
 		<else>
-			<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
+			<tx id="Text_PB_Links_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
 			<model cmd="modify">
-				<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
+				<tx id="Text_PB_Links_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
 			</model> 
 		</else>
 	</if>

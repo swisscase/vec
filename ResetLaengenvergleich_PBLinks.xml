@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmlscript desc="ResetLaengenvergleich_PBLinks.xml">
 	<trace text="Reset Textefeld: Loklaenge abfragen in E0_Gl.311. Skript: ResetLaengenvergleich_PBLinks"/>
-	<tx id="Text_PB_Links_Gl322_Laengenvergleich" format="Loklänge Gl.311/322"/>
+	<tx id="Text_PB_Links_Laengenvergleich" format="Loklänge Gl.311/322"/>
 	<model cmd="modify">
-		<tx id="Text_PB_Links_Gl322_Laengenvergleich" bgred="255" bggreen="255" bgblue="128"/>
+		<tx id="Text_PB_Links_Laengenvergleich" bgred="255" bggreen="255" bgblue="128"/>
 	</model> 
 	<trace text="Ende Skript: ResetLaengenvergleich_PBLinks.xml"/>
 </xmlscript>

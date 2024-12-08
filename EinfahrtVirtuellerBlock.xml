@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="EinfahrtVirtuellerBlock.xml">
+	<trace text="Skript: EinfahrtVirtuellerBlock.xml -- Parameter: Fahrstrasse, Block von, AktionVirtuellerBlock, AktionNormalerBlock, Textfeld"/>
+	<trace text="Param1: %param1%; Param2: %param2%; Param3: %param3%; Param4: %param4%; Param5: %param5%"/>
+	<query vr="FSTMaxLaenge" table="stlist" id="%param1%" get="maxlen"/>
+	<query vr="FSTMinLaenge" table="stlist" id="%param1%" get="minlen"/>
+	<query vr="LokID" table="bklist" id="%param2%" get="locid"/>
+	<query vr="LokID_Block" table="bklist" id="%param2%" get="locid"/>
+	<query vr="LokLaenge" table="lclist" id="@LokID_Block" get="len"/>
+	<if condition="#LokLaenge > #FSTMinLaenge">
+		<then>
+			<trace text="Zuglänge #LokLaenge > FSTMinLänge #FSTMinLaenge - Geprüfte FST: %param1%"/>
+			<trace text="Einfahrt in: %param3%"/>
+			<actionctrl id="%param3%">
+				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+			</actionctrl>
+		</then>
+		<else>
+			<trace text="Zuglänge #LokLaenge < FSTMinLänge #FSTMinLaenge - Geprüfte FST: %param1%"/>
+			<trace text="Einfahrt in: %param4%"/>
+			<actionctrl id="%param4%">
+				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+			</actionctrl>
+		</else>
+	</if>
+	<if condition="#FSTMaxLaenge > #LokLaenge">
+		<then>
+			<tx id="%param5%" format="OK: @LokLaenge cm"/>
+			<model cmd="modify">
+				<tx id="%param5%" bgred="0" bggreen="255" bgblue="0"/>
+			</model> 
+		</then>
+		<else>
+			<tx id="%param5%" format="Zu Lang: @LokLaenge cm"/>
+			<model cmd="modify">
+				<tx id="%param5%" bgred="255" bggreen="0" bgblue="0"/>
+			</model> 
+		</else>
+	</if>
+	<trace text="Ende Skript: EinfahrtVirtuellerBlock.xml"/>	
+</xmlscript>
