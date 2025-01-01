@@ -10,6 +10,7 @@
 	<model cmd="modify">
 		<tx id="InfoBox" bgred="255" bggreen="255" bgblue="0"/>
 	</model>
+	<trace text="Warte 10 Sekunden bis alle RM abgefragt sind."/>
 	<sleep time="10000"/>
 	<trace text="Schalte Power und Auto ein."/>
 	<sys cmd="go" informall="true"/>
@@ -21,11 +22,27 @@
 		<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
 	</model>
 	<sleep time="1000"/>
+	<trace text="Einschalten Fahrspannung E-1"/>
 	<actionctrl id="Dig_FahrspannungSchBhfE-1_ON">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 	</actionctrl>
 	<sleep time="200"/>
+	<trace text="Einschalten Fahrspannung E-2"/>
 	<actionctrl id="Dig_FahrspannungSchBhfE-2_ON">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	<sleep time="100"/>
+	<trace text="Licht: Einschalten Lichttrafo (Puls 1s)"/>
+	<actionctrl id="Akt_Licht_Trafo_Ein">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	<sleep time="1000"/>
+	<actionctrl id="Akt_Licht_Trafo_Aus">
+		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+	</actionctrl>
+	<sleep time="100"/>
+	<trace text="Licht: Einschalten Bahnhof und Signale"/>
+	<actionctrl id="Akt_Licht_Bahnhof_Signale_Ein">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 	</actionctrl>
 	<trace text="Ende Skript: FspEin.xml"/>
