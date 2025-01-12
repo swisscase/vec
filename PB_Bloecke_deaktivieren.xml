@@ -7,32 +7,48 @@
 			
 			<while state="fb R_Rangierbetrieb = true" alltrue="false">
 				<trace text="Skript Rangiermodus PB: Bitte Kippschalter deaktivieren, da noch ein Zug in/aus dem Bahnhof unterwegs ist."/>
-				<model cmd="modify">
-					<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
-				</model>
-				<tx id="InfoBox" format="Rangiermodus PB: Achtung!|Eine Lok ist im Bahnhof unterwegs|Sofern unsicher:|Kippschalter Rangiermodus GB deaktivieren!"/>
+				<vr id="vr_tx_red" text="255"/>
+				<vr id="vr_tx_green" text="0"/>
+				<vr id="vr_tx_blue" text="0"/>
+				<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+				<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+				<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
+				<tx id="InfoBox" format="Rangiermodus PB: Achtung!|Eine Lok ist im Bahnhof unterwegs.|Kippschalter Rangiermodus GB deaktivieren!"/>
 				<!-------Dieser Abschnitt wird so lange ausgeführt bis der Kippschalter deaktiviert ist. ----->
-				<sleep time="2000"/>
+				<sleep time="10000"/>
 			</while>
 						
-			<actionctrl id="Akt_DigitalbetriebPruefeBetriebsbeginn">
+			<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 			</actionctrl>
+			<vr id="vr_tx_red" text="0"/>
+			<vr id="vr_tx_green" text="255"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 			
 			<trace text="Ende Skript: PB_Bloecke_deaktivieren.xml"/>
-						
 			<exit cmt=""/>
 		</then>
 	</if>
-	
+	<trace text="Skript: Schliesse alle Blöcke im PB da der Rangiermodus aktiviert wurde."/>
 	<bk id="E0_Gl.311" state="closed"/>
 	<bk id="E0_Gl.322" state="closed"/>
 	<bk id="E0_Gl.4" state="closed"/>
 	<bk id="E0_Gl.5" state="closed"/>
 	<bk id="E0_Gl.6" state="closed"/>
 	<bk id="E0_Gl.7" state="closed"/>
+	<bk id="Virtuell_Gl7_Gl371" state="closed"/>
 	<bk id="E0_Gl.8" state="closed"/>
-	<trace text="Skript: Schliesse alle Blöcke im PB da der Rangiermodus aktiviert wurde."/>
+	
+	<tx id="InfoBox" format="Rangiermodus PB: Aktiv. Keine Automatischen Fahrstrassen möglich.|Züge vor dem Beenden korrekt platzieren."/>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="255"/>
+	<vr id="vr_tx_blue" text="0"/>
+	<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 	
 	<trace text="Ende Skript: PB_Bloecke_deaktivieren.xml"/>	
 </xmlscript>

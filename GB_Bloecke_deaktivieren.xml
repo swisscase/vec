@@ -7,24 +7,32 @@
 			
 			<while state="fb R_Rangierbetrieb_GB = true" alltrue="false">
 				<trace text="Skript Rangiermodus GB: Bitte Kippschalter deaktivieren, da noch ein Zug in/aus dem Bahnhof unterwegs ist."/>
-				<model cmd="modify">
-					<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
-				</model>
+				<vr id="vr_tx_red" text="255"/>
+				<vr id="vr_tx_green" text="0"/>
+				<vr id="vr_tx_blue" text="0"/>
+				<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+				<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+				<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 				<tx id="InfoBox" format="Rangiermodus GB: Achtung!|Eine Lok ist im Bahnhof unterwegs|Sofern unsicher:|Kippschalter Rangiermodus GB deaktivieren!"/>
 				<!-------Dieser Abschnitt wird so lange ausgeführt bis der Kippschalter deaktiviert ist. ----->
-				<sleep time="2000"/>
+				<sleep time="10000"/>
 			</while>
 						
-			<actionctrl id="Akt_DigitalbetriebPruefeBetriebsbeginn">
+			<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 			</actionctrl>
+			<vr id="vr_tx_red" text="0"/>
+			<vr id="vr_tx_green" text="255"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 			
-			<trace text="Ende Skript: GB_Bloecke_deaktivieren.xml"/>
-						
+			<trace text="Ende Skript: GB_Bloecke_deaktivieren.xml"/>			
 			<exit cmt=""/>
 		</then>
 	</if>
-	
+	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde. Rote Rangier LED's im Gleis nach GB beim PB-Stellpult eingeschaltet."/>
 	<bk id="E0_Gl.41" state="closed"/>
 	<bk id="E0_Gl.42" state="closed"/>
 	<bk id="E0_Gl.43" state="closed"/>
@@ -34,6 +42,14 @@
 	<co id="LED_D356Rt" cmd="on"/>
 	<co id="LED_D355Rt_Kopie" cmd="on"/>
 	<co id="LED_D356Rt_Kopie" cmd="on"/>
-	<trace text="Skript: Schliesse alle Blöcke im GB da der Rangiermodus aktiviert wurde. Rote Rangier LED's im Gleis nach GB beim PB-Stellpult eingeschaltet."/>
+	
+	<tx id="InfoBox" format="Rangiermodus GB: Aktiv. Keine Automatischen Fahrstrassen möglich.|Züge vor dem Beenden korrekt platzieren."/>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="255"/>
+	<vr id="vr_tx_blue" text="0"/>
+	<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
+	
 	<trace text="Ende Skript: GB_Bloecke_deaktivieren.xml"/>
 </xmlscript>

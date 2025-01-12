@@ -3,9 +3,12 @@
 	<trace text="Skript: Nothalt.xml"/>
 	<trace text="Nothalt ausgeführt weil der Nothalt Buzzer gedrückt wurde"/>
 	<sys cmd="ebreak"/>
-	<model cmd="modify">
-		<tx id="NothaltText" bgred="255" bggreen="0" bgblue="0"/>
-	</model>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="0"/>
+	<vr id="vr_tx_blue" text="0"/>
+	<set vr="vr_tx_red" table="txlist" id="NothaltText" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="NothaltText" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="NothaltText" set="bgblue" setint="false"/>
 	<tx id="NothaltText" format="NOTHALT BUZZER AKTIV"/>
 	<trace text="Ende Skript: Nothalt.xml"/>
 </xmlscript>

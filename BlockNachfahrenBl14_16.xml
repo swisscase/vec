@@ -16,9 +16,12 @@
 	
 	<if condition="#AutomatikZuegeNachfahrenBl1416FehlerWennNull = 0">
 		<then>
-			<model cmd="modify">
-				<tx id="InfoBox" backred="255" backgreen="0" backblue="0"/>
-			</model>
+			<vr id="vr_tx_red" text="255"/>
+			<vr id="vr_tx_green" text="0"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 			<tx id="InfoBox" format="Zug Nachfahren:|Es kann kein Zug gestartet|werden. Warte bis alle Züge stehen."/>
 			<trace text="Zug Nachfahren: Es kann kein Zug gestartet werden da noch Züge unterwegs sind. Warte bis alle Züge stehen."/>
 			<break cmt=""/>
@@ -79,9 +82,12 @@
 					   </if>
 					</foreach>
 					<tx id="InfoBox" format="Zug Nachfahren:|Züge im Bl.14-16 fahren|bis zum Bl.16"/>
-					<model cmd="modify">
-						<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
-					</model>
+					<vr id="vr_tx_red" text="255"/>
+					<vr id="vr_tx_green" text="255"/>
+					<vr id="vr_tx_blue" text="255"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 				</then>
 			</if>
 			<if condition="#LokRichtungTalBl1416WennNull = 2">
@@ -98,18 +104,23 @@
 						</if>
 					</foreach>
 					<tx id="InfoBox" format="Zug Nachfahren:|Züge im Bl.14-16 fahren|bis zum Bl.14"/>
-					<model cmd="modify">
-						<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
-					</model>
+					<vr id="vr_tx_red" text="255"/>
+					<vr id="vr_tx_green" text="255"/>
+					<vr id="vr_tx_blue" text="255"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 				</then>			
 			</if>
 		</else>
 	</if>
 	<sleep time="8000"/>
-
-	<model cmd="modify">
-		<tx id="InfoBox" backred="255" backgreen="255" backblue="255"/>
-	</model>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="255"/>
+	<vr id="vr_tx_blue" text="255"/>
+	<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 	<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 		<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 	</actionctrl>

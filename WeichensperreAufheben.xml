@@ -6,8 +6,11 @@
 	<sw id="E-1_W17" cmd="straight"/>
 	<sw id="E-2_W11" cmd="straight"/>
 	<tx id="txWsperre" format="Automatikbetrieb:|Klicke um Weichensperre|zu aktivieren"/>
-	<model cmd="modify">
-		<tx id="txWsperre" bgred="255" bggreen="0" bgblue="0"/>
-	</model>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="0"/>
+	<vr id="vr_tx_blue" text="0"/>
+	<set vr="vr_tx_red" table="txlist" id="txWsperre" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="txWsperre" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="txWsperre" set="bgblue" setint="false"/>	
 	<trace text="Ende Skript: WeichensperreAufheben.xml"/>
 </xmlscript>

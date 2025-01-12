@@ -34,9 +34,12 @@
 			<if condition="#AutomatikUmschaltenFehlerWennNull = 0">
 				<then>
 					<tx id="InfoBox" format="Automatikbetrieb:|Abbruch Automatkbetrieb.|Eine Fahrstrasse war noch|nicht freigegeben"/>
-					<model cmd="modify">
-						<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
-					</model>
+					<vr id="vr_tx_red" text="0"/>
+					<vr id="vr_tx_green" text="255"/>
+					<vr id="vr_tx_blue" text="0"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 					<trace text="Automatikbetrieb: Abbruch Automatkbetrieb. Eine Fahrstrasse war noch nicht freigegeben"/>
 					<break cmt=""/>
 				</then>
@@ -45,9 +48,12 @@
 				<then>
 					<vr id="fehlertext" text="Automatikbetrieb:|Abbruch Automatkbetrieb.|Lok steht auf Strecke:|"/>
 					<tx id="InfoBox" format="@fehlertext @Lokname"/>
-					<model cmd="modify">
-						<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
-					</model>
+					<vr id="vr_tx_red" text="255"/>
+					<vr id="vr_tx_green" text="0"/>
+					<vr id="vr_tx_blue" text="0"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 					<trace text="Automatikbetrieb: Abbruch Automatkbetrieb. Ein Zug steht auf der Fahrtstrecke"/>
 					<break cmt=""/>
 				</then>
@@ -88,15 +94,21 @@
 					<!-------Fehlerfall----->
 					<trace text="Automatikbetrieb: Abbruch Automatkbetrieb da eine Lok falsch platziert ist." />
 					<tx id="InfoBox" format="Automatikbetrieb:|Abbruch Automatikbetrieb.|Ein Zug in den Bahnhöfen ist|in eine falsche Richtung|platziert"/>
-					<model cmd="modify">
-						<tx id="InfoBox" bgred="255" bggreen="0" bgblue="0"/>
-					</model>
-					
+					<vr id="vr_tx_red" text="255"/>
+					<vr id="vr_tx_green" text="0"/>
+					<vr id="vr_tx_blue" text="0"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>					
 					<sleep time="5000"/>
 
-					<model cmd="modify">
-						<tx id="InfoBox" bgred="0" bggreen="255" bgblue="0"/>
-					</model>
+					<vr id="vr_tx_red" text="0"/>
+					<vr id="vr_tx_green" text="255"/>
+					<vr id="vr_tx_blue" text="0"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>					
+					
 					<actionctrl id="Akt_textupdate_Infobox_Digitalbetrieb">
 						<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
 					</actionctrl>
@@ -203,15 +215,23 @@
 					</foreach>
 					
 					<trace text="Automatikbetrieb: Automatikbetrieb gestartet"/>
-					<model cmd="modify">
-						<tx id="InfoBox" bgred="239" bggreen="206" bgblue="200"/>
-					</model>
+
+					<vr id="vr_tx_red" text="239"/>
+					<vr id="vr_tx_green" text="206"/>
+					<vr id="vr_tx_blue" text="200"/>
+					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 					<tx id="InfoBox" format="Automatikbetrieb gestartet.|Die Züge fahren vollautomatisch."/>
 					
 					<tx id="txWsperre" format="Automatikbetrieb:|Klicke um Weichensperre|zu deaktivieren"/>
-					<model cmd="modify">
-					<tx id="txWsperre" bgred="0" bggreen="255" bgblue="0"/>
-					</model> 
+					<vr id="vr_tx_red" text="0"/>
+					<vr id="vr_tx_green" text="255"/>
+					<vr id="vr_tx_blue" text="0"/>
+					<set vr="vr_tx_red" table="txlist" id="txWsperre" set="bgred" setint="false"/>
+					<set vr="vr_tx_green" table="txlist" id="txWsperre" set="bggreen" setint="false"/>
+					<set vr="vr_tx_blue" table="txlist" id="txWsperre" set="bgblue" setint="false"/>
+					
 				</else>		
 				
 			</if>

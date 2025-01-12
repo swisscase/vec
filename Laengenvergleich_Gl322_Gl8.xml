@@ -7,15 +7,21 @@
 	<if condition="#FSTLaenge_pb_l_Gl322 > #LokLaenge_pb_l_Gl322">
 		<then>
 			<tx id="Text_PB_Links_Laengenvergleich" format="OK: @LokLaenge_pb_l_Gl322 cm"/>
-			<model cmd="modify">
-				<tx id="Text_PB_Links_Laengenvergleich" bgred="0" bggreen="255" bgblue="0"/>
-			</model> 
+			<vr id="vr_tx_red" text="0"/>
+			<vr id="vr_tx_green" text="255"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="Text_PB_Links_Laengenvergleich" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="Text_PB_Links_Laengenvergleich" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="Text_PB_Links_Laengenvergleich" set="bgblue" setint="false"/>
 		</then>
 		<else>
 			<tx id="Text_PB_Links_Laengenvergleich" format="Zu Lang: @LokLaenge_pb_l_Gl322 cm"/>
-			<model cmd="modify">
-				<tx id="Text_PB_Links_Laengenvergleich" bgred="255" bggreen="0" bgblue="0"/>
-			</model> 
+			<vr id="vr_tx_red" text="255"/>
+			<vr id="vr_tx_green" text="0"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="Text_PB_Links_Laengenvergleich" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="Text_PB_Links_Laengenvergleich" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="Text_PB_Links_Laengenvergleich" set="bgblue" setint="false"/>
 		</else>
 	</if>
 	<trace text="Ende Skript: Laengenvergleich_Gl322_Gl8.xml"/>	

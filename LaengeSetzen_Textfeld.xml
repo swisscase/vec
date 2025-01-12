@@ -5,10 +5,9 @@
 	<query vr="TextfeldID" table="txlist" id="Loklänge_In_CM" get="text"/>
 	<if condition="#TextfeldID > 1" alltrue="true" connect="and">
 		<then>
+			<trace text="Skript: Länge im Textfeld ist @TextfeldID cm"/>
 			<query vr="LokLaengeAlt" table="lclist" id="@LokID" get="len"/>
-			<model cmd="modify">
-				<lc id="@LokID" len="@TextfeldID"/>
-			</model>
+			<set vr="TextfeldID" table="lclist" id="@LokID" set="len" setint="false"/>
 			<query vr="LokLaengeNeu" table="lclist" id="@LokID" get="len"/>
 			<trace text="Skript: Setze die Loklaenge im Gleis %param1% von @LokID | Bisher: @LokLaengeAlt cm Neu: @LokLaengeNeu cm"/>
 			<tx id="Loklänge_In_CM" format="0"/>

@@ -26,15 +26,21 @@
 	<if condition="#FSTMaxLaenge > #LokLaenge">
 		<then>
 			<tx id="%param5%" format="OK: @LokLaenge cm"/>
-			<model cmd="modify">
-				<tx id="%param5%" bgred="0" bggreen="255" bgblue="0"/>
-			</model> 
+			<vr id="vr_tx_red" text="0"/>
+			<vr id="vr_tx_green" text="255"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="%param5%" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="%param5%" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="%param5%" set="bgblue" setint="false"/>
 		</then>
 		<else>
 			<tx id="%param5%" format="Zu Lang: @LokLaenge cm"/>
-			<model cmd="modify">
-				<tx id="%param5%" bgred="255" bggreen="0" bgblue="0"/>
-			</model> 
+			<vr id="vr_tx_red" text="255"/>
+			<vr id="vr_tx_green" text="0"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="%param5%" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="%param5%" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="%param5%" set="bgblue" setint="false"/>
 		</else>
 	</if>
 	<trace text="Ende Skript: EinfahrtVirtuellerBlock.xml"/>	

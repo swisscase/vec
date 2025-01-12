@@ -4,9 +4,12 @@
 	<actionctrl id="Akt_textupdate_Infobox_Analogbetrieb">
 		<actioncond id="R_Dig_Analog" subid="" state="off" type="fb"/>
 	</actionctrl>
-	<model cmd="modify">
-		<tx id="InfoBox" bgred="255" bggreen="255" bgblue="0"/>
-	</model>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="255"/>
+	<vr id="vr_tx_blue" text="0"/>
+	<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 	<vr id="BetriebsbeginnWurdeGemachtWennEins" value="0"/> 
 	<sys cmd="stop" informall="true"/>
 	<auto cmd="off"/> 

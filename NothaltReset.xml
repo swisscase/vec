@@ -2,9 +2,12 @@
 <xmlscript desc="NothaltReset.xml"> 
 	<trace text="Skript: NothaltReset.xml"/>
 	<trace text="Nothalt Buzzer wurde deaktiviert"/>
-	<model cmd="modify">
-		<tx id="NothaltText" bgred="255" bggreen="255" bgblue="255"/>
-	</model>
+	<vr id="vr_tx_red" text="255"/>
+	<vr id="vr_tx_green" text="255"/>
+	<vr id="vr_tx_blue" text="255"/>
+	<set vr="vr_tx_red" table="txlist" id="NothaltText" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="NothaltText" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="NothaltText" set="bgblue" setint="false"/>
 	<tx id="NothaltText" format="Nothalt Buzzer nicht aktiv"/>
 	<trace text="Ende Skript: NothaltReset.xml"/>
 </xmlscript>

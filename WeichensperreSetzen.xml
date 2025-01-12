@@ -8,8 +8,11 @@
 	<sw id="E-2_W11" cmd="setstatic"/>
 	<sleep time="100"/>
 	<tx id="txWsperre" format="Automatikbetrieb:|Klicke um Weichensperre|zu deaktivieren"/>
-	<model cmd="modify">
-		<tx id="txWsperre" bgred="0" bggreen="255" bgblue="0"/>
-	</model> 
+	<vr id="vr_tx_red" text="0"/>
+	<vr id="vr_tx_green" text="255"/>
+	<vr id="vr_tx_blue" text="0"/>
+	<set vr="vr_tx_red" table="txlist" id="txWsperre" set="bgred" setint="false"/>
+	<set vr="vr_tx_green" table="txlist" id="txWsperre" set="bggreen" setint="false"/>
+	<set vr="vr_tx_blue" table="txlist" id="txWsperre" set="bgblue" setint="false"/>	
 	<trace text="Ende Skript: WeichensperreSetzen.xml"/>
 </xmlscript>
