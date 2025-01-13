@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="ZugmessungResetVariablenTextfeld.xml">
+	<trace text="Skript: ZugmessungResetVariablenTextfeld.xml"/>
+	<vr id="Zugmessung_Bl1_Geschwindigkeit" text=""/>
+	<vr id="Zugmessung_Bl1_Laenge" text=""/>
+	<tx id="Zugmessung" format="Zugmessung: Keine Messdaten"/>
+	<trace text="Ende Skript: ZugmessungResetVariablenTextfeld.xml"/>
+</xmlscript>
