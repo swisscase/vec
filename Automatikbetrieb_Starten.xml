@@ -206,7 +206,8 @@
 					<bk id="E0_Gl.42" state="closed"/>
 					<bk id="E0_Gl.43" state="closed"/>
 					<bk id="E0_Gl.44" state="closed"/>
-					<bk id="E0_Gl.45" state="closed"/>				
+					<bk id="E0_Gl.45" state="closed"/>
+					<bk id="E0_Gl.511" state="closed"/>
 
 					<!-------Starte die Züge in Gleis 4,5,7,8----->			
 					<foreach table="lclist" condition="%lccur% # E0_Gl.4|%lccur% # E0_Gl.5|%lccur% # E0_Gl.7|%lccur% # E0_Gl.8" alltrue="false">
