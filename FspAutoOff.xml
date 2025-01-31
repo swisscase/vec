@@ -12,6 +12,7 @@
 	<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
 	<vr id="BetriebsbeginnWurdeGemachtWennEins" value="0"/> 
 	<sys cmd="stop" informall="true"/>
+	<sys cmd="stoplocs" informall="true"/>
 	<auto cmd="off"/> 
 	<trace text="Ende Skript: FspAutoOff.xml"/>
 </xmlscript>
