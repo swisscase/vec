@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Geisterzug.xml">
+	
+	<trace text="Skript: Geisterzug.xml. Liste alle fahrende Züge (wait, auto) auf. Parameter1: Block wo der Geisterzug auftrat"/>
+	<vr id="Lokliste" text="Geisterzug in %param1%." value="" generated="true"/> 
+	<vr id="ErsterDurchlauf" text="" value="1"/> 
+	<trace text="Geisterzug in %param1% . Prüfe ob noch Züge unterwegs sind (wait/auto Modus)."/>
+	<foreach table="lclist">
+				
+		<if state="lc %oid% = wait|lc %oid% = auto" alltrue="false">
+			<then>
+				<if condition="#ErsterDurchlauf = 1">
+					<then>
+					<vr id="Lokliste" text="Geisterzug in %param1% | Folgende Züge waren unterwegs:|" value="" generated="true"/>
+					<vr id="ErsterDurchlauf" text="" value="0"/> 
+					</then>
+				</if>
+				<query vr="BlockID" table="lclist" id="%oid%" get="blockid"/>
+				<query vr="Status" table="lclist" id="%oid%" get="mode"/>
+				<vr id="Lokliste" text="@Lokliste '%oid%' unterwegs in Abschnitt: ' @BlockID ', Lokstatus: ' @Status '|" value="" generated="true"/>
+			</then>
+		</if>	
+		
+		<vr id="vr_tx_red" text="255"/>
+		<vr id="vr_tx_green" text="0"/>
+		<vr id="vr_tx_blue" text="0"/>
+		<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
+		<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
+		<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
+		<tx id="InfoBox" format="@Lokliste"/>
+		
+	</foreach>
+	<trace text="Ende Skript: Geisterzug.xml. Resultat: @Lokliste ."/>
+	<vr id="Lokliste" text="Lokliste Geisterzug ist leer" value="" generated="true"/> 
+</xmlscript>

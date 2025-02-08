@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="SignalRot.xml">
+	<trace text="Skript: SignalRot.xml -- Parameter: Signalkennung"/>
+	<trace text="Param1: %param1%"/>
+	<sg id="%param1%" cmd="red"/>
+	<trace text="Ende Skript: SignalRot.xml"/>	
+</xmlscript>
