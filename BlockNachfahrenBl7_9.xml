@@ -103,9 +103,9 @@
 						</if>
 					</foreach>
 					<tx id="InfoBox" format="Zug Nachfahren:|Züge im Bl.7-9 fahren|bis zum Bl.9"/>
-					<vr id="vr_tx_red" text="255"/>
+					<vr id="vr_tx_red" text="0"/>
 					<vr id="vr_tx_green" text="255"/>
-					<vr id="vr_tx_blue" text="255"/>
+					<vr id="vr_tx_blue" text="0"/>
 					<set vr="vr_tx_red" table="txlist" id="InfoBox" set="bgred" setint="false"/>
 					<set vr="vr_tx_green" table="txlist" id="InfoBox" set="bggreen" setint="false"/>
 					<set vr="vr_tx_blue" table="txlist" id="InfoBox" set="bgblue" setint="false"/>
