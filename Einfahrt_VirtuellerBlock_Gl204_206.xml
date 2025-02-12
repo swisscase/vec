@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlscript desc="Einfahrt_VirtuellerBlock_Gl204_206.xml">
+	<trace text="Skript: Einfahrt_VirtuellerBlock_Gl204_206.xml. Loklaenge abfragen in Block 2 Gl204/205/206. Parameter1: %param1%; Parameter2: %param2%"/>
+	<query vr="FSTLaenge_pb_r" table="stlist" id="%param1%" get="maxlen"/>
+	<query vr="LokID_pb_r" table="bklist" id="E-2_Bl2" get="locid"/>
+	<query vr="LokLaenge_pb_r" table="lclist" id="@LokID_pb_r" get="len"/>
+	<if condition="#FSTLaenge_pb_r > #LokLaenge_pb_r" | state="bk E-2_Gl207 != occupied" alltrue="false">
+		<then>
+			<tx id="Text_SB_Bl2" format="OK: @LokLaenge_pb_r cm"/>
+			<vr id="vr_tx_red" text="0"/>
+			<vr id="vr_tx_green" text="255"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="Text_SB_Bl2" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="Text_SB_Bl2" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="Text_SB_Bl2" set="bgblue" setint="false"/>
+			<actionctrl id="%param2%">
+				<actioncond id="R_Dig_Analog" subid="" state="on" type="fb"/>
+				<actioncond id="R_Fahrbetrieb" subid="" state="on" type="fb"/>
+				<actioncond id="R_AutoHand" subid="" state="off" type="fb"/>
+				<actioncond id="E-2_T_Bl2" subid="" state="on" type="fb"/>
+				<actioncond id="E-2_GF_Verbindung" subid="" state="free" type="bk"/>
+				<actioncond id="E-2_Gl207" subid="" state="free" type="bk"/>
+			</actionctrl>
+		</then>
+		<else>
+			<if condition="#FSTLaenge_pb_r < #LokLaenge_pb_r">
+				<then>
+					<tx id="Text_SB_Bl2" format="Zu Lang: @LokLaenge_pb_r cm"/>
+				</then>
+			</if>
+			<if state="bk E-2_Gl207 = occupied">
+				<then>
+					<tx id="Text_SB_Bl2" format="Gl207 belegt"/>
+				</then>
+			</if>
+			<if state="bk E-2_GF_Verbindung = occupied">
+				<then>
+					<tx id="Text_SB_Bl2" format="Verbindung belegt"/>
+				</then>
+			</if>
+			<vr id="vr_tx_red" text="255"/>
+			<vr id="vr_tx_green" text="0"/>
+			<vr id="vr_tx_blue" text="0"/>
+			<set vr="vr_tx_red" table="txlist" id="Text_SB_Bl2" set="bgred" setint="false"/>
+			<set vr="vr_tx_green" table="txlist" id="Text_SB_Bl2" set="bggreen" setint="false"/>
+			<set vr="vr_tx_blue" table="txlist" id="Text_SB_Bl2" set="bgblue" setint="false"/>
+		</else>
+	</if>
+	<trace text="Ende Skript: Einfahrt_VirtuellerBlock_Gl204_206.xml"/>	
+</xmlscript>
